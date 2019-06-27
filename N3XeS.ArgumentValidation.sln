@@ -1,0 +1,89 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Builds", "Builds", "{E92F310B-A53F-4917-9EBF-EE531E831D05}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{234FCAA4-F16F-4AFA-B45F-6FC6BEC646CE}"
+	ProjectSection(SolutionItems) = preProject
+		Docs\N3XeS.ArgumentValidation.coveragexml = Docs\N3XeS.ArgumentValidation.coveragexml
+		Docs\N3XeS.CSharp.ArgumentValidation Code Metrics.xlsx = Docs\N3XeS.CSharp.ArgumentValidation Code Metrics.xlsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Setup", "Setup", "{38D243A4-4BDD-4906-8715-856386AC1CE7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FDEDF410-3C1C-4E8D-B91E-A7C8E7E54204}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		azure-pipelines.yml = azure-pipelines.yml
+		CHANGELOG.md = CHANGELOG.md
+		COPYING.LESSER = COPYING.LESSER
+		LICENSE.txt = LICENSE.txt
+		README.md = README.md
+		TestSettings.runsettings = TestSettings.runsettings
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{055E26BF-2617-425D-9416-6842A75900EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{E5DD2FFD-4C6A-49DC-9FDB-88CF302C652B}"
+	ProjectSection(SolutionItems) = preProject
+		Shared\DotNetVersionSpecificCompileTimeContantSymbols.props = Shared\DotNetVersionSpecificCompileTimeContantSymbols.props
+		Shared\N3XeS CSharp Managed Code - Development.ruleset = Shared\N3XeS CSharp Managed Code - Development.ruleset
+		Shared\N3XeS CSharp Managed Code - Production.ruleset = Shared\N3XeS CSharp Managed Code - Production.ruleset
+		Shared\N3XeS.CSharp.ArgumentValidation Identity Private Key.snk = Shared\N3XeS.CSharp.ArgumentValidation Identity Private Key.snk
+		Shared\N3XeS.CSharp.ArgumentValidation Identity Public Key.snk = Shared\N3XeS.CSharp.ArgumentValidation Identity Public Key.snk
+		Shared\N3XeS.CSharp.ArgumentValidation Signature Private Key.snk = Shared\N3XeS.CSharp.ArgumentValidation Signature Private Key.snk
+		Shared\N3XeS.CSharp.ArgumentValidation Signature Public Key.snk = Shared\N3XeS.CSharp.ArgumentValidation Signature Public Key.snk
+		Shared\N3XeSCodeAnalysisDictionary.xml = Shared\N3XeSCodeAnalysisDictionary.xml
+		Shared\NuGet.Config = Shared\NuGet.Config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{6B6CD369-5706-4276-87E9-87B883212B31}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{370A3D62-91CF-4697-A4D5-C111797214E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Functional", "Functional", "{8BD7620C-A9AA-4914-9C20-0AD30FAF6A9C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Performance", "Performance", "{B49DC3C3-BC3D-4C4C-A547-23604565E75E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Security", "Security", "{915BCB0D-9EFE-4FA0-898D-F6F27B7B4978}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Binaries", "Binaries", "{ADC73005-F999-44E7-8262-F56FDF2D9B1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N3XeS.CSharp.ArgumentValidation", "Source\N3XeS.CSharp.ArgumentValidation\N3XeS.CSharp.ArgumentValidation.csproj", "{B055ACCB-D682-40E3-90E0-6A4DD0E509A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N3XeS.CSharp.ArgumentValidation.UnitTests", "Source\N3XeS.CSharp.ArgumentValidation.UnitTests\N3XeS.CSharp.ArgumentValidation.UnitTests.csproj", "{4B32C3B9-C1D3-4DF4-94D3-DD11CB899E42}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B055ACCB-D682-40E3-90E0-6A4DD0E509A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B055ACCB-D682-40E3-90E0-6A4DD0E509A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B055ACCB-D682-40E3-90E0-6A4DD0E509A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B055ACCB-D682-40E3-90E0-6A4DD0E509A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B32C3B9-C1D3-4DF4-94D3-DD11CB899E42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B32C3B9-C1D3-4DF4-94D3-DD11CB899E42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B32C3B9-C1D3-4DF4-94D3-DD11CB899E42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B32C3B9-C1D3-4DF4-94D3-DD11CB899E42}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6B6CD369-5706-4276-87E9-87B883212B31} = {055E26BF-2617-425D-9416-6842A75900EB}
+		{8BD7620C-A9AA-4914-9C20-0AD30FAF6A9C} = {370A3D62-91CF-4697-A4D5-C111797214E3}
+		{B49DC3C3-BC3D-4C4C-A547-23604565E75E} = {370A3D62-91CF-4697-A4D5-C111797214E3}
+		{915BCB0D-9EFE-4FA0-898D-F6F27B7B4978} = {370A3D62-91CF-4697-A4D5-C111797214E3}
+		{ADC73005-F999-44E7-8262-F56FDF2D9B1A} = {E5DD2FFD-4C6A-49DC-9FDB-88CF302C652B}
+		{B055ACCB-D682-40E3-90E0-6A4DD0E509A9} = {055E26BF-2617-425D-9416-6842A75900EB}
+		{4B32C3B9-C1D3-4DF4-94D3-DD11CB899E42} = {055E26BF-2617-425D-9416-6842A75900EB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {99979C9C-290E-406A-BE44-4B2B0A86B4C8}
+	EndGlobalSection
+EndGlobal

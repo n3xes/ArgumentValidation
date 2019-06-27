@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata>
+		<authors>$author$</authors>
+		<copyright>$copyright$</copyright>
+		<description>$description$</description>
+		<dependencies>
+			<dependency id="N3XeS.CSharp.Common" version="1.0.19178.2" />
+			<dependency id="N3XeS.CSharp.Analyzation" version="1.0.19178.1" />
+		</dependencies>
+		<id>$id$</id>
+		<language>en-US</language>
+		<license type="expression">LGPL-3.0-or-later</license>
+		<projectUrl>https://dev.azure.com/n3xes/ArgumentValidation/</projectUrl>
+		<title>$title$</title>
+		<version>$version$</version>
+	</metadata>
+</package>

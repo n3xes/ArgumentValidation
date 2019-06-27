@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="N3XeS.CSharp.ArgumentValidation.Attributes.ValidatedNotNullAttribute" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Attributes\ValidatedNotNullAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="N3XeS.CSharp.ArgumentValidation.Extensions.ArgumentEqualityValidationExtension" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kAAAAAAAAAkAAEAAAQAAgAAQAAIAAAAAECQAIBAAAAA=</HashCode>
+      <FileName>Extensions\ArgumentEqualityValidationExtension.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="N3XeS.CSharp.ArgumentValidation.Extensions.ArgumentFloatingPointNumberParityValidationExtension" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Extensions\ArgumentFloatingPointNumberParityValidationExtension.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="N3XeS.CSharp.ArgumentValidation.Extensions.ArgumentGenericRelationalValidationExtension" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAQAAAAAAIAAAIAAAAEAAAAAAUAQAA=</HashCode>
+      <FileName>Extensions\ArgumentGenericRelationalValidationExtension.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="N3XeS.CSharp.ArgumentValidation.Extensions.ArgumentIntegralParityValidationExtension" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Extensions\ArgumentIntegralParityValidationExtension.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="N3XeS.CSharp.ArgumentValidation.Extensions.ArgumentRelationalValidationExtension" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAQAAAAAAIAAAIAAAAEAAAAAAUAQAA=</HashCode>
+      <FileName>Extensions\ArgumentRelationalValidationExtension.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="N3XeS.CSharp.ArgumentValidation.Extensions.ArgumentSignedFloatingPointNumberValidationExtension" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAEA=</HashCode>
+      <FileName>Extensions\ArgumentSignedFloatingPointNumberValidationExtension.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="N3XeS.CSharp.ArgumentValidation.Extensions.ArgumentSignedIntegralNumberValidationExtension" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAEA=</HashCode>
+      <FileName>Extensions\ArgumentSignedIntegralNumberValidationExtension.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="N3XeS.CSharp.ArgumentValidation.Extensions.TypeTestingExtension" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Extensions\TypeTestingExtension.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="N3XeS.CSharp.ArgumentValidation.Properties.Resources" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEIAAoQCAIAABAQBFEAAAIUQhFDiAAAAIAAEEAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="N3XeS.CSharp.ArgumentValidation.Properties.Settings" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="N3XeS.CSharp.ArgumentValidation.Utilities.ArgumentEqualityValidationUtility" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kAAAAAAAAAkAAEAAAQAAgAAQAAIAAAAAECQAIBAAAAA=</HashCode>
+      <FileName>Utilities\ArgumentEqualityValidationUtility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="N3XeS.CSharp.ArgumentValidation.Utilities.ArgumentFloatingPointNumberParityValidationUtility" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Utilities\ArgumentFloatingPointNumberParityValidationUtility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="N3XeS.CSharp.ArgumentValidation.Utilities.ArgumentGenericRelationalValidationUtility" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAQAAAAAAIAAAIAAAAEAAAAAAUAQAA=</HashCode>
+      <FileName>Utilities\ArgumentGenericRelationalValidationUtility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="N3XeS.CSharp.ArgumentValidation.Utilities.ArgumentIntegralParityValidationUtility" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Utilities\ArgumentIntegralParityValidationUtility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="N3XeS.CSharp.ArgumentValidation.Utilities.ArgumentRelationalValidationUtility" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAQAAAAAAIAAAIAAAAEAAAAAAUAQAA=</HashCode>
+      <FileName>Utilities\ArgumentRelationalValidationUtility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="N3XeS.CSharp.ArgumentValidation.Utilities.ArgumentSignedFloatingPointNumberValidationUtility" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAEA=</HashCode>
+      <FileName>Utilities\ArgumentSignedFloatingPointNumberValidationUtility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="N3XeS.CSharp.ArgumentValidation.Utilities.ArgumentSignedIntegralNumberValidationUtility" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAEA=</HashCode>
+      <FileName>Utilities\ArgumentSignedIntegralNumberValidationUtility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="N3XeS.CSharp.ArgumentValidation.Utilities.TypeTestingUtility" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utilities\TypeTestingUtility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

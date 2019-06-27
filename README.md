@@ -1,0 +1,4 @@
+# N3XeS.ArgumentValidation
+[![Pipeline status](https://dev.azure.com/n3xes/ArgumentValidation/_apis/build/status/ArgumentValidation%20-%20Continuous%20Integration%20(CI)?branchName=master)](https://dev.azure.com/n3xes/ArgumentValidation/_build/latest?definitionId=18) ![Build Status](https://img.shields.io/azure-devops/build/n3xes/beae15fc-825b-425b-8543-fc42e2175502/18/master.svg?label=build&style=flat) ![Test Code Coverage](https://img.shields.io/azure-devops/coverage/n3xes/beae15fc-825b-425b-8543-fc42e2175502/18/master.svg?style=flat) ![Test Results](https://img.shields.io/azure-devops/tests/n3xes/beae15fc-825b-425b-8543-fc42e2175502/18/master.svg?style=flat)
+
+A library containing extensions and utilities that are intended to be used to standardize argument validation exception types and the exception type's messages.
