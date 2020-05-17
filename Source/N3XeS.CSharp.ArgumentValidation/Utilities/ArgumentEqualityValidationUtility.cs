@@ -1,7 +1,7 @@
 ﻿#region Header: Copyright © 2013, John Caruthers
 
 // =====================================================================================================================
-// <copyright file="ArgumentEqualityValidationUtility.cs">
+// <copyright company="John Caruthers" file="ArgumentEqualityValidationUtility.cs">
 //		Copyright © 2013, John Caruthers
 //		All rights reserved.
 //
@@ -15,7 +15,7 @@
 //		FOR A PARTICULAR PURPOSE.SEE THE GNU GENERAL PUBLIC LICENSE FOR MORE DETAILS.
 //
 //		YOU SHOULD HAVE RECEIVED A COPY OF THE GNU GENERAL PUBLIC LICENSE ALONG
-//		WITH THIS PROGRAM.  IF NOT, SEE <https://www.gnu.org/licenses/>.
+//		WITH THIS PROGRAM.  IF NOT, SEE https://www.gnu.org/licenses/.
 //
 // </copyright>
 ////====================================================================================================================
@@ -180,7 +180,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
 
-			if (valueArgument.HasNonwhiteSpaceValue())
+			if (valueArgument.HasNonWhiteSpaceValue())
 			{
 				throw new ArgumentOutOfRangeException(nameArgument, valueArgument, String.Format(CultureInfo.InvariantCulture, "{0}.  {1}.", Resources.ValueOutOfRange, Resources.StringValueMustBeNullEmptyOrWhiteSpace));
 			}
