@@ -32,7 +32,6 @@ using System.Runtime.InteropServices;
 
 #endregion
 
-
 // System.Reflection
 
 // General Information about an assembly is controlled through the following 
@@ -44,6 +43,11 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyProduct("N3XeS.CSharp.ArgumentValidation")]
 [assembly: AssemblyCopyright("Copyright (c) 2013, John Caruthers")]
 [assembly: AssemblyTrademark("N3XeS is a registered trademark of, John Caruthers")]
+
+[assembly: AssemblyMetadata("ImplicitNullability.AppliesTo", "InputParameters, RefParameters, OutParametersAndResult, Fields, Properties")]
+[assembly: AssemblyMetadata("ImplicitNullability.Fields", "RestrictToReadonly, RestrictToReferenceTypes")]
+[assembly: AssemblyMetadata("ImplicitNullability.Properties", "RestrictToGetterOnly, RestrictToReferenceTypes")]
+[assembly: AssemblyMetadata("ImplicitNullability.GeneratedCode", "Exclude")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -87,6 +91,7 @@ using System.Runtime.InteropServices;
 // to COM components.  If you need to access a type in this assembly from 
 // COM, set the ComVisible attribute to true on that type.
 [assembly: ComVisible(false)]
+
 // The following Guid is for the ID of the typelib if this project is exposed to COM
 [assembly: Guid("b055accb-d682-40e3-90e0-6a4dd0e509a9")]
 
