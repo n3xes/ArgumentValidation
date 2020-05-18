@@ -39,7 +39,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Attributes
 	#endregion
 
 	/// <summary>
-	///		A parameter attribute used to describe a parameter that it is being validated against <see langword="null"/> in a validation method.
+	///		A parameter attribute used to describe a parameter that it is being validated against
+	///		<see langword="null"/> in a validation method.
 	/// </summary>
 	/// <author>
 	///  <AuthorName>John Caruthers</AuthorName>
