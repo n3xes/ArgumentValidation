@@ -67,7 +67,7 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Attributes\ValidatedNotNullAttribute.cs" />
+    <Compile Include="Attributes\ArgumentValidatedNotNullAttribute.cs" />
     <Compile Include="Extensions\ArgumentEqualityValidationExtension.cs" />
     <Compile Include="Extensions\ArgumentFloatingPointNumberParityValidationExtension.cs" />
     <Compile Include="Extensions\ArgumentIntegralParityValidationExtension.cs" />
