@@ -213,7 +213,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="N3XeS.CSharp.Analyzation">
-      <Version>1.0.20138.1</Version>
+      <Version>1.0.20138.2</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
