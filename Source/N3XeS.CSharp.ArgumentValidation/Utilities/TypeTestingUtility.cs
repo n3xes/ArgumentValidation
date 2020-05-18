@@ -67,6 +67,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 	///   <ModificationDescription></ModificationDescription>
 	///  </Modification>
 	/// </history>
+	[PublicAPI]
 	public static class TypeTestingUtility
 	{
 		#region Constants

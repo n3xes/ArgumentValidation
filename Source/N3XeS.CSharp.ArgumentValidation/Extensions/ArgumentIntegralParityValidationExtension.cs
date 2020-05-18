@@ -64,6 +64,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 	///   <ModificationDescription></ModificationDescription>
 	///  </Modification>
 	/// </history>
+	[PublicAPI]
+	// ReSharper disable once ClassTooBig
 	public static class ArgumentIntegralParityValidationExtension
 	{
 		#region Constants

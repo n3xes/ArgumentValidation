@@ -64,6 +64,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 	///   <ModificationDescription></ModificationDescription>
 	///  </Modification>
 	/// </history>
+	[PublicAPI]
 	public static class ArgumentSignedIntegralNumberValidationExtension
 	{
 		#region Constants

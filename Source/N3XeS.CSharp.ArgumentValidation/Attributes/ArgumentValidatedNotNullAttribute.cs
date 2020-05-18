@@ -57,8 +57,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Attributes
 	///   <ModificationDescription></ModificationDescription>
 	///  </Modification>
 	/// </history>
-	[AttributeUsage(AttributeTargets.Parameter)]
-	[PublicAPI]
+	[AttributeUsage(AttributeTargets.Parameter), 
+	 PublicAPI]
 	public sealed class ArgumentValidatedNotNullAttribute
 		: Attribute
 	{

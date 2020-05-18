@@ -70,6 +70,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 	///   <ModificationDescription></ModificationDescription>
 	///  </Modification>
 	/// </history>
+	[PublicAPI]
+	// ReSharper disable once ClassTooBig
 	public static class ArgumentEqualityValidationUtility
 	{
 		#region Constants
@@ -153,7 +155,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// </param>
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.String"/> value.</param>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is not <see langword="null"/> or empty.</exception>
-		public static void RequireArgumentHasNoValue(String valueArgument,
+		public static void RequireArgumentHasNoValue([CanBeNull] String valueArgument,
 													 [NotNull] String nameArgument)
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
@@ -175,7 +177,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is not <see langword="null"/>, empty, or white space.
 		/// </exception>
 		[SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", Justification = "Reviewed.  Suppression is OK here.  WhiteSpace is a word.", MessageId = "WhiteSpace")]
-		public static void RequireArgumentHasNullEmptyOrWhiteSpaceValue(String valueArgument,
+		public static void RequireArgumentHasNullEmptyOrWhiteSpaceValue([CanBeNull] String valueArgument,
 																		[NotNull] String nameArgument)
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
