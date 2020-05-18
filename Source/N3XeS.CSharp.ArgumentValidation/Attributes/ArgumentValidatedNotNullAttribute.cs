@@ -28,6 +28,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Attributes
 
 	using System;
 
+	using JetBrains.Annotations;
+
 	#endregion
 
 	#region Delegates
@@ -56,6 +58,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Attributes
 	///  </Modification>
 	/// </history>
 	[AttributeUsage(AttributeTargets.Parameter)]
+	[PublicAPI]
 	public sealed class ArgumentValidatedNotNullAttribute
 		: Attribute
 	{
