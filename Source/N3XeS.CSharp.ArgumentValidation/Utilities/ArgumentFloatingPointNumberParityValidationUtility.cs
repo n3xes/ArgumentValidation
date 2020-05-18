@@ -22,6 +22,8 @@
 
 #endregion
 
+// These were put in to fix problems with 3rd party software misdiagnosing code problems.
+// ReSharper disable UnusedParameter.Global
 namespace N3XeS.CSharp.ArgumentValidation.Utilities
 {
 	#region Directives
@@ -109,7 +111,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsEven(Double valueArgument,
 												 [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsEven())
 			{
@@ -127,7 +129,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsEven(Double? valueArgument,
 												 [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsOdd())
 			{
@@ -145,7 +147,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsEven(Single valueArgument,
 												 [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsEven())
 			{
@@ -163,7 +165,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsEven(Single? valueArgument,
 												 [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsOdd())
 			{
@@ -181,7 +183,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsOdd(Double valueArgument,
 												[NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsOdd())
 			{
@@ -199,7 +201,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsOdd(Double? valueArgument,
 												[NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsEven())
 			{
@@ -217,7 +219,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsOdd(Single valueArgument,
 												[NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsOdd())
 			{
@@ -235,7 +237,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsOdd(Single? valueArgument,
 												[NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsEven())
 			{

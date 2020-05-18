@@ -22,6 +22,8 @@
 
 #endregion
 
+// These were put in to fix problems with 3rd party software misdiagnosing code problems.
+// ReSharper disable UnusedParameter.Global
 namespace N3XeS.CSharp.ArgumentValidation.Utilities
 {
 	#region Directives
@@ -117,7 +119,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsNegative(BigInteger valueArgument,
 													 [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsPositive())
 			{
@@ -135,7 +137,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsNegative(BigInteger? valueArgument,
 													 [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsPositive())
 			{
@@ -155,7 +157,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsNegative(Decimal valueArgument,
 													 [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsPositive())
 			{
@@ -173,7 +175,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsNegative(Decimal? valueArgument,
 													 [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsPositive())
 			{
@@ -191,7 +193,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsNegative(Int32 valueArgument,
 													 [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsPositive())
 			{
@@ -209,7 +211,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsNegative(Int32? valueArgument,
 													 [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsPositive())
 			{
@@ -227,7 +229,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsNegative(Int64 valueArgument,
 													 [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsPositive())
 			{
@@ -245,7 +247,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsNegative(Int64? valueArgument,
 													 [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsPositive())
 			{
@@ -264,7 +266,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsNegative(SByte valueArgument,
 													 [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsPositive())
 			{
@@ -283,7 +285,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsNegative(SByte? valueArgument,
 													 [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsPositive())
 			{
@@ -301,7 +303,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsNegative(Int16 valueArgument,
 													 [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsPositive())
 			{
@@ -319,7 +321,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsNegative(Int16? valueArgument,
 													 [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsPositive())
 			{
@@ -339,7 +341,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsPositive(BigInteger valueArgument,
 													 [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNegative())
 			{
@@ -357,7 +359,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsPositive(BigInteger? valueArgument,
 													 [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNegative())
 			{
@@ -377,7 +379,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsPositive(Decimal valueArgument,
 													 [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNegative())
 			{
@@ -395,7 +397,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsPositive(Decimal? valueArgument,
 													 [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNegative())
 			{
@@ -413,7 +415,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsPositive(Int32 valueArgument,
 													 [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNegative())
 			{
@@ -431,7 +433,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsPositive(Int32? valueArgument,
 													 [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNegative())
 			{
@@ -449,7 +451,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsPositive(Int64 valueArgument,
 													 [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNegative())
 			{
@@ -467,7 +469,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsPositive(Int64? valueArgument,
 													 [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNegative())
 			{
@@ -486,7 +488,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsPositive(SByte valueArgument,
 													 [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNegative())
 			{
@@ -505,7 +507,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsPositive(SByte? valueArgument,
 													 [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNegative())
 			{
@@ -523,7 +525,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsPositive(Int16 valueArgument,
 													 [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNegative())
 			{
@@ -541,7 +543,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsPositive(Int16? valueArgument,
 													 [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNegative())
 			{

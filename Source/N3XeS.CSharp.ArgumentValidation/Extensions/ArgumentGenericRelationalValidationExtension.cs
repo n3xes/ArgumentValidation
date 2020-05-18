@@ -22,6 +22,8 @@
 
 #endregion
 
+// These were put in to fix problems with 3rd party software misdiagnosing code problems.
+// ReSharper disable UnusedTypeParameter
 namespace N3XeS.CSharp.ArgumentValidation.Extensions
 {
 	#region Directives
@@ -105,6 +107,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <summary>
 		///		Validates that the provided <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
 		/// <param name="valueArgument">
 		///		The <typeparamref name="T"/> to validate if is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
@@ -135,6 +138,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <summary>
 		///		Validates that the provided <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
 		/// <param name="valueArgument">
 		///		The <typeparamref name="T"/> to validate if is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
@@ -165,6 +169,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <summary>
 		///		Validates that the provided <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
 		/// <param name="valueArgument">
 		///		The <typeparamref name="T"/> to validate if is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
@@ -195,6 +200,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <summary>
 		///		Validates that the provided <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
 		/// <param name="valueArgument">
 		///		The <typeparamref name="T"/> to validate if is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
@@ -225,6 +231,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <summary>
 		///		Validates that the provided <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
 		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
@@ -255,6 +262,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <summary>
 		///		Validates that the provided <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
 		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
@@ -285,6 +293,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <summary>
 		///		Validates that the provided <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
 		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
@@ -315,6 +324,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <summary>
 		///		Validates that the provided <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
 		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
@@ -345,6 +355,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <summary>
 		///		Validates that the provided <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
 		/// </summary>
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
 		/// <param name="valueArgument">
 		///		The <typeparamref name="T"/> to validate if is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
 		/// </param>
@@ -375,6 +386,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <summary>
 		///		Validates that the provided <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
 		/// </summary>
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
 		/// <param name="valueArgument">
 		///		The <typeparamref name="T"/> to validate if is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
 		/// </param>
@@ -405,6 +417,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <summary>
 		///		Validates that the provided <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
 		/// </summary>
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
 		/// <param name="valueArgument">
 		///		The <typeparamref name="T"/> to validate if is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
 		/// </param>
@@ -435,6 +448,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <summary>
 		///		Validates that the provided <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
 		/// </summary>
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
 		/// <param name="valueArgument">
 		///		The <typeparamref name="T"/> to validate if is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
 		/// </param>
@@ -465,6 +479,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <summary>
 		///		Validates that the provided <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
 		/// </summary>
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
 		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
 		/// </param>
@@ -495,6 +510,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <summary>
 		///		Validates that the provided <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
 		/// </summary>
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
 		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
 		/// </param>
@@ -525,6 +541,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <summary>
 		///		Validates that the provided <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
 		/// </summary>
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
 		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
 		/// </param>
@@ -555,6 +572,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <summary>
 		///		Validates that the provided <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
 		/// </summary>
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
 		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
 		/// </param>
@@ -1001,6 +1019,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <summary>
 		///		Validates that the provided <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
 		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
@@ -1031,6 +1050,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <summary>
 		///		Validates that the provided <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
 		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
@@ -1061,6 +1081,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <summary>
 		///		Validates that the provided <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
 		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
@@ -1091,6 +1112,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <summary>
 		///		Validates that the provided <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
 		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
@@ -1121,6 +1143,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <summary>
 		///		Validates that the provided <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
 		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
@@ -1151,6 +1174,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <summary>
 		///		Validates that the provided <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
 		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
@@ -1181,6 +1205,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <summary>
 		///		Validates that the provided <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
 		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
@@ -1211,6 +1236,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <summary>
 		///		Validates that the provided <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
 		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
@@ -1241,6 +1267,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <summary>
 		///		Validates that the provided <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
 		/// </summary>
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
 		/// <param name="valueArgument">
 		///		The <typeparamref name="T"/> to validate if is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
 		/// </param>
@@ -1271,6 +1298,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <summary>
 		///		Validates that the provided <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
 		/// </summary>
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
 		/// <param name="valueArgument">
 		///		The <typeparamref name="T"/> to validate if is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
 		/// </param>
@@ -1301,6 +1329,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <summary>
 		///		Validates that the provided <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
 		/// </summary>
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
 		/// <param name="valueArgument">
 		///		The <typeparamref name="T"/> to validate if is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
 		/// </param>
@@ -1331,6 +1360,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <summary>
 		///		Validates that the provided <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
 		/// </summary>
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
 		/// <param name="valueArgument">
 		///		The <typeparamref name="T"/> to validate if is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
 		/// </param>
@@ -1361,6 +1391,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <summary>
 		///		Validates that the provided <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
 		/// </summary>
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
 		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
 		/// </param>
@@ -1391,6 +1422,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <summary>
 		///		Validates that the provided <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
 		/// </summary>
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
 		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
 		/// </param>
@@ -1421,6 +1453,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <summary>
 		///		Validates that the provided <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
 		/// </summary>
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
 		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
 		/// </param>
@@ -1451,6 +1484,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <summary>
 		///		Validates that the provided <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
 		/// </summary>
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
 		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
 		/// </param>

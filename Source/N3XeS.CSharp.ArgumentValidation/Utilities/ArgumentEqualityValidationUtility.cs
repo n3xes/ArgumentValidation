@@ -22,6 +22,9 @@
 
 #endregion
 
+// These were put in to fix problems with 3rd party software misdiagnosing code problems.
+// ReSharper disable UnusedParameter.Global
+// ReSharper disable UnusedTypeParameter
 namespace N3XeS.CSharp.ArgumentValidation.Utilities
 {
 	#region Directives
@@ -123,7 +126,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// </exception>
 		[ContractAnnotation("valueArgument:null => halt"),
 		 SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", Justification = "Reviewed.  Suppression is OK here.  WhiteSpace is a word.", MessageId = "WhiteSpace")]
-		public static void RequireArgumentHasNonwhiteSpaceValue([NotNull, ArgumentValidatedNotNull] String valueArgument,
+		public static void RequireArgumentHasNonWhiteSpaceValue([ArgumentValidatedNotNull, NotNull] String valueArgument,
 																[NotNull] String nameArgument)
 		{
 			if (nameArgument.IsNull())
@@ -158,7 +161,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentHasNoValue([CanBeNull] String valueArgument,
 													 [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.HasValue())
 			{
@@ -180,7 +183,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentHasNullEmptyOrWhiteSpaceValue([CanBeNull] String valueArgument,
 																		[NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.HasNonWhiteSpaceValue())
 			{
@@ -198,10 +201,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// <exception cref="ArgumentNullException">The <paramref name="valueArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is empty.</exception>
 		[ContractAnnotation("valueArgument:null => halt")]
-		public static void RequireArgumentHasValue([NotNull, ArgumentValidatedNotNull] String valueArgument,
+		public static void RequireArgumentHasValue([ArgumentValidatedNotNull, NotNull] String valueArgument,
 												   [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNull())
 			{
@@ -227,7 +230,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentApproximatelyDefaultValue(Double valueArgument,
 																	[NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNotApproximatelyDefaultValue())
 			{
@@ -248,7 +251,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentApproximatelyDefaultValue(Single valueArgument,
 																	[NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNotApproximatelyDefaultValue())
 			{
@@ -273,7 +276,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 															 Double valueArgumentB,
 															 [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgumentA.IsNotApproximatelyEqual(valueArgumentB))
 			{
@@ -298,7 +301,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 															 Double valueArgumentB,
 															 [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgumentA.IsNotApproximatelyEqual(valueArgumentB))
 			{
@@ -323,7 +326,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 															 Double? valueArgumentB,
 															 [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgumentA.IsNotApproximatelyEqual(valueArgumentB))
 			{
@@ -348,7 +351,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 															 Double? valueArgumentB,
 															 [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgumentA.IsNotApproximatelyEqual(valueArgumentB))
 			{
@@ -373,7 +376,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 															 Single valueArgumentB,
 															 [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgumentA.IsNotApproximatelyEqual(valueArgumentB))
 			{
@@ -398,7 +401,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 															 Single valueArgumentB,
 															 [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgumentA.IsNotApproximatelyEqual(valueArgumentB))
 			{
@@ -423,7 +426,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 															 Single? valueArgumentB,
 															 [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgumentA.IsNotApproximatelyEqual(valueArgumentB))
 			{
@@ -448,7 +451,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 															 Single? valueArgumentB,
 															 [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgumentA.IsNotApproximatelyEqual(valueArgumentB))
 			{
@@ -466,11 +469,11 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is not equal to the default value of <typeparamref name="T"/>, <see langword="null"/>.
 		/// </exception>
 		[ContractAnnotation("valueArgument:notnull => halt")]
-		public static void RequireArgumentDefault<T>(T valueArgument,
+		public static void RequireArgumentDefault<T>([CanBeNull] T valueArgument,
 													 [NotNull] String nameArgument)
 			where T : class
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNotDefault())
 			{
@@ -493,7 +496,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentDefaultValue(BigInteger valueArgument,
 													   [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNotDefaultValue())
 			{
@@ -515,7 +518,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentDefaultValue(BigInteger? valueArgument,
 													   [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNotDefaultValue())
 			{
@@ -538,7 +541,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentDefaultValue(DateTime valueArgument,
 													  [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNotDefaultValue())
 			{
@@ -560,7 +563,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentDefaultValue(DateTime? valueArgument,
 													   [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNotDefaultValue())
 			{
@@ -581,7 +584,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentDefaultValue(Guid valueArgument,
 													   [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNotDefaultValue())
 			{
@@ -603,7 +606,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentDefaultValue(Guid? valueArgument,
 													   [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNotDefaultValue())
 			{
@@ -624,7 +627,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentDefaultValue(Byte valueArgument,
 													   [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNotDefaultValue())
 			{
@@ -646,7 +649,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentDefaultValue(Byte? valueArgument,
 													   [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNotDefaultValue())
 			{
@@ -667,7 +670,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentDefaultValue(Char valueArgument,
 													   [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNotDefaultValue())
 			{
@@ -689,7 +692,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentDefaultValue(Char? valueArgument,
 													   [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNotDefaultValue())
 			{
@@ -710,7 +713,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentDefaultValue(Decimal valueArgument,
 													   [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNotDefaultValue())
 			{
@@ -732,7 +735,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentDefaultValue(Decimal? valueArgument,
 													   [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNotDefaultValue())
 			{
@@ -754,7 +757,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentDefaultValue(Double? valueArgument,
 													   [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNotDefaultValue())
 			{
@@ -776,7 +779,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentDefaultValue(Single? valueArgument,
 													   [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNotDefaultValue())
 			{
@@ -797,7 +800,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentDefaultValue(Int32 valueArgument,
 													   [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNotDefaultValue())
 			{
@@ -819,7 +822,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentDefaultValue(Int32? valueArgument,
 													   [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNotDefaultValue())
 			{
@@ -840,7 +843,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentDefaultValue(Int64 valueArgument,
 													   [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNotDefaultValue())
 			{
@@ -862,7 +865,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentDefaultValue(Int64? valueArgument,
 													   [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNotDefaultValue())
 			{
@@ -884,7 +887,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentDefaultValue(SByte valueArgument,
 													   [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNotDefaultValue())
 			{
@@ -906,7 +909,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentDefaultValue(SByte? valueArgument,
 													   [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNotDefaultValue())
 			{
@@ -927,7 +930,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentDefaultValue(Int16 valueArgument,
 													   [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNotDefaultValue())
 			{
@@ -949,7 +952,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentDefaultValue(Int16? valueArgument,
 													   [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNotDefaultValue())
 			{
@@ -971,7 +974,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentDefaultValue(UInt32 valueArgument,
 													   [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNotDefaultValue())
 			{
@@ -993,7 +996,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentDefaultValue(UInt32? valueArgument,
 													   [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNotDefaultValue())
 			{
@@ -1015,7 +1018,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentDefaultValue(UInt64 valueArgument,
 													   [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNotDefaultValue())
 			{
@@ -1037,7 +1040,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentDefaultValue(UInt64? valueArgument,
 													   [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNotDefaultValue())
 			{
@@ -1059,7 +1062,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentDefaultValue(UInt16 valueArgument,
 													   [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNotDefaultValue())
 			{
@@ -1081,7 +1084,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentDefaultValue(UInt16? valueArgument,
 													   [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNotDefaultValue())
 			{
@@ -1102,7 +1105,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 														  [NotNull] String nameArgument)
 			where T : struct
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNotDefaultValue())
 			{
@@ -1126,7 +1129,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 														  [NotNull] String nameArgument)
 			where T : struct
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNotDefaultValue())
 			{
@@ -1147,7 +1150,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentNotApproximatelyDefaultValue(Double valueArgument,
 																	   [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsApproximatelyDefaultValue())
 			{
@@ -1168,7 +1171,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentNotApproximatelyDefaultValue(Single valueArgument,
 																	   [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsApproximatelyDefaultValue())
 			{
@@ -1193,7 +1196,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 																Double valueArgumentB,
 																[NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgumentA.IsApproximatelyEqual(valueArgumentB))
 			{
@@ -1218,7 +1221,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 																Double valueArgumentB,
 																[NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgumentA.IsApproximatelyEqual(valueArgumentB))
 			{
@@ -1243,7 +1246,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 																Double? valueArgumentB,
 																[NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgumentA.IsApproximatelyEqual(valueArgumentB))
 			{
@@ -1268,7 +1271,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 																Double? valueArgumentB,
 																[NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgumentA.IsApproximatelyEqual(valueArgumentB))
 			{
@@ -1293,7 +1296,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 																Single valueArgumentB,
 																[NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgumentA.IsApproximatelyEqual(valueArgumentB))
 			{
@@ -1318,7 +1321,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 																Single valueArgumentB,
 																[NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgumentA.IsApproximatelyEqual(valueArgumentB))
 			{
@@ -1343,7 +1346,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 																Single? valueArgumentB,
 																[NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgumentA.IsApproximatelyEqual(valueArgumentB))
 			{
@@ -1368,7 +1371,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 																Single? valueArgumentB,
 																[NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgumentA.IsApproximatelyEqual(valueArgumentB))
 			{
@@ -1386,11 +1389,11 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is equal to the default value of <typeparamref name="T"/>, <see langword="null"/>.
 		/// </exception>
 		[ContractAnnotation("valueArgument:null => halt")]
-		public static void RequireArgumentNotDefault<T>([NotNull, ArgumentValidatedNotNull] T valueArgument,
+		public static void RequireArgumentNotDefault<T>([ArgumentValidatedNotNull, NotNull] T valueArgument,
 														[NotNull] String nameArgument)
 			where T : class
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsDefault())
 			{
@@ -1413,7 +1416,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentNotDefaultValue(BigInteger valueArgument,
 														  [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsDefaultValue())
 			{
@@ -1435,7 +1438,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentNotDefaultValue([NotNull, ValidatedNotNull] BigInteger? valueArgument,
 														  [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsDefaultValue())
 			{
@@ -1458,7 +1461,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentNotDefaultValue(DateTime valueArgument,
 														  [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsDefaultValue())
 			{
@@ -1477,10 +1480,11 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is equal to the default value of <see cref="T:System.Nullable`1"/> of <see cref="T:System.DateTime"/>, <see langword="null"/>.
 		/// </exception>
 		[ContractAnnotation("valueArgument:null => halt")]
-		public static void RequireArgumentNotDefaultValue([NotNull, ArgumentValidatedNotNull] DateTime? valueArgument,
+		// ReSharper disable once NotNullOnImplicitCanBeNull
+		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, NotNull] DateTime? valueArgument,
 														  [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsDefaultValue())
 			{
@@ -1501,7 +1505,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentNotDefaultValue(Guid valueArgument,
 														  [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsDefaultValue())
 			{
@@ -1520,10 +1524,11 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is equal to the default value of <see cref="T:System.Nullable`1"/> of <see cref="T:System.Guid"/>, <see langword="null"/>.
 		/// </exception>
 		[ContractAnnotation("valueArgument:null => halt")]
-		public static void RequireArgumentNotDefaultValue([NotNull, ArgumentValidatedNotNull] Guid? valueArgument,
+		// ReSharper disable once NotNullOnImplicitCanBeNull
+		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, NotNull] Guid? valueArgument,
 														  [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsDefaultValue())
 			{
@@ -1544,7 +1549,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentNotDefaultValue(Byte valueArgument,
 														  [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsDefaultValue())
 			{
@@ -1563,10 +1568,11 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is equal to the default value of <see cref="T:System.Nullable`1"/> of <see cref="T:System.Byte"/>, <see langword="null"/>.
 		/// </exception>
 		[ContractAnnotation("valueArgument:null => halt")]
-		public static void RequireArgumentNotDefaultValue([NotNull, ArgumentValidatedNotNull] Byte? valueArgument,
+		// ReSharper disable once NotNullOnImplicitCanBeNull
+		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, NotNull] Byte? valueArgument,
 														  [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsDefaultValue())
 			{
@@ -1587,7 +1593,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentNotDefaultValue(Char valueArgument,
 														  [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsDefaultValue())
 			{
@@ -1606,10 +1612,11 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is equal to the default value of <see cref="T:System.Nullable`1"/> of <see cref="T:System.Char"/>, <see langword="null"/>.
 		/// </exception>
 		[ContractAnnotation("valueArgument:null => halt")]
-		public static void RequireArgumentNotDefaultValue([NotNull, ArgumentValidatedNotNull] Char? valueArgument,
+		// ReSharper disable once NotNullOnImplicitCanBeNull
+		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, NotNull] Char? valueArgument,
 														  [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsDefaultValue())
 			{
@@ -1630,7 +1637,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentNotDefaultValue(Decimal valueArgument,
 														  [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsDefaultValue())
 			{
@@ -1649,10 +1656,11 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is equal to the default value of <see cref="T:System.Nullable`1"/> of <see cref="T:System.Decimal"/>, <see langword="null"/>.
 		/// </exception>
 		[ContractAnnotation("valueArgument:null => halt")]
-		public static void RequireArgumentNotDefaultValue([NotNull, ArgumentValidatedNotNull] Decimal? valueArgument,
+		// ReSharper disable once NotNullOnImplicitCanBeNull
+		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, NotNull] Decimal? valueArgument,
 														  [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsDefaultValue())
 			{
@@ -1671,10 +1679,11 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is equal to the default value of <see cref="T:System.Nullable`1"/> of <see cref="T:System.Double"/>, <see langword="null"/>.
 		/// </exception>
 		[ContractAnnotation("valueArgument:null => halt")]
-		public static void RequireArgumentNotDefaultValue([NotNull, ArgumentValidatedNotNull] Double? valueArgument,
+		// ReSharper disable once NotNullOnImplicitCanBeNull
+		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, NotNull] Double? valueArgument,
 														  [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsDefaultValue())
 			{
@@ -1693,10 +1702,11 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is equal to the default value of <see cref="T:System.Nullable`1"/> of <see cref="T:System.Single"/>, <see langword="null"/>.
 		/// </exception>
 		[ContractAnnotation("valueArgument:null => halt")]
-		public static void RequireArgumentNotDefaultValue([NotNull, ArgumentValidatedNotNull] Single? valueArgument,
+		// ReSharper disable once NotNullOnImplicitCanBeNull
+		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, NotNull] Single? valueArgument,
 														  [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsDefaultValue())
 			{
@@ -1717,7 +1727,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentNotDefaultValue(Int32 valueArgument,
 														  [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsDefaultValue())
 			{
@@ -1736,10 +1746,11 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is equal to the default value of <see cref="T:System.Nullable`1"/> of <see cref="T:System.Int32"/>, <see langword="null"/>.
 		/// </exception>
 		[ContractAnnotation("valueArgument:null => halt")]
-		public static void RequireArgumentNotDefaultValue([NotNull, ArgumentValidatedNotNull] Int32? valueArgument,
+		// ReSharper disable once NotNullOnImplicitCanBeNull
+		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, NotNull] Int32? valueArgument,
 														  [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsDefaultValue())
 			{
@@ -1760,7 +1771,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentNotDefaultValue(Int64 valueArgument,
 														  [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsDefaultValue())
 			{
@@ -1779,10 +1790,11 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is equal to the default value of <see cref="T:System.Nullable`1"/> of <see cref="T:System.Int64"/>, <see langword="null"/>.
 		/// </exception>
 		[ContractAnnotation("valueArgument:null => halt")]
-		public static void RequireArgumentNotDefaultValue([NotNull, ArgumentValidatedNotNull] Int64? valueArgument,
+		// ReSharper disable once NotNullOnImplicitCanBeNull
+		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, NotNull] Int64? valueArgument,
 														  [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsDefaultValue())
 			{
@@ -1804,7 +1816,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentNotDefaultValue(SByte valueArgument,
 														  [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsDefaultValue())
 			{
@@ -1823,10 +1835,11 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is equal to the default value of <see cref="T:System.Nullable`1"/> of <see cref="T:System.SByte"/>, <see langword="null"/>.
 		/// </exception>
 		[CLSCompliant(false), ContractAnnotation("valueArgument:null => halt")]
-		public static void RequireArgumentNotDefaultValue([NotNull, ArgumentValidatedNotNull] SByte? valueArgument,
+		// ReSharper disable once NotNullOnImplicitCanBeNull
+		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, NotNull] SByte? valueArgument,
 														  [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsDefaultValue())
 			{
@@ -1847,7 +1860,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentNotDefaultValue(Int16 valueArgument,
 														  [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsDefaultValue())
 			{
@@ -1866,10 +1879,11 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is equal to the default value of <see cref="T:System.Nullable`1"/> of <see cref="T:System.Int16"/>, <see langword="null"/>.
 		/// </exception>
 		[ContractAnnotation("valueArgument:null => halt")]
-		public static void RequireArgumentNotDefaultValue([NotNull, ArgumentValidatedNotNull] Int16? valueArgument,
+		// ReSharper disable once NotNullOnImplicitCanBeNull
+		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, NotNull] Int16? valueArgument,
 														  [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsDefaultValue())
 			{
@@ -1891,7 +1905,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentNotDefaultValue(UInt32 valueArgument,
 														  [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsDefaultValue())
 			{
@@ -1910,10 +1924,11 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is equal to the default value of <see cref="T:System.Nullable`1"/> of <see cref="T:System.UInt32"/>, <see langword="null"/>.
 		/// </exception>
 		[CLSCompliant(false), ContractAnnotation("valueArgument:null => halt")]
-		public static void RequireArgumentNotDefaultValue([NotNull, ArgumentValidatedNotNull] UInt32? valueArgument,
+		// ReSharper disable once NotNullOnImplicitCanBeNull
+		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, NotNull] UInt32? valueArgument,
 														  [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsDefaultValue())
 			{
@@ -1935,7 +1950,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentNotDefaultValue(UInt64 valueArgument,
 														  [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsDefaultValue())
 			{
@@ -1954,10 +1969,11 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is equal to the default value of <see cref="T:System.Nullable`1"/> of <see cref="T:System.UInt64"/>, <see langword="null"/>.
 		/// </exception>
 		[CLSCompliant(false), ContractAnnotation("valueArgument:null => halt")]
-		public static void RequireArgumentNotDefaultValue([NotNull, ArgumentValidatedNotNull] UInt64? valueArgument,
+		// ReSharper disable once NotNullOnImplicitCanBeNull
+		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, NotNull] UInt64? valueArgument,
 														  [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsDefaultValue())
 			{
@@ -1979,7 +1995,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentNotDefaultValue(UInt16 valueArgument,
 														  [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsDefaultValue())
 			{
@@ -1998,10 +2014,11 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is equal to the default value of <see cref="T:System.Nullable`1"/> of <see cref="T:System.UInt16"/>, <see langword="null"/>.
 		/// </exception>
 		[CLSCompliant(false), ContractAnnotation("valueArgument:null => halt")]
-		public static void RequireArgumentNotDefaultValue([NotNull, ArgumentValidatedNotNull] UInt16? valueArgument,
+		// ReSharper disable once NotNullOnImplicitCanBeNull
+		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, NotNull] UInt16? valueArgument,
 														  [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsDefaultValue())
 			{
@@ -2022,7 +2039,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 															 [NotNull] String nameArgument)
 			where T : struct
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsDefaultValue())
 			{
@@ -2042,11 +2059,12 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is equal to the default value of <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/>.
 		/// </exception>
 		[ContractAnnotation("valueArgument:null => halt")]
-		public static void RequireArgumentNotDefaultValue<T>([NotNull, ArgumentValidatedNotNull] T? valueArgument,
+		// ReSharper disable once NotNullOnImplicitCanBeNull
+		public static void RequireArgumentNotDefaultValue<T>([ArgumentValidatedNotNull, NotNull] T? valueArgument,
 															 [NotNull] String nameArgument)
 			where T : struct
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsDefaultValue())
 			{
@@ -2062,10 +2080,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// <param name="nameArgument">The argument name of the <typeparamref name="T"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="valueArgument"/> is <see langword="null"/>.</exception>
 		[ContractAnnotation("valueArgument:null => halt")]
-		public static void RequireArgumentNotNull<T>([NotNull, ArgumentValidatedNotNull] T valueArgument,
+		public static void RequireArgumentNotNull<T>([ArgumentValidatedNotNull, NotNull] T valueArgument,
 													 [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNull())
 			{
@@ -2081,11 +2099,12 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="valueArgument"/> is <see langword="null"/>.</exception>
 		[ContractAnnotation("valueArgument:null => halt")]
-		public static void RequireArgumentNotNull<T>([NotNull, ArgumentValidatedNotNull] T? valueArgument,
+		// ReSharper disable once NotNullOnImplicitCanBeNull
+		public static void RequireArgumentNotNull<T>([ArgumentValidatedNotNull, NotNull] T? valueArgument,
 													 [NotNull] String nameArgument)
 			where T : struct
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNull())
 			{
@@ -2104,7 +2123,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentNull<T>(T valueArgument,
 												  [NotNull] String nameArgument)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNotNull())
 			{
@@ -2124,7 +2143,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 												  [NotNull] String nameArgument)
 			where T : struct
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
 			if (valueArgument.IsNotNull())
 			{

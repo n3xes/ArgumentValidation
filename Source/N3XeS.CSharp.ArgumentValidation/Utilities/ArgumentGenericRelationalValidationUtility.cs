@@ -22,6 +22,9 @@
 
 #endregion
 
+// These were put in to fix problems with 3rd party software misdiagnosing code problems.
+// ReSharper disable UnusedParameter.Global
+// ReSharper disable UnusedTypeParameter
 namespace N3XeS.CSharp.ArgumentValidation.Utilities
 {
 	#region Directives
@@ -109,1661 +112,1685 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 #if (!NETFX_V2 && !NETFX_V3 && !NETFX_V35)
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
-		/// <param name="argumentValue">
+		/// <param name="valueArgument">
 		///		The <see cref="T:System.Numerics.BigInteger"/> to validate if is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
-		/// <param name="valueBoundUpper">The <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
+		/// <param name="valueBoundUpper">The <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than the <paramref name="valueBoundLower"/>.  
+		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(BigInteger argumentValue,
+		public static void RequireArgumentIsBetween(BigInteger valueArgument,
 													[NotNull] String nameArgument,
 													BigInteger valueBoundLower,
 													BigInteger valueBoundUpper)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			argumentValue.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
-			argumentValue.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
+			valueArgument.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
-		/// <param name="argumentValue">
+		/// <param name="valueArgument">
 		///		The <see cref="T:System.Numerics.BigInteger"/> to validate if is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
-		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
+		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than the <paramref name="valueBoundLower"/>.  
+		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(BigInteger argumentValue,
+		public static void RequireArgumentIsBetween(BigInteger valueArgument,
 													[NotNull] String nameArgument,
 													BigInteger valueBoundLower,
 													BigInteger? valueBoundUpper)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			argumentValue.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
-			argumentValue.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
+			valueArgument.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
-		/// <param name="argumentValue">
+		/// <param name="valueArgument">
 		///		The <see cref="T:System.Numerics.BigInteger"/> to validate if is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
-		/// <param name="valueBoundUpper">The <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
+		/// <param name="valueBoundUpper">The <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than the <paramref name="valueBoundLower"/>.  
+		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(BigInteger argumentValue,
+		public static void RequireArgumentIsBetween(BigInteger valueArgument,
 													[NotNull] String nameArgument,
 													BigInteger? valueBoundLower,
 													BigInteger valueBoundUpper)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			argumentValue.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
-			argumentValue.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
+			valueArgument.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
-		/// <param name="argumentValue">
+		/// <param name="valueArgument">
 		///		The <see cref="T:System.Numerics.BigInteger"/> to validate if is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
-		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
+		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than the <paramref name="valueBoundLower"/>.  
+		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(BigInteger argumentValue,
+		public static void RequireArgumentIsBetween(BigInteger valueArgument,
 													[NotNull] String nameArgument,
 													BigInteger? valueBoundLower,
 													BigInteger? valueBoundUpper)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			argumentValue.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
-			argumentValue.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
+			valueArgument.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
-		/// <param name="argumentValue">
+		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> to validate if is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
-		/// <param name="valueBoundUpper">The <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
+		/// <param name="valueBoundUpper">The <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than the <paramref name="valueBoundLower"/>.  
+		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(BigInteger? argumentValue,
+		public static void RequireArgumentIsBetween(BigInteger? valueArgument,
 													[NotNull] String nameArgument,
 													BigInteger valueBoundLower,
 													BigInteger valueBoundUpper)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			argumentValue.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
-			argumentValue.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
+			valueArgument.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
-		/// <param name="argumentValue">
+		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> to validate if is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
-		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
+		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than the <paramref name="valueBoundLower"/>.  
+		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(BigInteger? argumentValue,
+		public static void RequireArgumentIsBetween(BigInteger? valueArgument,
 													[NotNull] String nameArgument,
 													BigInteger valueBoundLower,
 													BigInteger? valueBoundUpper)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			argumentValue.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
-			argumentValue.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
+			valueArgument.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
-		/// <param name="argumentValue">
+		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> to validate if is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
-		/// <param name="valueBoundUpper">The <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
+		/// <param name="valueBoundUpper">The <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than the <paramref name="valueBoundLower"/>.  
+		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(BigInteger? argumentValue,
+		public static void RequireArgumentIsBetween(BigInteger? valueArgument,
 													[NotNull] String nameArgument,
 													BigInteger? valueBoundLower,
 													BigInteger valueBoundUpper)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			argumentValue.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
-			argumentValue.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
+			valueArgument.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
-		/// <param name="argumentValue">
+		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> to validate if is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
-		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
+		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than the <paramref name="valueBoundLower"/>.  
+		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(BigInteger? argumentValue,
+		public static void RequireArgumentIsBetween(BigInteger? valueArgument,
 													[NotNull] String nameArgument,
 													BigInteger? valueBoundLower,
 													BigInteger? valueBoundUpper)
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			argumentValue.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
-			argumentValue.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
+			valueArgument.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
 		}
 
 #endif
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
 		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
-		/// <param name="argumentValue">
+		/// <param name="valueArgument">
 		///		The <typeparamref name="T"/> to validate if is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
-		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
+		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than the <paramref name="valueBoundLower"/>.  
+		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween<T>(T argumentValue,
+		public static void RequireArgumentIsBetween<T>(T valueArgument,
 													   [NotNull] String nameArgument,
 													   T valueBoundLower,
 													   T valueBoundUpper)
 			where T : IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			argumentValue.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
-			argumentValue.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
+			valueArgument.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
 		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
-		/// <param name="argumentValue">
+		/// <param name="valueArgument">
 		///		The <typeparamref name="T"/> to validate if is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
-		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
+		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than the <paramref name="valueBoundLower"/>.  
+		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween<T>(T argumentValue,
+		public static void RequireArgumentIsBetween<T>(T valueArgument,
 													   [NotNull] String nameArgument,
 													   T valueBoundLower,
 													   T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			argumentValue.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
-			argumentValue.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
+			valueArgument.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
 		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
-		/// <param name="argumentValue">
+		/// <param name="valueArgument">
 		///		The <typeparamref name="T"/> to validate if is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
-		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
+		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than the <paramref name="valueBoundLower"/>.  
+		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween<T>(T argumentValue,
+		public static void RequireArgumentIsBetween<T>(T valueArgument,
 													   [NotNull] String nameArgument,
 													   T? valueBoundLower,
 													   T valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			argumentValue.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
-			argumentValue.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
+			valueArgument.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
 		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
-		/// <param name="argumentValue">
+		/// <param name="valueArgument">
 		///		The <typeparamref name="T"/> to validate if is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
-		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
+		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than the <paramref name="valueBoundLower"/>.  
+		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween<T>(T argumentValue,
+		public static void RequireArgumentIsBetween<T>(T valueArgument,
 													   [NotNull] String nameArgument,
 													   T? valueBoundLower,
 													   T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			argumentValue.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
-			argumentValue.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
+			valueArgument.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
 		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
-		/// <param name="argumentValue">
+		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
-		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
+		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than the <paramref name="valueBoundLower"/>.  
+		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween<T>(T? argumentValue,
+		public static void RequireArgumentIsBetween<T>(T? valueArgument,
 													   [NotNull] String nameArgument,
 													   T valueBoundLower,
 													   T valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			argumentValue.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
-			argumentValue.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
+			valueArgument.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
 		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
-		/// <param name="argumentValue">
+		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
-		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
+		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than the <paramref name="valueBoundLower"/>.  
+		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween<T>(T? argumentValue,
+		public static void RequireArgumentIsBetween<T>(T? valueArgument,
 													   [NotNull] String nameArgument,
 													   T valueBoundLower,
 													   T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			argumentValue.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
-			argumentValue.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
+			valueArgument.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
 		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
-		/// <param name="argumentValue">
+		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
-		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
+		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than the <paramref name="valueBoundLower"/>.  
+		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween<T>(T? argumentValue,
+		public static void RequireArgumentIsBetween<T>(T? valueArgument,
 													   [NotNull] String nameArgument,
 													   T? valueBoundLower,
 													   T valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			argumentValue.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
-			argumentValue.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
+			valueArgument.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
 		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
-		/// <param name="argumentValue">
+		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
-		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
+		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than the <paramref name="valueBoundLower"/>.  
+		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween<T>(T? argumentValue,
+		public static void RequireArgumentIsBetween<T>(T? valueArgument,
 													   [NotNull] String nameArgument,
 													   T? valueBoundLower,
 													   T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			argumentValue.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
-			argumentValue.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
+			valueArgument.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
 		/// </summary>
-		/// <param name="argumentValue">
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
+		/// <param name="valueArgument">
 		///		The <typeparamref name="T"/> to validate if is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
-		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
+		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than or equal to the <paramref name="valueBoundLower"/>.  
+		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive<T>(T argumentValue,
+		public static void RequireArgumentIsBetweenExclusive<T>(T valueArgument,
 																[NotNull] String nameArgument,
 																T valueBoundLower,
 																T valueBoundUpper)
 			where T : IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			argumentValue.RequireArgumentIsLessThan(nameArgument, valueBoundUpper);
-			argumentValue.RequireArgumentIsGreaterThan(nameArgument, valueBoundLower);
+			valueArgument.RequireArgumentIsLessThan(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsGreaterThan(nameArgument, valueBoundLower);
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
-		/// </summary>
-		/// <param name="argumentValue">
-		///		The <typeparamref name="T"/> to validate if is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
-		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
-		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
-		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
-		/// <exception cref="ArgumentOutOfRangeException">
-		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
-		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than or equal to the <paramref name="valueBoundLower"/>.  
-		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
-		/// </exception>
-		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive<T>(T argumentValue,
-																[NotNull] String nameArgument,
-																T valueBoundLower,
-																T? valueBoundUpper)
-			where T : struct, IComparable<T>
-		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
-
-			argumentValue.RequireArgumentIsLessThan(nameArgument, valueBoundUpper);
-			argumentValue.RequireArgumentIsGreaterThan(nameArgument, valueBoundLower);
-		}
-
-		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
-		/// </summary>
-		/// <param name="argumentValue">
-		///		The <typeparamref name="T"/> to validate if is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
-		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
-		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
-		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
-		/// <exception cref="ArgumentOutOfRangeException">
-		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
-		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than or equal to the <paramref name="valueBoundLower"/>.  
-		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
-		/// </exception>
-		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive<T>(T argumentValue,
-																[NotNull] String nameArgument,
-																T? valueBoundLower,
-																T valueBoundUpper)
-			where T : struct, IComparable<T>
-		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
-
-			argumentValue.RequireArgumentIsLessThan(nameArgument, valueBoundUpper);
-			argumentValue.RequireArgumentIsGreaterThan(nameArgument, valueBoundLower);
-		}
-
-		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
-		/// </summary>
-		/// <param name="argumentValue">
-		///		The <typeparamref name="T"/> to validate if is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
-		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
-		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
-		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
-		/// <exception cref="ArgumentOutOfRangeException">
-		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
-		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than or equal to the <paramref name="valueBoundLower"/>.  
-		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
-		/// </exception>
-		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive<T>(T argumentValue,
-																[NotNull] String nameArgument,
-																T? valueBoundLower,
-																T? valueBoundUpper)
-			where T : struct, IComparable<T>
-		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
-
-			argumentValue.RequireArgumentIsLessThan(nameArgument, valueBoundUpper);
-			argumentValue.RequireArgumentIsGreaterThan(nameArgument, valueBoundLower);
-		}
-
-		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
-		/// </summary>
-		/// <param name="argumentValue">
-		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
-		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
-		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
-		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
-		/// <exception cref="ArgumentOutOfRangeException">
-		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
-		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than or equal to the <paramref name="valueBoundLower"/>.  
-		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
-		/// </exception>
-		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive<T>(T? argumentValue,
-																[NotNull] String nameArgument,
-																T valueBoundLower,
-																T valueBoundUpper)
-			where T : struct, IComparable<T>
-		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
-
-			argumentValue.RequireArgumentIsLessThan(nameArgument, valueBoundUpper);
-			argumentValue.RequireArgumentIsGreaterThan(nameArgument, valueBoundLower);
-		}
-
-		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
-		/// </summary>
-		/// <param name="argumentValue">
-		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
-		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
-		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
-		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
-		/// <exception cref="ArgumentOutOfRangeException">
-		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
-		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than or equal to the <paramref name="valueBoundLower"/>.  
-		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
-		/// </exception>
-		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive<T>(T? argumentValue,
-																[NotNull] String nameArgument,
-																T valueBoundLower,
-																T? valueBoundUpper)
-			where T : struct, IComparable<T>
-		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
-
-			argumentValue.RequireArgumentIsLessThan(nameArgument, valueBoundUpper);
-			argumentValue.RequireArgumentIsGreaterThan(nameArgument, valueBoundLower);
-		}
-
-		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
-		/// </summary>
-		/// <param name="argumentValue">
-		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
-		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
-		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
-		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
-		/// <exception cref="ArgumentOutOfRangeException">
-		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
-		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than or equal to the <paramref name="valueBoundLower"/>.  
-		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
-		/// </exception>
-		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive<T>(T? argumentValue,
-																[NotNull] String nameArgument,
-																T? valueBoundLower,
-																T valueBoundUpper)
-			where T : struct, IComparable<T>
-		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
-
-			argumentValue.RequireArgumentIsLessThan(nameArgument, valueBoundUpper);
-			argumentValue.RequireArgumentIsGreaterThan(nameArgument, valueBoundLower);
-		}
-
-		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
-		/// </summary>
-		/// <param name="argumentValue">
-		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
-		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
-		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
-		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
-		/// <exception cref="ArgumentOutOfRangeException">
-		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
-		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than or equal to the <paramref name="valueBoundLower"/>.  
-		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
-		/// </exception>
-		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive<T>(T? argumentValue,
-																[NotNull] String nameArgument,
-																T? valueBoundLower,
-																T? valueBoundUpper)
-			where T : struct, IComparable<T>
-		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
-
-			argumentValue.RequireArgumentIsLessThan(nameArgument, valueBoundUpper);
-			argumentValue.RequireArgumentIsGreaterThan(nameArgument, valueBoundLower);
-		}
-
-		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is greater than the <paramref name="valueBoundLower"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
 		/// </summary>
 		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
-		/// <param name="argumentValue">
+		/// <param name="valueArgument">
+		///		The <typeparamref name="T"/> to validate if is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
+		/// </param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
+		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
+		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
+		/// <exception cref="ArgumentOutOfRangeException">
+		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
+		///		-or-  
+		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.  
+		///		-or-  
+		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
+		/// </exception>
+		[CLSCompliant(false)]
+		public static void RequireArgumentIsBetweenExclusive<T>(T valueArgument,
+																[NotNull] String nameArgument,
+																T valueBoundLower,
+																T? valueBoundUpper)
+			where T : struct, IComparable<T>
+		{
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
+
+			valueArgument.RequireArgumentIsLessThan(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsGreaterThan(nameArgument, valueBoundLower);
+		}
+
+		/// <summary>
+		///		Validates that the provided <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
+		/// </summary>
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
+		/// <param name="valueArgument">
+		///		The <typeparamref name="T"/> to validate if is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
+		/// </param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
+		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
+		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
+		/// <exception cref="ArgumentOutOfRangeException">
+		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
+		///		-or-  
+		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.  
+		///		-or-  
+		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
+		/// </exception>
+		[CLSCompliant(false)]
+		public static void RequireArgumentIsBetweenExclusive<T>(T valueArgument,
+																[NotNull] String nameArgument,
+																T? valueBoundLower,
+																T valueBoundUpper)
+			where T : struct, IComparable<T>
+		{
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
+
+			valueArgument.RequireArgumentIsLessThan(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsGreaterThan(nameArgument, valueBoundLower);
+		}
+
+		/// <summary>
+		///		Validates that the provided <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
+		/// </summary>
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
+		/// <param name="valueArgument">
+		///		The <typeparamref name="T"/> to validate if is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
+		/// </param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
+		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
+		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
+		/// <exception cref="ArgumentOutOfRangeException">
+		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
+		///		-or-  
+		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.  
+		///		-or-  
+		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
+		/// </exception>
+		[CLSCompliant(false)]
+		public static void RequireArgumentIsBetweenExclusive<T>(T valueArgument,
+																[NotNull] String nameArgument,
+																T? valueBoundLower,
+																T? valueBoundUpper)
+			where T : struct, IComparable<T>
+		{
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
+
+			valueArgument.RequireArgumentIsLessThan(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsGreaterThan(nameArgument, valueBoundLower);
+		}
+
+		/// <summary>
+		///		Validates that the provided <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
+		/// </summary>
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
+		/// <param name="valueArgument">
+		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
+		/// </param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
+		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
+		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
+		/// <exception cref="ArgumentOutOfRangeException">
+		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
+		///		-or-  
+		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.  
+		///		-or-  
+		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
+		/// </exception>
+		[CLSCompliant(false)]
+		public static void RequireArgumentIsBetweenExclusive<T>(T? valueArgument,
+																[NotNull] String nameArgument,
+																T valueBoundLower,
+																T valueBoundUpper)
+			where T : struct, IComparable<T>
+		{
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
+
+			valueArgument.RequireArgumentIsLessThan(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsGreaterThan(nameArgument, valueBoundLower);
+		}
+
+		/// <summary>
+		///		Validates that the provided <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
+		/// </summary>
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
+		/// <param name="valueArgument">
+		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
+		/// </param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
+		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
+		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
+		/// <exception cref="ArgumentOutOfRangeException">
+		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
+		///		-or-  
+		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.  
+		///		-or-  
+		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
+		/// </exception>
+		[CLSCompliant(false)]
+		public static void RequireArgumentIsBetweenExclusive<T>(T? valueArgument,
+																[NotNull] String nameArgument,
+																T valueBoundLower,
+																T? valueBoundUpper)
+			where T : struct, IComparable<T>
+		{
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
+
+			valueArgument.RequireArgumentIsLessThan(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsGreaterThan(nameArgument, valueBoundLower);
+		}
+
+		/// <summary>
+		///		Validates that the provided <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
+		/// </summary>
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
+		/// <param name="valueArgument">
+		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
+		/// </param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
+		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
+		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
+		/// <exception cref="ArgumentOutOfRangeException">
+		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
+		///		-or-  
+		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.  
+		///		-or-  
+		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
+		/// </exception>
+		[CLSCompliant(false)]
+		public static void RequireArgumentIsBetweenExclusive<T>(T? valueArgument,
+																[NotNull] String nameArgument,
+																T? valueBoundLower,
+																T valueBoundUpper)
+			where T : struct, IComparable<T>
+		{
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
+
+			valueArgument.RequireArgumentIsLessThan(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsGreaterThan(nameArgument, valueBoundLower);
+		}
+
+		/// <summary>
+		///		Validates that the provided <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
+		/// </summary>
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
+		/// <param name="valueArgument">
+		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is greater than the <paramref name="valueBoundLower"/> and less than the <paramref name="valueBoundUpper"/>.
+		/// </param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
+		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
+		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
+		/// <exception cref="ArgumentOutOfRangeException">
+		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
+		///		-or-  
+		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.  
+		///		-or-  
+		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
+		/// </exception>
+		[CLSCompliant(false)]
+		public static void RequireArgumentIsBetweenExclusive<T>(T? valueArgument,
+																[NotNull] String nameArgument,
+																T? valueBoundLower,
+																T? valueBoundUpper)
+			where T : struct, IComparable<T>
+		{
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
+
+			valueArgument.RequireArgumentIsLessThan(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsGreaterThan(nameArgument, valueBoundLower);
+		}
+
+		/// <summary>
+		///		Validates that the provided <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundLower"/>.
+		/// </summary>
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
+		/// <param name="valueArgument">
 		///		The <typeparamref name="T"/> to validate if is greater than the <paramref name="valueBoundLower"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than or equal to the <paramref name="valueBoundLower"/>.
+		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan<T>(T argumentValue,
+		public static void RequireArgumentIsGreaterThan<T>(T valueArgument,
 														   [NotNull] String nameArgument,
 														   T valueBoundLower)
 			where T : IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			if (argumentValue.IsLessThanOrEqual(valueBoundLower))
+			if (valueArgument.IsLessThanOrEqual(valueBoundLower))
 			{
-				throw new ArgumentOutOfRangeException(nameArgument, argumentValue, String.Format(CultureInfo.CurrentCulture, "{0}.  {1}, {2}.", Resources.ValueOutOfRange, Resources.ValueMustBeGreaterThan, valueBoundLower));
+				throw new ArgumentOutOfRangeException(nameArgument, valueArgument, String.Format(CultureInfo.CurrentCulture, "{0}.  {1}, {2}.", Resources.ValueOutOfRange, Resources.ValueMustBeGreaterThan, valueBoundLower));
 			}
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is greater than the <paramref name="valueBoundLower"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundLower"/>.
 		/// </summary>
 		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
-		/// <param name="argumentValue">
+		/// <param name="valueArgument">
 		///		The <typeparamref name="T"/> to validate if is greater than the <paramref name="valueBoundLower"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than or equal to the <paramref name="valueBoundLower"/>.
+		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan<T>(T argumentValue,
+		public static void RequireArgumentIsGreaterThan<T>(T valueArgument,
 														   [NotNull] String nameArgument,
 														   T? valueBoundLower)
 			where T : struct, IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			if (argumentValue.IsLessThanOrEqual(valueBoundLower))
+			if (valueArgument.IsLessThanOrEqual(valueBoundLower))
 			{
-				throw new ArgumentOutOfRangeException(nameArgument, argumentValue, String.Format(CultureInfo.CurrentCulture, "{0}.  {1}, {2}.", Resources.ValueOutOfRange, Resources.ValueMustBeGreaterThan, valueBoundLower));
+				throw new ArgumentOutOfRangeException(nameArgument, valueArgument, String.Format(CultureInfo.CurrentCulture, "{0}.  {1}, {2}.", Resources.ValueOutOfRange, Resources.ValueMustBeGreaterThan, valueBoundLower));
 			}
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is greater than the <paramref name="valueBoundLower"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundLower"/>.
 		/// </summary>
 		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
-		/// <param name="argumentValue">
+		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is greater than the <paramref name="valueBoundLower"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than or equal to the <paramref name="valueBoundLower"/>.
+		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan<T>(T? argumentValue,
+		public static void RequireArgumentIsGreaterThan<T>(T? valueArgument,
 														   [NotNull] String nameArgument,
 														   T valueBoundLower)
 			where T : struct, IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			if (argumentValue.IsLessThanOrEqual(valueBoundLower))
+			if (valueArgument.IsLessThanOrEqual(valueBoundLower))
 			{
-				throw new ArgumentOutOfRangeException(nameArgument, argumentValue, String.Format(CultureInfo.CurrentCulture, "{0}.  {1}, {2}.", Resources.ValueOutOfRange, Resources.ValueMustBeGreaterThan, valueBoundLower));
+				throw new ArgumentOutOfRangeException(nameArgument, valueArgument, String.Format(CultureInfo.CurrentCulture, "{0}.  {1}, {2}.", Resources.ValueOutOfRange, Resources.ValueMustBeGreaterThan, valueBoundLower));
 			}
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is greater than the <paramref name="valueBoundLower"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundLower"/>.
 		/// </summary>
 		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
-		/// <param name="argumentValue">
+		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is greater than the <paramref name="valueBoundLower"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than or equal to the <paramref name="valueBoundLower"/>.
+		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan<T>(T? argumentValue,
+		public static void RequireArgumentIsGreaterThan<T>(T? valueArgument,
 														   [NotNull] String nameArgument,
 														   T? valueBoundLower)
 			where T : struct, IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			if (argumentValue.IsLessThanOrEqual(valueBoundLower))
+			if (valueArgument.IsLessThanOrEqual(valueBoundLower))
 			{
-				throw new ArgumentOutOfRangeException(nameArgument, argumentValue, String.Format(CultureInfo.CurrentCulture, "{0}.  {1}, {2}.", Resources.ValueOutOfRange, Resources.ValueMustBeGreaterThan, valueBoundLower));
+				throw new ArgumentOutOfRangeException(nameArgument, valueArgument, String.Format(CultureInfo.CurrentCulture, "{0}.  {1}, {2}.", Resources.ValueOutOfRange, Resources.ValueMustBeGreaterThan, valueBoundLower));
 			}
 		}
 		
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundLower"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/>.
 		/// </summary>
 		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
-		/// <param name="argumentValue">
+		/// <param name="valueArgument">
 		///		The <typeparamref name="T"/> to validate if is greater than or equal to the <paramref name="valueBoundLower"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than the <paramref name="valueBoundLower"/>.
+		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual<T>(T argumentValue,
+		public static void RequireArgumentIsGreaterThanOrEqual<T>(T valueArgument,
 																  [NotNull] String nameArgument,
 																  T valueBoundLower)
 			where T : IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			if (argumentValue.IsLessThan(valueBoundLower))
+			if (valueArgument.IsLessThan(valueBoundLower))
 			{
-				throw new ArgumentOutOfRangeException(nameArgument, argumentValue, String.Format(CultureInfo.CurrentCulture, "{0}.  {1}, {2}.", Resources.ValueOutOfRange, Resources.ValueMustBeGreaterThanOrEqual, valueBoundLower));
+				throw new ArgumentOutOfRangeException(nameArgument, valueArgument, String.Format(CultureInfo.CurrentCulture, "{0}.  {1}, {2}.", Resources.ValueOutOfRange, Resources.ValueMustBeGreaterThanOrEqual, valueBoundLower));
 			}
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundLower"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/>.
 		/// </summary>
 		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
-		/// <param name="argumentValue">
+		/// <param name="valueArgument">
 		///		The <typeparamref name="T"/> to validate if is greater than or equal to the <paramref name="valueBoundLower"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than the <paramref name="valueBoundLower"/>.
+		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual<T>(T argumentValue,
+		public static void RequireArgumentIsGreaterThanOrEqual<T>(T valueArgument,
 																  [NotNull] String nameArgument,
 																  T? valueBoundLower)
 			where T : struct, IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			if (argumentValue.IsLessThan(valueBoundLower))
+			if (valueArgument.IsLessThan(valueBoundLower))
 			{
-				throw new ArgumentOutOfRangeException(nameArgument, argumentValue, String.Format(CultureInfo.CurrentCulture, "{0}.  {1}, {2}.", Resources.ValueOutOfRange, Resources.ValueMustBeGreaterThanOrEqual, valueBoundLower));
+				throw new ArgumentOutOfRangeException(nameArgument, valueArgument, String.Format(CultureInfo.CurrentCulture, "{0}.  {1}, {2}.", Resources.ValueOutOfRange, Resources.ValueMustBeGreaterThanOrEqual, valueBoundLower));
 			}
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundLower"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/>.
 		/// </summary>
 		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
-		/// <param name="argumentValue">
+		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is greater than or equal to the <paramref name="valueBoundLower"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than the <paramref name="valueBoundLower"/>.
+		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual<T>(T? argumentValue,
+		public static void RequireArgumentIsGreaterThanOrEqual<T>(T? valueArgument,
 																  [NotNull] String nameArgument,
 																  T valueBoundLower)
 			where T : struct, IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			if (argumentValue.IsLessThan(valueBoundLower))
+			if (valueArgument.IsLessThan(valueBoundLower))
 			{
-				throw new ArgumentOutOfRangeException(nameArgument, argumentValue, String.Format(CultureInfo.CurrentCulture, "{0}.  {1}, {2}.", Resources.ValueOutOfRange, Resources.ValueMustBeGreaterThanOrEqual, valueBoundLower));
+				throw new ArgumentOutOfRangeException(nameArgument, valueArgument, String.Format(CultureInfo.CurrentCulture, "{0}.  {1}, {2}.", Resources.ValueOutOfRange, Resources.ValueMustBeGreaterThanOrEqual, valueBoundLower));
 			}
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundLower"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/>.
 		/// </summary>
 		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
-		/// <param name="argumentValue">
+		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is greater than or equal to the <paramref name="valueBoundLower"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than the <paramref name="valueBoundLower"/>.
+		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual<T>(T? argumentValue,
+		public static void RequireArgumentIsGreaterThanOrEqual<T>(T? valueArgument,
 																  [NotNull] String nameArgument,
 																  T? valueBoundLower)
 			where T : struct, IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			if (argumentValue.IsLessThan(valueBoundLower))
+			if (valueArgument.IsLessThan(valueBoundLower))
 			{
-				throw new ArgumentOutOfRangeException(nameArgument, argumentValue, String.Format(CultureInfo.CurrentCulture, "{0}.  {1}, {2}.", Resources.ValueOutOfRange, Resources.ValueMustBeGreaterThanOrEqual, valueBoundLower));
+				throw new ArgumentOutOfRangeException(nameArgument, valueArgument, String.Format(CultureInfo.CurrentCulture, "{0}.  {1}, {2}.", Resources.ValueOutOfRange, Resources.ValueMustBeGreaterThanOrEqual, valueBoundLower));
 			}
 		}
 		
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is less than the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </summary>
 		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
-		/// <param name="argumentValue">
+		/// <param name="valueArgument">
 		///		The <typeparamref name="T"/> to validate if is less than the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan<T>(T argumentValue,
+		public static void RequireArgumentIsLessThan<T>(T valueArgument,
 														[NotNull] String nameArgument,
 														T valueBoundUpper)
 			where T : IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			if (argumentValue.IsGreaterThanOrEqual(valueBoundUpper))
+			if (valueArgument.IsGreaterThanOrEqual(valueBoundUpper))
 			{
-				throw new ArgumentOutOfRangeException(nameArgument, argumentValue, String.Format(CultureInfo.CurrentCulture, "{0}.  {1}, {2}.", Resources.ValueOutOfRange, Resources.ValueMustBeLessThan, valueBoundUpper));
+				throw new ArgumentOutOfRangeException(nameArgument, valueArgument, String.Format(CultureInfo.CurrentCulture, "{0}.  {1}, {2}.", Resources.ValueOutOfRange, Resources.ValueMustBeLessThan, valueBoundUpper));
 			}
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is less than the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </summary>
 		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
-		/// <param name="argumentValue">
+		/// <param name="valueArgument">
 		///		The <typeparamref name="T"/> to validate if is less than the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan<T>(T argumentValue,
+		public static void RequireArgumentIsLessThan<T>(T valueArgument,
 														[NotNull] String nameArgument,
 														T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			if (argumentValue.IsGreaterThanOrEqual(valueBoundUpper))
+			if (valueArgument.IsGreaterThanOrEqual(valueBoundUpper))
 			{
-				throw new ArgumentOutOfRangeException(nameArgument, argumentValue, String.Format(CultureInfo.CurrentCulture, "{0}.  {1}, {2}.", Resources.ValueOutOfRange, Resources.ValueMustBeLessThan, valueBoundUpper));
+				throw new ArgumentOutOfRangeException(nameArgument, valueArgument, String.Format(CultureInfo.CurrentCulture, "{0}.  {1}, {2}.", Resources.ValueOutOfRange, Resources.ValueMustBeLessThan, valueBoundUpper));
 			}
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is less than the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </summary>
 		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
-		/// <param name="argumentValue">
+		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is less than the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan<T>(T? argumentValue,
+		public static void RequireArgumentIsLessThan<T>(T? valueArgument,
 														[NotNull] String nameArgument,
 														T valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			if (argumentValue.IsGreaterThanOrEqual(valueBoundUpper))
+			if (valueArgument.IsGreaterThanOrEqual(valueBoundUpper))
 			{
-				throw new ArgumentOutOfRangeException(nameArgument, argumentValue, String.Format(CultureInfo.CurrentCulture, "{0}.  {1}, {2}.", Resources.ValueOutOfRange, Resources.ValueMustBeLessThan, valueBoundUpper));
+				throw new ArgumentOutOfRangeException(nameArgument, valueArgument, String.Format(CultureInfo.CurrentCulture, "{0}.  {1}, {2}.", Resources.ValueOutOfRange, Resources.ValueMustBeLessThan, valueBoundUpper));
 			}
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is less than the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </summary>
 		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
-		/// <param name="argumentValue">
+		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is less than the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan<T>(T? argumentValue,
+		public static void RequireArgumentIsLessThan<T>(T? valueArgument,
 														[NotNull] String nameArgument,
 														T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			if (argumentValue.IsGreaterThanOrEqual(valueBoundUpper))
+			if (valueArgument.IsGreaterThanOrEqual(valueBoundUpper))
 			{
-				throw new ArgumentOutOfRangeException(nameArgument, argumentValue, String.Format(CultureInfo.CurrentCulture, "{0}.  {1}, {2}.", Resources.ValueOutOfRange, Resources.ValueMustBeLessThan, valueBoundUpper));
+				throw new ArgumentOutOfRangeException(nameArgument, valueArgument, String.Format(CultureInfo.CurrentCulture, "{0}.  {1}, {2}.", Resources.ValueOutOfRange, Resources.ValueMustBeLessThan, valueBoundUpper));
 			}
 		}		
 		
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
 		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
-		/// <param name="argumentValue">
+		/// <param name="valueArgument">
 		///		The <typeparamref name="T"/> to validate if is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual<T>(T argumentValue,
+		public static void RequireArgumentIsLessThanOrEqual<T>(T valueArgument,
 															   [NotNull] String nameArgument,
 															   T valueBoundUpper)
 			where T : IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			if (argumentValue.IsGreaterThan(valueBoundUpper))
+			if (valueArgument.IsGreaterThan(valueBoundUpper))
 			{
-				throw new ArgumentOutOfRangeException(nameArgument, argumentValue, String.Format(CultureInfo.CurrentCulture, "{0}.  {1}, {2}.", Resources.ValueOutOfRange, Resources.ValueMustBeLessThanOrEqual, valueBoundUpper));
+				throw new ArgumentOutOfRangeException(nameArgument, valueArgument, String.Format(CultureInfo.CurrentCulture, "{0}.  {1}, {2}.", Resources.ValueOutOfRange, Resources.ValueMustBeLessThanOrEqual, valueBoundUpper));
 			}
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
 		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
-		/// <param name="argumentValue">
+		/// <param name="valueArgument">
 		///		The <typeparamref name="T"/> to validate if is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual<T>(T argumentValue,
+		public static void RequireArgumentIsLessThanOrEqual<T>(T valueArgument,
 															   [NotNull] String nameArgument,
 															   T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			if (argumentValue.IsGreaterThan(valueBoundUpper))
+			if (valueArgument.IsGreaterThan(valueBoundUpper))
 			{
-				throw new ArgumentOutOfRangeException(nameArgument, argumentValue, String.Format(CultureInfo.CurrentCulture, "{0}.  {1}, {2}.", Resources.ValueOutOfRange, Resources.ValueMustBeLessThanOrEqual, valueBoundUpper));
+				throw new ArgumentOutOfRangeException(nameArgument, valueArgument, String.Format(CultureInfo.CurrentCulture, "{0}.  {1}, {2}.", Resources.ValueOutOfRange, Resources.ValueMustBeLessThanOrEqual, valueBoundUpper));
 			}
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
 		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
-		/// <param name="argumentValue">
+		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual<T>(T? argumentValue,
+		public static void RequireArgumentIsLessThanOrEqual<T>(T? valueArgument,
 															   [NotNull] String nameArgument,
 															   T valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			if (argumentValue.IsGreaterThan(valueBoundUpper))
+			if (valueArgument.IsGreaterThan(valueBoundUpper))
 			{
-				throw new ArgumentOutOfRangeException(nameArgument, argumentValue, String.Format(CultureInfo.CurrentCulture, "{0}.  {1}, {2}.", Resources.ValueOutOfRange, Resources.ValueMustBeLessThanOrEqual, valueBoundUpper));
+				throw new ArgumentOutOfRangeException(nameArgument, valueArgument, String.Format(CultureInfo.CurrentCulture, "{0}.  {1}, {2}.", Resources.ValueOutOfRange, Resources.ValueMustBeLessThanOrEqual, valueBoundUpper));
 			}
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
 		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
-		/// <param name="argumentValue">
+		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual<T>(T? argumentValue,
+		public static void RequireArgumentIsLessThanOrEqual<T>(T? valueArgument,
 															   [NotNull] String nameArgument,
 															   T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			if (argumentValue.IsGreaterThan(valueBoundUpper))
+			if (valueArgument.IsGreaterThan(valueBoundUpper))
 			{
-				throw new ArgumentOutOfRangeException(nameArgument, argumentValue, String.Format(CultureInfo.CurrentCulture, "{0}.  {1}, {2}.", Resources.ValueOutOfRange, Resources.ValueMustBeLessThanOrEqual, valueBoundUpper));
+				throw new ArgumentOutOfRangeException(nameArgument, valueArgument, String.Format(CultureInfo.CurrentCulture, "{0}.  {1}, {2}.", Resources.ValueOutOfRange, Resources.ValueMustBeLessThanOrEqual, valueBoundUpper));
 			}
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
-		/// <param name="argumentValue">
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
+		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
-		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
+		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than the <paramref name="valueBoundLower"/>.  
+		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundLower"/>.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside<T>(T argumentValue,
+		public static void RequireArgumentIsOutside<T>(T valueArgument,
 													   [NotNull] String nameArgument,
 													   T valueBoundLower,
 													   T valueBoundUpper)
 			where T : IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			argumentValue.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundLower);
-			argumentValue.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundLower);
+			valueArgument.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundUpper);
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
-		/// <param name="argumentValue">
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
+		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
-		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
+		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than the <paramref name="valueBoundLower"/>.  
+		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundLower"/>.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside<T>(T argumentValue,
+		public static void RequireArgumentIsOutside<T>(T valueArgument,
 													   [NotNull] String nameArgument,
 													   T valueBoundLower,
 													   T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			argumentValue.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundLower);
-			argumentValue.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundLower);
+			valueArgument.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundUpper);
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
-		/// <param name="argumentValue">
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
+		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
-		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
+		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than the <paramref name="valueBoundLower"/>.  
+		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundLower"/>.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside<T>(T argumentValue,
+		public static void RequireArgumentIsOutside<T>(T valueArgument,
 													   [NotNull] String nameArgument,
 													   T? valueBoundLower,
 													   T valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			argumentValue.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundLower);
-			argumentValue.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundLower);
+			valueArgument.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundUpper);
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
-		/// <param name="argumentValue">
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
+		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
-		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
+		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than the <paramref name="valueBoundLower"/>.  
+		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundLower"/>.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside<T>(T argumentValue,
+		public static void RequireArgumentIsOutside<T>(T valueArgument,
 													   [NotNull] String nameArgument,
 													   T? valueBoundLower,
 													   T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			argumentValue.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundLower);
-			argumentValue.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundLower);
+			valueArgument.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundUpper);
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
-		/// <param name="argumentValue">
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
+		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
-		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
+		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than the <paramref name="valueBoundLower"/>.  
+		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundLower"/>.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside<T>(T? argumentValue,
+		public static void RequireArgumentIsOutside<T>(T? valueArgument,
 													   [NotNull] String nameArgument,
 													   T valueBoundLower,
 													   T valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			argumentValue.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundLower);
-			argumentValue.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundLower);
+			valueArgument.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundUpper);
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
-		/// <param name="argumentValue">
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
+		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
-		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
+		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than the <paramref name="valueBoundLower"/>.  
+		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundLower"/>.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside<T>(T? argumentValue,
+		public static void RequireArgumentIsOutside<T>(T? valueArgument,
 													   [NotNull] String nameArgument,
 													   T valueBoundLower,
 													   T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			argumentValue.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundLower);
-			argumentValue.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundLower);
+			valueArgument.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundUpper);
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
-		/// <param name="argumentValue">
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
+		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
-		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
+		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than the <paramref name="valueBoundLower"/>.  
+		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundLower"/>.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside<T>(T? argumentValue,
+		public static void RequireArgumentIsOutside<T>(T? valueArgument,
 													   [NotNull] String nameArgument,
 													   T? valueBoundLower,
 													   T valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			argumentValue.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundLower);
-			argumentValue.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundLower);
+			valueArgument.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundUpper);
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
-		/// <param name="argumentValue">
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
+		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is less than or equal to the <paramref name="valueBoundLower"/> and greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
-		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
+		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than the <paramref name="valueBoundLower"/>.  
+		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundLower"/>.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside<T>(T? argumentValue,
+		public static void RequireArgumentIsOutside<T>(T? valueArgument,
 													   [NotNull] String nameArgument,
 													   T? valueBoundLower,
 													   T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			argumentValue.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundLower);
-			argumentValue.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundLower);
+			valueArgument.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundUpper);
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
 		/// </summary>
-		/// <param name="argumentValue">
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
+		/// <param name="valueArgument">
 		///		The <typeparamref name="T"/> to validate if is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
-		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
+		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundLower"/>.  
+		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/>.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive<T>(T argumentValue,
+		public static void RequireArgumentIsOutsideExclusive<T>(T valueArgument,
 																[NotNull] String nameArgument,
 																T valueBoundLower,
 																T valueBoundUpper)
 			where T : IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			argumentValue.RequireArgumentIsLessThan(nameArgument, valueBoundUpper);
-			argumentValue.RequireArgumentIsGreaterThan(nameArgument, valueBoundLower);
+			valueArgument.RequireArgumentIsLessThan(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsGreaterThan(nameArgument, valueBoundLower);
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
 		/// </summary>
-		/// <param name="argumentValue">
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
+		/// <param name="valueArgument">
 		///		The <typeparamref name="T"/> to validate if is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
-		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
+		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundLower"/>.  
+		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/>.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive<T>(T argumentValue,
+		public static void RequireArgumentIsOutsideExclusive<T>(T valueArgument,
 																[NotNull] String nameArgument,
 																T valueBoundLower,
 																T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			argumentValue.RequireArgumentIsLessThan(nameArgument, valueBoundUpper);
-			argumentValue.RequireArgumentIsGreaterThan(nameArgument, valueBoundLower);
+			valueArgument.RequireArgumentIsLessThan(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsGreaterThan(nameArgument, valueBoundLower);
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
 		/// </summary>
-		/// <param name="argumentValue">
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
+		/// <param name="valueArgument">
 		///		The <typeparamref name="T"/> to validate if is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
-		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
+		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundLower"/>.  
+		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/>.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive<T>(T argumentValue,
+		public static void RequireArgumentIsOutsideExclusive<T>(T valueArgument,
 																[NotNull] String nameArgument,
 																T? valueBoundLower,
 																T valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			argumentValue.RequireArgumentIsLessThan(nameArgument, valueBoundUpper);
-			argumentValue.RequireArgumentIsGreaterThan(nameArgument, valueBoundLower);
+			valueArgument.RequireArgumentIsLessThan(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsGreaterThan(nameArgument, valueBoundLower);
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
 		/// </summary>
-		/// <param name="argumentValue">
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
+		/// <param name="valueArgument">
 		///		The <typeparamref name="T"/> to validate if is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
-		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
+		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundLower"/>.  
+		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/>.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive<T>(T argumentValue,
+		public static void RequireArgumentIsOutsideExclusive<T>(T valueArgument,
 																[NotNull] String nameArgument,
 																T? valueBoundLower,
 																T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			argumentValue.RequireArgumentIsLessThan(nameArgument, valueBoundUpper);
-			argumentValue.RequireArgumentIsGreaterThan(nameArgument, valueBoundLower);
+			valueArgument.RequireArgumentIsLessThan(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsGreaterThan(nameArgument, valueBoundLower);
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
 		/// </summary>
-		/// <param name="argumentValue">
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
+		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
-		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
+		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundLower"/>.  
+		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/>.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive<T>(T? argumentValue,
+		public static void RequireArgumentIsOutsideExclusive<T>(T? valueArgument,
 																[NotNull] String nameArgument,
 																T valueBoundLower,
 																T valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			argumentValue.RequireArgumentIsLessThan(nameArgument, valueBoundUpper);
-			argumentValue.RequireArgumentIsGreaterThan(nameArgument, valueBoundLower);
+			valueArgument.RequireArgumentIsLessThan(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsGreaterThan(nameArgument, valueBoundLower);
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
 		/// </summary>
-		/// <param name="argumentValue">
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
+		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
-		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
+		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundLower"/>.  
+		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/>.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive<T>(T? argumentValue,
+		public static void RequireArgumentIsOutsideExclusive<T>(T? valueArgument,
 																[NotNull] String nameArgument,
 																T valueBoundLower,
 																T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			argumentValue.RequireArgumentIsLessThan(nameArgument, valueBoundUpper);
-			argumentValue.RequireArgumentIsGreaterThan(nameArgument, valueBoundLower);
+			valueArgument.RequireArgumentIsLessThan(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsGreaterThan(nameArgument, valueBoundLower);
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
 		/// </summary>
-		/// <param name="argumentValue">
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
+		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
-		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
+		/// <param name="valueBoundUpper">The <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundLower"/>.  
+		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/>.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive<T>(T? argumentValue,
+		public static void RequireArgumentIsOutsideExclusive<T>(T? valueArgument,
 																[NotNull] String nameArgument,
 																T? valueBoundLower,
 																T valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			argumentValue.RequireArgumentIsLessThan(nameArgument, valueBoundUpper);
-			argumentValue.RequireArgumentIsGreaterThan(nameArgument, valueBoundLower);
+			valueArgument.RequireArgumentIsLessThan(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsGreaterThan(nameArgument, valueBoundLower);
 		}
 
 		/// <summary>
-		///		Validates that the provided <paramref name="argumentValue"/> is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
+		///		Validates that the provided <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
 		/// </summary>
-		/// <param name="argumentValue">
+		/// <typeparam name="T">The <see cref="T:System.IComparable{T}"/> type to compare.</typeparam>
+		/// <param name="valueArgument">
 		///		The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if is less than the <paramref name="valueBoundLower"/> and greater than the <paramref name="valueBoundUpper"/>.
 		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="argumentValue"/> to validate.</param>
-		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is less than or equal to.</param>
-		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="argumentValue"/> is greater than or equal to.</param>
+		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
+		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
+		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is greater than or equal to the <paramref name="valueBoundLower"/>.  
+		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/>.  
 		///		-or-  
-		///		The <paramref name="argumentValue"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
+		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive<T>(T? argumentValue,
+		public static void RequireArgumentIsOutsideExclusive<T>(T? valueArgument,
 																[NotNull] String nameArgument,
 																T? valueBoundLower,
 																T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
-			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
+			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
-			argumentValue.RequireArgumentIsLessThan(nameArgument, valueBoundUpper);
-			argumentValue.RequireArgumentIsGreaterThan(nameArgument, valueBoundLower);
+			valueArgument.RequireArgumentIsLessThan(nameArgument, valueBoundUpper);
+			valueArgument.RequireArgumentIsGreaterThan(nameArgument, valueBoundLower);
 		}
 		
 		#endregion
