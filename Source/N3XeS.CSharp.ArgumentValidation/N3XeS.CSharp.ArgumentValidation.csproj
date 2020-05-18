@@ -75,7 +75,6 @@
     <Compile Include="Extensions\ArgumentGenericRelationalValidationExtension.cs" />
     <Compile Include="Extensions\ArgumentSignedFloatingPointNumberValidationExtension.cs" />
     <Compile Include="Extensions\ArgumentSignedIntegralNumberValidationExtension.cs" />
-    <Compile Include="Extensions\TypeTestingExtension.cs" />
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="JetBrainsAnnotations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -96,7 +95,6 @@
     <Compile Include="Utilities\ArgumentGenericRelationalValidationUtility.cs" />
     <Compile Include="Utilities\ArgumentSignedFloatingPointNumberValidationUtility.cs" />
     <Compile Include="Utilities\ArgumentSignedIntegralNumberValidationUtility.cs" />
-    <Compile Include="Utilities\TypeTestingUtility.cs" />
   </ItemGroup>
   <Choose>
     <When Condition=" '$(BuildDevLocal)'=='true' ">
@@ -169,7 +167,7 @@
     <AssemblyOriginatorKeyFile>$(SolutionDir)\Shared\N3XeS.CSharp.ArgumentValidation Identity Public Key.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="Docs\N3XeS.CSharp.ArgumentValidation Class Diagram.cd" />
+    <None Include="Docs\N3XeS.CSharp.ArgumentValidation.cd" />
     <None Include="Docs\DotCover\All Tests from N3XeS.CSharp.ArgumentValidation Source.dcvr" />
     <None Include="Docs\DotCover\All Tests from N3XeS.CSharp.ArgumentValidation Source.dcvr.settings" />
     <None Include="Docs\N3XeS.CSharp.ArgumentValidation CodeMap.dgml" />
@@ -213,7 +211,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="N3XeS.CSharp.Analyzation">
-      <Version>1.0.20138.2</Version>
+      <Version>1.0.20138.3</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
