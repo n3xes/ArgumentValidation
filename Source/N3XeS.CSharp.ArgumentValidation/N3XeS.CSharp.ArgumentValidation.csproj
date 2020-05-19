@@ -167,6 +167,7 @@
     <AssemblyOriginatorKeyFile>$(SolutionDir)\Shared\N3XeS.CSharp.ArgumentValidation Identity Public Key.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="Docs\All Tests from N3XeS.CSharp.ArgumentValidation Source.testsession" />
     <None Include="Docs\N3XeS.CSharp.ArgumentValidation.cd" />
     <None Include="Docs\DotCover\All Tests from N3XeS.CSharp.ArgumentValidation Source.dcvr" />
     <None Include="Docs\DotCover\All Tests from N3XeS.CSharp.ArgumentValidation Source.dcvr.settings" />
