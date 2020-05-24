@@ -23,6 +23,7 @@
 #endregion
 
 // These were put in to fix problems with 3rd party software misdiagnosing code problems.
+// ReSharper disable UnusedParameter.Global
 // ReSharper disable UnusedTypeParameter
 namespace N3XeS.CSharp.ArgumentValidation.Extensions
 {
@@ -121,7 +122,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// </exception>
 		[ContractAnnotation("valueArgument:null => halt"),
 		 SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", Justification = "Reviewed.  Suppression is OK here.  WhiteSpace is a word.", MessageId = "WhiteSpace")]
-		public static void RequireArgumentHasNonWhiteSpaceValue([ArgumentValidatedNotNull, NotNull] this String valueArgument,
+		public static void RequireArgumentHasNonWhiteSpaceValue([ArgumentValidatedNotNull, CanBeNull] this String valueArgument,
 																[NotNull] String nameArgument)
 		{
 			ArgumentEqualityValidationUtility.RequireArgumentHasNonWhiteSpaceValue(valueArgument, nameArgument);
@@ -168,7 +169,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <exception cref="ArgumentNullException">The <paramref name="valueArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is empty.</exception>
 		[ContractAnnotation("valueArgument:null => halt")]
-		public static void RequireArgumentHasValue([ArgumentValidatedNotNull, NotNull] this String valueArgument,
+		public static void RequireArgumentHasValue([ArgumentValidatedNotNull, CanBeNull] this String valueArgument,
 												   [NotNull] String nameArgument)
 		{
 			ArgumentEqualityValidationUtility.RequireArgumentHasValue(valueArgument, nameArgument);
@@ -223,7 +224,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="valueArgumentA"/> is not approximately equal to the <paramref name="valueArgumentB"/> value.
 		/// </exception>
-		public static void RequireArgumentApproximatelyEqual(this Double? valueArgumentA,
+		public static void RequireArgumentApproximatelyEqual([CanBeNull] this Double? valueArgumentA,
 															 Double valueArgumentB,
 															 [NotNull] String nameArgument)
 		{
@@ -244,7 +245,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgumentA"/> is not approximately equal to the <paramref name="valueArgumentB"/> value.
 		/// </exception>
 		public static void RequireArgumentApproximatelyEqual(this Double valueArgumentA,
-															 Double? valueArgumentB,
+															 [CanBeNull] Double? valueArgumentB,
 															 [NotNull] String nameArgument)
 		{
 			ArgumentEqualityValidationUtility.RequireArgumentApproximatelyEqual(valueArgumentA, valueArgumentB, nameArgument);
@@ -263,8 +264,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="valueArgumentA"/> is not approximately equal to the <paramref name="valueArgumentB"/> value.
 		/// </exception>
-		public static void RequireArgumentApproximatelyEqual(this Double? valueArgumentA,
-															 Double? valueArgumentB,
+		public static void RequireArgumentApproximatelyEqual([CanBeNull] this Double? valueArgumentA,
+															 [CanBeNull] Double? valueArgumentB,
 															 [NotNull] String nameArgument)
 		{
 			ArgumentEqualityValidationUtility.RequireArgumentApproximatelyEqual(valueArgumentA, valueArgumentB, nameArgument);
@@ -303,7 +304,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="valueArgumentA"/> is not approximately equal to the <paramref name="valueArgumentB"/> value.
 		/// </exception>
-		public static void RequireArgumentApproximatelyEqual(this Single? valueArgumentA,
+		public static void RequireArgumentApproximatelyEqual([CanBeNull] this Single? valueArgumentA,
 															 Single valueArgumentB,
 															 [NotNull] String nameArgument)
 		{
@@ -324,7 +325,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgumentA"/> is not approximately equal to the <paramref name="valueArgumentB"/> value.
 		/// </exception>
 		public static void RequireArgumentApproximatelyEqual(this Single valueArgumentA,
-															 Single? valueArgumentB,
+															 [CanBeNull] Single? valueArgumentB,
 															 [NotNull] String nameArgument)
 		{
 			ArgumentEqualityValidationUtility.RequireArgumentApproximatelyEqual(valueArgumentA, valueArgumentB, nameArgument);
@@ -343,8 +344,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="valueArgumentA"/> is not approximately equal to the <paramref name="valueArgumentB"/> value.
 		/// </exception>
-		public static void RequireArgumentApproximatelyEqual(this Single? valueArgumentA,
-															 Single? valueArgumentB,
+		public static void RequireArgumentApproximatelyEqual([CanBeNull] this Single? valueArgumentA,
+															 [CanBeNull] Single? valueArgumentB,
 															 [NotNull] String nameArgument)
 		{
 			ArgumentEqualityValidationUtility.RequireArgumentApproximatelyEqual(valueArgumentA, valueArgumentB, nameArgument);
@@ -396,7 +397,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is not equal to the default value of <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/>, <see langword="null"/>.
 		/// </exception>
 		[ContractAnnotation("valueArgument:notnull => halt")]
-		public static void RequireArgumentDefaultValue(this BigInteger? valueArgument,
+		public static void RequireArgumentDefaultValue([CanBeNull] this BigInteger? valueArgument,
 													   [NotNull] String nameArgument)
 		{
 			ArgumentEqualityValidationUtility.RequireArgumentDefaultValue(valueArgument, nameArgument);
@@ -431,7 +432,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is not equal to the default value of <see cref="T:System.Nullable`1"/> of <see cref="T:System.DateTime"/>, <see langword="null"/>.
 		/// </exception>
 		[ContractAnnotation("valueArgument:notnull => halt")]
-		public static void RequireArgumentDefaultValue(this DateTime? valueArgument,
+		public static void RequireArgumentDefaultValue([CanBeNull] this DateTime? valueArgument,
 													   [NotNull] String nameArgument)
 		{
 			ArgumentEqualityValidationUtility.RequireArgumentDefaultValue(valueArgument, nameArgument);
@@ -464,7 +465,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is not equal to the default value of <see cref="T:System.Nullable`1"/> of <see cref="T:System.Guid"/>, <see langword="null"/>.
 		/// </exception>
 		[ContractAnnotation("valueArgument:notnull => halt")]
-		public static void RequireArgumentDefaultValue(this Guid? valueArgument,
+		public static void RequireArgumentDefaultValue([CanBeNull] this Guid? valueArgument,
 													   [NotNull] String nameArgument)
 		{
 			ArgumentEqualityValidationUtility.RequireArgumentDefaultValue(valueArgument, nameArgument);
@@ -497,7 +498,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is not equal to the default value of <see cref="T:System.Nullable`1"/> of <see cref="T:System.Byte"/>, <see langword="null"/>.
 		/// </exception>
 		[ContractAnnotation("valueArgument:notnull => halt")]
-		public static void RequireArgumentDefaultValue(this Byte? valueArgument,
+		public static void RequireArgumentDefaultValue([CanBeNull] this Byte? valueArgument,
 													   [NotNull] String nameArgument)
 		{
 			ArgumentEqualityValidationUtility.RequireArgumentDefaultValue(valueArgument, nameArgument);
@@ -530,7 +531,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is not equal to the default value of <see cref="T:System.Nullable`1"/> of <see cref="T:System.Char"/>, <see langword="null"/>.
 		/// </exception>
 		[ContractAnnotation("valueArgument:notnull => halt")]
-		public static void RequireArgumentDefaultValue(this Char? valueArgument,
+		public static void RequireArgumentDefaultValue([CanBeNull] this Char? valueArgument,
 													   [NotNull] String nameArgument)
 		{
 			ArgumentEqualityValidationUtility.RequireArgumentDefaultValue(valueArgument, nameArgument);
@@ -563,7 +564,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is not equal to the default value of <see cref="T:System.Nullable`1"/> of <see cref="T:System.Decimal"/>, <see langword="null"/>.
 		/// </exception>
 		[ContractAnnotation("valueArgument:notnull => halt")]
-		public static void RequireArgumentDefaultValue(this Decimal? valueArgument,
+		public static void RequireArgumentDefaultValue([CanBeNull] this Decimal? valueArgument,
 													   [NotNull] String nameArgument)
 		{
 			ArgumentEqualityValidationUtility.RequireArgumentDefaultValue(valueArgument, nameArgument);
@@ -580,7 +581,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is not equal to the default value of <see cref="T:System.Nullable`1"/> of <see cref="T:System.Double"/>, <see langword="null"/>.
 		/// </exception>
 		[ContractAnnotation("valueArgument:notnull => halt")]
-		public static void RequireArgumentDefaultValue(this Double? valueArgument,
+		public static void RequireArgumentDefaultValue([CanBeNull] this Double? valueArgument,
 													   [NotNull] String nameArgument)
 		{
 			ArgumentEqualityValidationUtility.RequireArgumentDefaultValue(valueArgument, nameArgument);
@@ -597,7 +598,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is not equal to the default value of <see cref="T:System.Nullable`1"/> of <see cref="T:System.Single"/>, <see langword="null"/>.
 		/// </exception>
 		[ContractAnnotation("valueArgument:notnull => halt")]
-		public static void RequireArgumentDefaultValue(this Single? valueArgument,
+		public static void RequireArgumentDefaultValue([CanBeNull] this Single? valueArgument,
 													   [NotNull] String nameArgument)
 		{
 			ArgumentEqualityValidationUtility.RequireArgumentDefaultValue(valueArgument, nameArgument);
@@ -630,7 +631,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is not equal to the default value of <see cref="T:System.Nullable`1"/> of <see cref="T:System.Int32"/>, <see langword="null"/>.
 		/// </exception>
 		[ContractAnnotation("valueArgument:notnull => halt")]
-		public static void RequireArgumentDefaultValue(this Int32? valueArgument,
+		public static void RequireArgumentDefaultValue([CanBeNull] this Int32? valueArgument,
 													   [NotNull] String nameArgument)
 		{
 			ArgumentEqualityValidationUtility.RequireArgumentDefaultValue(valueArgument, nameArgument);
@@ -663,7 +664,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is not equal to the default value of <see cref="T:System.Nullable`1"/> of <see cref="T:System.Int64"/>, <see langword="null"/>.
 		/// </exception>
 		[ContractAnnotation("valueArgument:notnull => halt")]
-		public static void RequireArgumentDefaultValue(this Int64? valueArgument,
+		public static void RequireArgumentDefaultValue([CanBeNull] this Int64? valueArgument,
 													   [NotNull] String nameArgument)
 		{
 			ArgumentEqualityValidationUtility.RequireArgumentDefaultValue(valueArgument, nameArgument);
@@ -697,7 +698,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is not equal to the default value of <see cref="T:System.Nullable`1"/> of <see cref="T:System.SByte"/>, <see langword="null"/>.
 		/// </exception>
 		[CLSCompliant(false), ContractAnnotation("valueArgument:notnull => halt")]
-		public static void RequireArgumentDefaultValue(this SByte? valueArgument,
+		public static void RequireArgumentDefaultValue([CanBeNull] this SByte? valueArgument,
 													   [NotNull] String nameArgument)
 		{
 			ArgumentEqualityValidationUtility.RequireArgumentDefaultValue(valueArgument, nameArgument);
@@ -730,7 +731,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is not equal to the default value of <see cref="T:System.Nullable`1"/> of <see cref="T:System.Int16"/>, <see langword="null"/>.
 		/// </exception>
 		[ContractAnnotation("valueArgument:notnull => halt")]
-		public static void RequireArgumentDefaultValue(this Int16? valueArgument,
+		public static void RequireArgumentDefaultValue([CanBeNull] this Int16? valueArgument,
 													   [NotNull] String nameArgument)
 		{
 			ArgumentEqualityValidationUtility.RequireArgumentDefaultValue(valueArgument, nameArgument);
@@ -764,7 +765,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is not equal to the default value of <see cref="T:System.Nullable`1"/> of <see cref="T:System.UInt32"/>, <see langword="null"/>.
 		/// </exception>
 		[CLSCompliant(false), ContractAnnotation("valueArgument:notnull => halt")]
-		public static void RequireArgumentDefaultValue(this UInt32? valueArgument,
+		public static void RequireArgumentDefaultValue([CanBeNull] this UInt32? valueArgument,
 													   [NotNull] String nameArgument)
 		{
 			ArgumentEqualityValidationUtility.RequireArgumentDefaultValue(valueArgument, nameArgument);
@@ -798,7 +799,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is not equal to the default value of <see cref="T:System.Nullable`1"/> of <see cref="T:System.UInt64"/>, <see langword="null"/>.
 		/// </exception>
 		[CLSCompliant(false), ContractAnnotation("valueArgument:notnull => halt")]
-		public static void RequireArgumentDefaultValue(this UInt64? valueArgument,
+		public static void RequireArgumentDefaultValue([CanBeNull] this UInt64? valueArgument,
 													   [NotNull] String nameArgument)
 		{
 			ArgumentEqualityValidationUtility.RequireArgumentDefaultValue(valueArgument, nameArgument);
@@ -832,7 +833,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is not equal to the default value of <see cref="T:System.Nullable`1"/> of <see cref="T:System.UInt16"/>, <see langword="null"/>.
 		/// </exception>
 		[CLSCompliant(false), ContractAnnotation("valueArgument:notnull => halt")]
-		public static void RequireArgumentDefaultValue(this UInt16? valueArgument,
+		public static void RequireArgumentDefaultValue([CanBeNull] this UInt16? valueArgument,
 													   [NotNull] String nameArgument)
 		{
 			ArgumentEqualityValidationUtility.RequireArgumentDefaultValue(valueArgument, nameArgument);
@@ -866,7 +867,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is not equal to the default value of <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/>.
 		/// </exception>
 		[ContractAnnotation("valueArgument:notnull => halt")]
-		public static void RequireArgumentDefaultValue<T>(this T? valueArgument,
+		public static void RequireArgumentDefaultValue<T>([CanBeNull] this T? valueArgument,
 														  [NotNull] String nameArgument)
 			where T : struct
 		{
@@ -938,7 +939,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="valueArgumentA"/> is approximately equal to the <paramref name="valueArgumentB"/> value.
 		/// </exception>
-		public static void RequireArgumentNotApproximatelyEqual(this Double? valueArgumentA,
+		public static void RequireArgumentNotApproximatelyEqual([CanBeNull] this Double? valueArgumentA,
 																Double valueArgumentB,
 																[NotNull] String nameArgument)
 		{
@@ -959,7 +960,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgumentA"/> is approximately equal to the <paramref name="valueArgumentB"/> value.
 		/// </exception>
 		public static void RequireArgumentNotApproximatelyEqual(this Double valueArgumentA,
-																Double? valueArgumentB,
+																[CanBeNull] Double? valueArgumentB,
 																[NotNull] String nameArgument)
 		{
 			ArgumentEqualityValidationUtility.RequireArgumentNotApproximatelyEqual(valueArgumentA, valueArgumentB, nameArgument);
@@ -978,8 +979,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="valueArgumentA"/> is approximately equal to the <paramref name="valueArgumentB"/> value.
 		/// </exception>
-		public static void RequireArgumentNotApproximatelyEqual(this Double? valueArgumentA,
-																Double? valueArgumentB,
+		public static void RequireArgumentNotApproximatelyEqual([CanBeNull] this Double? valueArgumentA,
+																[CanBeNull] Double? valueArgumentB,
 																[NotNull] String nameArgument)
 		{
 			ArgumentEqualityValidationUtility.RequireArgumentNotApproximatelyEqual(valueArgumentA, valueArgumentB, nameArgument);
@@ -1018,7 +1019,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="valueArgumentA"/> is approximately equal to the <paramref name="valueArgumentB"/> value.
 		/// </exception>
-		public static void RequireArgumentNotApproximatelyEqual(this Single? valueArgumentA,
+		public static void RequireArgumentNotApproximatelyEqual([CanBeNull] this Single? valueArgumentA,
 																Single valueArgumentB,
 																[NotNull] String nameArgument)
 		{
@@ -1039,7 +1040,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgumentA"/> is approximately equal to the <paramref name="valueArgumentB"/> value.
 		/// </exception>
 		public static void RequireArgumentNotApproximatelyEqual(this Single valueArgumentA,
-																Single? valueArgumentB,
+																[CanBeNull] Single? valueArgumentB,
 																[NotNull] String nameArgument)
 		{
 			ArgumentEqualityValidationUtility.RequireArgumentNotApproximatelyEqual(valueArgumentA, valueArgumentB, nameArgument);
@@ -1058,8 +1059,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="valueArgumentA"/> is approximately equal to the <paramref name="valueArgumentB"/> value.
 		/// </exception>
-		public static void RequireArgumentNotApproximatelyEqual(this Single? valueArgumentA,
-																Single? valueArgumentB,
+		public static void RequireArgumentNotApproximatelyEqual([CanBeNull] this Single? valueArgumentA,
+																[CanBeNull] Single? valueArgumentB,
 																[NotNull] String nameArgument)
 		{
 			ArgumentEqualityValidationUtility.RequireArgumentNotApproximatelyEqual(valueArgumentA, valueArgumentB, nameArgument);
@@ -1149,7 +1150,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// </exception>
 		[ContractAnnotation("valueArgument:null => halt")]
 		// ReSharper disable once NotNullOnImplicitCanBeNull
-		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, NotNull] this DateTime? valueArgument,
+		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, CanBeNull] this DateTime? valueArgument,
 														  [NotNull] String nameArgument)
 		{
 			// ReSharper disable once AssignNullToNotNullAttribute
@@ -1184,7 +1185,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// </exception>
 		[ContractAnnotation("valueArgument:null => halt")]
 		// ReSharper disable once NotNullOnImplicitCanBeNull
-		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, NotNull] this Guid? valueArgument,
+		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, CanBeNull] this Guid? valueArgument,
 														  [NotNull] String nameArgument)
 		{
 			// ReSharper disable once AssignNullToNotNullAttribute
@@ -1219,7 +1220,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// </exception>
 		[ContractAnnotation("valueArgument:null => halt")]
 		// ReSharper disable once NotNullOnImplicitCanBeNull
-		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, NotNull] this Byte? valueArgument,
+		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, CanBeNull] this Byte? valueArgument,
 														  [NotNull] String nameArgument)
 		{
 			// ReSharper disable once AssignNullToNotNullAttribute
@@ -1254,7 +1255,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// </exception>
 		[ContractAnnotation("valueArgument:null => halt")]
 		// ReSharper disable once NotNullOnImplicitCanBeNull
-		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, NotNull] this Char? valueArgument,
+		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, CanBeNull] this Char? valueArgument,
 														  [NotNull] String nameArgument)
 		{
 			// ReSharper disable once AssignNullToNotNullAttribute
@@ -1289,7 +1290,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// </exception>
 		[ContractAnnotation("valueArgument:null => halt")]
 		// ReSharper disable once NotNullOnImplicitCanBeNull
-		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, NotNull] this Decimal? valueArgument,
+		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, CanBeNull] this Decimal? valueArgument,
 														  [NotNull] String nameArgument)
 		{
 			// ReSharper disable once AssignNullToNotNullAttribute
@@ -1308,7 +1309,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// </exception>
 		[ContractAnnotation("valueArgument:null => halt")]
 		// ReSharper disable once NotNullOnImplicitCanBeNull
-		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, NotNull] this Double? valueArgument,
+		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, CanBeNull] this Double? valueArgument,
 														  [NotNull] String nameArgument)
 		{
 			// ReSharper disable once AssignNullToNotNullAttribute
@@ -1327,7 +1328,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// </exception>
 		[ContractAnnotation("valueArgument:null => halt")]
 		// ReSharper disable once NotNullOnImplicitCanBeNull
-		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, NotNull] this Single? valueArgument,
+		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, CanBeNull] this Single? valueArgument,
 														  [NotNull] String nameArgument)
 		{
 			// ReSharper disable once AssignNullToNotNullAttribute
@@ -1362,7 +1363,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// </exception>
 		[ContractAnnotation("valueArgument:null => halt")]
 		// ReSharper disable once NotNullOnImplicitCanBeNull
-		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, NotNull] this Int32? valueArgument,
+		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, CanBeNull] this Int32? valueArgument,
 														  [NotNull] String nameArgument)
 		{
 			// ReSharper disable once AssignNullToNotNullAttribute
@@ -1397,7 +1398,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// </exception>
 		[ContractAnnotation("valueArgument:null => halt")]
 		// ReSharper disable once NotNullOnImplicitCanBeNull
-		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, NotNull] this Int64? valueArgument,
+		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, CanBeNull] this Int64? valueArgument,
 														  [NotNull] String nameArgument)
 		{
 			// ReSharper disable once AssignNullToNotNullAttribute
@@ -1433,7 +1434,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// </exception>
 		[CLSCompliant(false), ContractAnnotation("valueArgument:null => halt")]
 		// ReSharper disable once NotNullOnImplicitCanBeNull
-		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, NotNull] this SByte? valueArgument,
+		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, CanBeNull] this SByte? valueArgument,
 														  [NotNull] String nameArgument)
 		{
 			// ReSharper disable once AssignNullToNotNullAttribute
@@ -1468,7 +1469,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// </exception>
 		[ContractAnnotation("valueArgument:null => halt")]
 		// ReSharper disable once NotNullOnImplicitCanBeNull
-		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, NotNull] this Int16? valueArgument,
+		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, CanBeNull] this Int16? valueArgument,
 														  [NotNull] String nameArgument)
 		{
 			// ReSharper disable once AssignNullToNotNullAttribute
@@ -1504,7 +1505,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// </exception>
 		[CLSCompliant(false), ContractAnnotation("valueArgument:null => halt")]
 		// ReSharper disable once NotNullOnImplicitCanBeNull
-		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, NotNull] this UInt32? valueArgument,
+		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, CanBeNull] this UInt32? valueArgument,
 														  [NotNull] String nameArgument)
 		{
 			// ReSharper disable once AssignNullToNotNullAttribute
@@ -1540,7 +1541,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// </exception>
 		[CLSCompliant(false), ContractAnnotation("valueArgument:null => halt")]
 		// ReSharper disable once NotNullOnImplicitCanBeNull
-		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, NotNull] this UInt64? valueArgument,
+		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, CanBeNull] this UInt64? valueArgument,
 														  [NotNull] String nameArgument)
 		{
 			// ReSharper disable once AssignNullToNotNullAttribute
@@ -1576,7 +1577,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// </exception>
 		[CLSCompliant(false), ContractAnnotation("valueArgument:null => halt")]
 		// ReSharper disable once NotNullOnImplicitCanBeNull
-		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, NotNull] this UInt16? valueArgument,
+		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, CanBeNull] this UInt16? valueArgument,
 														  [NotNull] String nameArgument)
 		{
 			// ReSharper disable once AssignNullToNotNullAttribute
@@ -1612,7 +1613,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// </exception>
 		[ContractAnnotation("valueArgument:null => halt")]
 		// ReSharper disable once NotNullOnImplicitCanBeNull
-		public static void RequireArgumentNotDefaultValue<T>([ArgumentValidatedNotNull, NotNull] this T? valueArgument,
+		public static void RequireArgumentNotDefaultValue<T>([ArgumentValidatedNotNull, CanBeNull] this T? valueArgument,
 															 [NotNull] String nameArgument)
 			where T : struct
 		{
@@ -1643,7 +1644,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <exception cref="ArgumentNullException">The <paramref name="valueArgument"/> is <see langword="null"/>.</exception>
 		[ContractAnnotation("valueArgument:null => halt")]
 		// ReSharper disable once NotNullOnImplicitCanBeNull
-		public static void RequireArgumentNotNull<T>([ArgumentValidatedNotNull, NotNull] this T? valueArgument,
+		public static void RequireArgumentNotNull<T>([ArgumentValidatedNotNull, CanBeNull] this T? valueArgument,
 													 [NotNull] String nameArgument)
 			where T : struct
 		{
@@ -1659,7 +1660,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <param name="nameArgument">The argument name of the <typeparamref name="T"/> value.</param>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is not equal to <see langword="null"/>.</exception>
 		[ContractAnnotation("valueArgument:notnull => halt")]
-		public static void RequireArgumentNull<T>(this T valueArgument,
+		public static void RequireArgumentNull<T>([CanBeNull] this T valueArgument,
 												  [NotNull] String nameArgument)
 		{
 			ArgumentEqualityValidationUtility.RequireArgumentNull(valueArgument, nameArgument);
@@ -1673,7 +1674,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <typeparamref name="T"/> value.</param>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is not equal to <see langword="null"/>.</exception>
 		[ContractAnnotation("valueArgument:notnull => halt")]
-		public static void RequireArgumentNull<T>(this T? valueArgument,
+		public static void RequireArgumentNull<T>([CanBeNull] this T? valueArgument,
 												  [NotNull] String nameArgument)
 			where T : struct
 		{

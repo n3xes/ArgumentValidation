@@ -126,7 +126,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Double"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is <see langword="null"/> or odd.</exception>
-		public static void RequireArgumentIsEven(Double? valueArgument,
+		public static void RequireArgumentIsEven([CanBeNull] Double? valueArgument,
 												 [NotNull] String nameArgument)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -162,7 +162,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Single"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is <see langword="null"/> or odd.</exception>
-		public static void RequireArgumentIsEven(Single? valueArgument,
+		public static void RequireArgumentIsEven([CanBeNull] Single? valueArgument,
 												 [NotNull] String nameArgument)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -198,7 +198,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Double"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is <see langword="null"/> or even.</exception>
-		public static void RequireArgumentIsOdd(Double? valueArgument,
+		public static void RequireArgumentIsOdd([CanBeNull] Double? valueArgument,
 												[NotNull] String nameArgument)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -234,7 +234,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Single"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is <see langword="null"/> or even.</exception>
-		public static void RequireArgumentIsOdd(Single? valueArgument,
+		public static void RequireArgumentIsOdd([CanBeNull] Single? valueArgument,
 												[NotNull] String nameArgument)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");

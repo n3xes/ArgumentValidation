@@ -152,7 +152,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsBetween(this BigInteger valueArgument,
 													[NotNull] String nameArgument,
 													BigInteger valueBoundLower,
-													BigInteger? valueBoundUpper)
+													[CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
 
@@ -179,7 +179,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// </exception>
 		public static void RequireArgumentIsBetween(this BigInteger valueArgument,
 													[NotNull] String nameArgument,
-													BigInteger? valueBoundLower,
+													[CanBeNull] BigInteger? valueBoundLower,
 													BigInteger valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
@@ -207,8 +207,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// </exception>
 		public static void RequireArgumentIsBetween(this BigInteger valueArgument,
 													[NotNull] String nameArgument,
-													BigInteger? valueBoundLower,
-													BigInteger? valueBoundUpper)
+													[CanBeNull] BigInteger? valueBoundLower,
+													[CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
 
@@ -233,7 +233,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(this BigInteger? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this BigInteger? valueArgument,
 													[NotNull] String nameArgument,
 													BigInteger valueBoundLower,
 													BigInteger valueBoundUpper)
@@ -261,10 +261,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(this BigInteger? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this BigInteger? valueArgument,
 													[NotNull] String nameArgument,
 													BigInteger valueBoundLower,
-													BigInteger? valueBoundUpper)
+													[CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
 
@@ -289,9 +289,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(this BigInteger? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this BigInteger? valueArgument,
 													[NotNull] String nameArgument,
-													BigInteger? valueBoundLower,
+													[CanBeNull] BigInteger? valueBoundLower,
 													BigInteger valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
@@ -317,10 +317,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(this BigInteger? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this BigInteger? valueArgument,
 													[NotNull] String nameArgument,
-													BigInteger? valueBoundLower,
-													BigInteger? valueBoundUpper)
+													[CanBeNull] BigInteger? valueBoundLower,
+													[CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
 
@@ -378,7 +378,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsBetween(this DateTime valueArgument,
 													[NotNull] String nameArgument,
 													DateTime valueBoundLower,
-													DateTime? valueBoundUpper)
+													[CanBeNull] DateTime? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -405,7 +405,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// </exception>
 		public static void RequireArgumentIsBetween(this DateTime valueArgument,
 													[NotNull] String nameArgument,
-													DateTime? valueBoundLower,
+													[CanBeNull] DateTime? valueBoundLower,
 													DateTime valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
@@ -433,8 +433,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// </exception>
 		public static void RequireArgumentIsBetween(this DateTime valueArgument,
 													[NotNull] String nameArgument,
-													DateTime? valueBoundLower,
-													DateTime? valueBoundUpper)
+													[CanBeNull] DateTime? valueBoundLower,
+													[CanBeNull] DateTime? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -459,7 +459,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(this DateTime? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this DateTime? valueArgument,
 													[NotNull] String nameArgument,
 													DateTime valueBoundLower,
 													DateTime valueBoundUpper)
@@ -487,10 +487,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(this DateTime? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this DateTime? valueArgument,
 													[NotNull] String nameArgument,
 													DateTime valueBoundLower,
-													DateTime? valueBoundUpper)
+													[CanBeNull] DateTime? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -515,9 +515,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(this DateTime? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this DateTime? valueArgument,
 													[NotNull] String nameArgument,
-													DateTime? valueBoundLower,
+													[CanBeNull] DateTime? valueBoundLower,
 													DateTime valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
@@ -543,10 +543,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(this DateTime? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this DateTime? valueArgument,
 													[NotNull] String nameArgument,
-													DateTime? valueBoundLower,
-													DateTime? valueBoundUpper)
+													[CanBeNull] DateTime? valueBoundLower,
+													[CanBeNull] DateTime? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -602,7 +602,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsBetween(this Byte valueArgument,
 													[NotNull] String nameArgument,
 													Byte valueBoundLower,
-													Byte? valueBoundUpper)
+													[CanBeNull] Byte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -629,7 +629,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// </exception>
 		public static void RequireArgumentIsBetween(this Byte valueArgument,
 													[NotNull] String nameArgument,
-													Byte? valueBoundLower,
+													[CanBeNull] Byte? valueBoundLower,
 													Byte valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
@@ -657,8 +657,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// </exception>
 		public static void RequireArgumentIsBetween(this Byte valueArgument,
 													[NotNull] String nameArgument,
-													Byte? valueBoundLower,
-													Byte? valueBoundUpper)
+													[CanBeNull] Byte? valueBoundLower,
+													[CanBeNull] Byte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -683,7 +683,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(this Byte? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this Byte? valueArgument,
 													[NotNull] String nameArgument,
 													Byte valueBoundLower,
 													Byte valueBoundUpper)
@@ -711,10 +711,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(this Byte? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this Byte? valueArgument,
 													[NotNull] String nameArgument,
 													Byte valueBoundLower,
-													Byte? valueBoundUpper)
+													[CanBeNull] Byte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -739,9 +739,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(this Byte? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this Byte? valueArgument,
 													[NotNull] String nameArgument,
-													Byte? valueBoundLower,
+													[CanBeNull] Byte? valueBoundLower,
 													Byte valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
@@ -767,10 +767,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(this Byte? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this Byte? valueArgument,
 													[NotNull] String nameArgument,
-													Byte? valueBoundLower,
-													Byte? valueBoundUpper)
+													[CanBeNull] Byte? valueBoundLower,
+													[CanBeNull] Byte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -826,7 +826,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsBetween(this Decimal valueArgument,
 													[NotNull] String nameArgument,
 													Decimal valueBoundLower,
-													Decimal? valueBoundUpper)
+													[CanBeNull] Decimal? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -853,7 +853,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// </exception>
 		public static void RequireArgumentIsBetween(this Decimal valueArgument,
 													[NotNull] String nameArgument,
-													Decimal? valueBoundLower,
+													[CanBeNull] Decimal? valueBoundLower,
 													Decimal valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
@@ -881,8 +881,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// </exception>
 		public static void RequireArgumentIsBetween(this Decimal valueArgument,
 													[NotNull] String nameArgument,
-													Decimal? valueBoundLower,
-													Decimal? valueBoundUpper)
+													[CanBeNull] Decimal? valueBoundLower,
+													[CanBeNull] Decimal? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -907,7 +907,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(this Decimal? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this Decimal? valueArgument,
 													[NotNull] String nameArgument,
 													Decimal valueBoundLower,
 													Decimal valueBoundUpper)
@@ -935,10 +935,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(this Decimal? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this Decimal? valueArgument,
 													[NotNull] String nameArgument,
 													Decimal valueBoundLower,
-													Decimal? valueBoundUpper)
+													[CanBeNull] Decimal? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -963,9 +963,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(this Decimal? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this Decimal? valueArgument,
 													[NotNull] String nameArgument,
-													Decimal? valueBoundLower,
+													[CanBeNull] Decimal? valueBoundLower,
 													Decimal valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
@@ -991,10 +991,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(this Decimal? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this Decimal? valueArgument,
 													[NotNull] String nameArgument,
-													Decimal? valueBoundLower,
-													Decimal? valueBoundUpper)
+													[CanBeNull] Decimal? valueBoundLower,
+													[CanBeNull] Decimal? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -1050,7 +1050,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsBetween(this Double valueArgument,
 													[NotNull] String nameArgument,
 													Double valueBoundLower,
-													Double? valueBoundUpper)
+													[CanBeNull] Double? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -1077,7 +1077,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// </exception>
 		public static void RequireArgumentIsBetween(this Double valueArgument,
 													[NotNull] String nameArgument,
-													Double? valueBoundLower,
+													[CanBeNull] Double? valueBoundLower,
 													Double valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
@@ -1105,8 +1105,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// </exception>
 		public static void RequireArgumentIsBetween(this Double valueArgument,
 													[NotNull] String nameArgument,
-													Double? valueBoundLower,
-													Double? valueBoundUpper)
+													[CanBeNull] Double? valueBoundLower,
+													[CanBeNull] Double? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -1131,7 +1131,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(this Double? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this Double? valueArgument,
 													[NotNull] String nameArgument,
 													Double valueBoundLower,
 													Double valueBoundUpper)
@@ -1159,10 +1159,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(this Double? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this Double? valueArgument,
 													[NotNull] String nameArgument,
 													Double valueBoundLower,
-													Double? valueBoundUpper)
+													[CanBeNull] Double? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -1187,9 +1187,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(this Double? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this Double? valueArgument,
 													[NotNull] String nameArgument,
-													Double? valueBoundLower,
+													[CanBeNull] Double? valueBoundLower,
 													Double valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
@@ -1215,10 +1215,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(this Double? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this Double? valueArgument,
 													[NotNull] String nameArgument,
-													Double? valueBoundLower,
-													Double? valueBoundUpper)
+													[CanBeNull] Double? valueBoundLower,
+													[CanBeNull] Double? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -1274,7 +1274,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsBetween(this Single valueArgument,
 													[NotNull] String nameArgument,
 													Single valueBoundLower,
-													Single? valueBoundUpper)
+													[CanBeNull] Single? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -1301,7 +1301,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// </exception>
 		public static void RequireArgumentIsBetween(this Single valueArgument,
 													[NotNull] String nameArgument,
-													Single? valueBoundLower,
+													[CanBeNull] Single? valueBoundLower,
 													Single valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
@@ -1329,8 +1329,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// </exception>
 		public static void RequireArgumentIsBetween(this Single valueArgument,
 													[NotNull] String nameArgument,
-													Single? valueBoundLower,
-													Single? valueBoundUpper)
+													[CanBeNull] Single? valueBoundLower,
+													[CanBeNull] Single? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -1355,7 +1355,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(this Single? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this Single? valueArgument,
 													[NotNull] String nameArgument,
 													Single valueBoundLower,
 													Single valueBoundUpper)
@@ -1383,10 +1383,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(this Single? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this Single? valueArgument,
 													[NotNull] String nameArgument,
 													Single valueBoundLower,
-													Single? valueBoundUpper)
+													[CanBeNull] Single? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -1411,9 +1411,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(this Single? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this Single? valueArgument,
 													[NotNull] String nameArgument,
-													Single? valueBoundLower,
+													[CanBeNull] Single? valueBoundLower,
 													Single valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
@@ -1439,10 +1439,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(this Single? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this Single? valueArgument,
 													[NotNull] String nameArgument,
-													Single? valueBoundLower,
-													Single? valueBoundUpper)
+													[CanBeNull] Single? valueBoundLower,
+													[CanBeNull] Single? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -1498,7 +1498,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsBetween(this Int32 valueArgument,
 													[NotNull] String nameArgument,
 													Int32 valueBoundLower,
-													Int32? valueBoundUpper)
+													[CanBeNull] Int32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -1525,7 +1525,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// </exception>
 		public static void RequireArgumentIsBetween(this Int32 valueArgument,
 													[NotNull] String nameArgument,
-													Int32? valueBoundLower,
+													[CanBeNull] Int32? valueBoundLower,
 													Int32 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
@@ -1553,8 +1553,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// </exception>
 		public static void RequireArgumentIsBetween(this Int32 valueArgument,
 													[NotNull] String nameArgument,
-													Int32? valueBoundLower,
-													Int32? valueBoundUpper)
+													[CanBeNull] Int32? valueBoundLower,
+													[CanBeNull] Int32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -1579,7 +1579,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(this Int32? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this Int32? valueArgument,
 													[NotNull] String nameArgument,
 													Int32 valueBoundLower,
 													Int32 valueBoundUpper)
@@ -1607,10 +1607,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(this Int32? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this Int32? valueArgument,
 													[NotNull] String nameArgument,
 													Int32 valueBoundLower,
-													Int32? valueBoundUpper)
+													[CanBeNull] Int32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -1635,9 +1635,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(this Int32? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this Int32? valueArgument,
 													[NotNull] String nameArgument,
-													Int32? valueBoundLower,
+													[CanBeNull] Int32? valueBoundLower,
 													Int32 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
@@ -1663,10 +1663,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(this Int32? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this Int32? valueArgument,
 													[NotNull] String nameArgument,
-													Int32? valueBoundLower,
-													Int32? valueBoundUpper)
+													[CanBeNull] Int32? valueBoundLower,
+													[CanBeNull] Int32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -1722,7 +1722,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsBetween(this Int64 valueArgument,
 													[NotNull] String nameArgument,
 													Int64 valueBoundLower,
-													Int64? valueBoundUpper)
+													[CanBeNull] Int64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -1749,7 +1749,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// </exception>
 		public static void RequireArgumentIsBetween(this Int64 valueArgument,
 													[NotNull] String nameArgument,
-													Int64? valueBoundLower,
+													[CanBeNull] Int64? valueBoundLower,
 													Int64 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
@@ -1777,8 +1777,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// </exception>
 		public static void RequireArgumentIsBetween(this Int64 valueArgument,
 													[NotNull] String nameArgument,
-													Int64? valueBoundLower,
-													Int64? valueBoundUpper)
+													[CanBeNull] Int64? valueBoundLower,
+													[CanBeNull] Int64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -1803,7 +1803,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(this Int64? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this Int64? valueArgument,
 													[NotNull] String nameArgument,
 													Int64 valueBoundLower,
 													Int64 valueBoundUpper)
@@ -1831,10 +1831,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(this Int64? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this Int64? valueArgument,
 													[NotNull] String nameArgument,
 													Int64 valueBoundLower,
-													Int64? valueBoundUpper)
+													[CanBeNull] Int64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -1859,9 +1859,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(this Int64? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this Int64? valueArgument,
 													[NotNull] String nameArgument,
-													Int64? valueBoundLower,
+													[CanBeNull] Int64? valueBoundLower,
 													Int64 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
@@ -1887,10 +1887,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(this Int64? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this Int64? valueArgument,
 													[NotNull] String nameArgument,
-													Int64? valueBoundLower,
-													Int64? valueBoundUpper)
+													[CanBeNull] Int64? valueBoundLower,
+													[CanBeNull] Int64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -1948,7 +1948,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsBetween(this SByte valueArgument,
 													[NotNull] String nameArgument,
 													SByte valueBoundLower,
-													SByte? valueBoundUpper)
+													[CanBeNull] SByte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -1976,7 +1976,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetween(this SByte valueArgument,
 													[NotNull] String nameArgument,
-													SByte? valueBoundLower,
+													[CanBeNull] SByte? valueBoundLower,
 													SByte valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
@@ -2005,8 +2005,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetween(this SByte valueArgument,
 													[NotNull] String nameArgument,
-													SByte? valueBoundLower,
-													SByte? valueBoundUpper)
+													[CanBeNull] SByte? valueBoundLower,
+													[CanBeNull] SByte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -2032,7 +2032,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(this SByte? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this SByte? valueArgument,
 													[NotNull] String nameArgument,
 													SByte valueBoundLower,
 													SByte valueBoundUpper)
@@ -2061,10 +2061,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(this SByte? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this SByte? valueArgument,
 													[NotNull] String nameArgument,
 													SByte valueBoundLower,
-													SByte? valueBoundUpper)
+													[CanBeNull] SByte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -2090,9 +2090,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(this SByte? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this SByte? valueArgument,
 													[NotNull] String nameArgument,
-													SByte? valueBoundLower,
+													[CanBeNull] SByte? valueBoundLower,
 													SByte valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
@@ -2119,10 +2119,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(this SByte? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this SByte? valueArgument,
 													[NotNull] String nameArgument,
-													SByte? valueBoundLower,
-													SByte? valueBoundUpper)
+													[CanBeNull] SByte? valueBoundLower,
+													[CanBeNull] SByte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -2180,7 +2180,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsBetween(this Int16 valueArgument,
 													[NotNull] String nameArgument,
 													Int16 valueBoundLower,
-													Int16? valueBoundUpper)
+													[CanBeNull] Int16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -2208,7 +2208,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetween(this Int16 valueArgument,
 													[NotNull] String nameArgument,
-													Int16? valueBoundLower,
+													[CanBeNull] Int16? valueBoundLower,
 													Int16 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
@@ -2237,8 +2237,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetween(this Int16 valueArgument,
 													[NotNull] String nameArgument,
-													Int16? valueBoundLower,
-													Int16? valueBoundUpper)
+													[CanBeNull] Int16? valueBoundLower,
+													[CanBeNull] Int16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -2264,7 +2264,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(this Int16? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this Int16? valueArgument,
 													[NotNull] String nameArgument,
 													Int16 valueBoundLower,
 													Int16 valueBoundUpper)
@@ -2293,10 +2293,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(this Int16? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this Int16? valueArgument,
 													[NotNull] String nameArgument,
 													Int16 valueBoundLower,
-													Int16? valueBoundUpper)
+													[CanBeNull] Int16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -2322,9 +2322,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(this Int16? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this Int16? valueArgument,
 													[NotNull] String nameArgument,
-													Int16? valueBoundLower,
+													[CanBeNull] Int16? valueBoundLower,
 													Int16 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
@@ -2351,10 +2351,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(this Int16? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this Int16? valueArgument,
 													[NotNull] String nameArgument,
-													Int16? valueBoundLower,
-													Int16? valueBoundUpper)
+													[CanBeNull] Int16? valueBoundLower,
+													[CanBeNull] Int16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -2412,7 +2412,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsBetween(this UInt32 valueArgument,
 													[NotNull] String nameArgument,
 													UInt32 valueBoundLower,
-													UInt32? valueBoundUpper)
+													[CanBeNull] UInt32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -2440,7 +2440,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetween(this UInt32 valueArgument,
 													[NotNull] String nameArgument,
-													UInt32? valueBoundLower,
+													[CanBeNull] UInt32? valueBoundLower,
 													UInt32 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
@@ -2469,8 +2469,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetween(this UInt32 valueArgument,
 													[NotNull] String nameArgument,
-													UInt32? valueBoundLower,
-													UInt32? valueBoundUpper)
+													[CanBeNull] UInt32? valueBoundLower,
+													[CanBeNull] UInt32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -2496,7 +2496,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(this UInt32? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this UInt32? valueArgument,
 													[NotNull] String nameArgument,
 													UInt32 valueBoundLower,
 													UInt32 valueBoundUpper)
@@ -2525,10 +2525,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(this UInt32? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this UInt32? valueArgument,
 													[NotNull] String nameArgument,
 													UInt32 valueBoundLower,
-													UInt32? valueBoundUpper)
+													[CanBeNull] UInt32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -2554,9 +2554,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(this UInt32? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this UInt32? valueArgument,
 													[NotNull] String nameArgument,
-													UInt32? valueBoundLower,
+													[CanBeNull] UInt32? valueBoundLower,
 													UInt32 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
@@ -2583,10 +2583,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(this UInt32? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this UInt32? valueArgument,
 													[NotNull] String nameArgument,
-													UInt32? valueBoundLower,
-													UInt32? valueBoundUpper)
+													[CanBeNull] UInt32? valueBoundLower,
+													[CanBeNull] UInt32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -2644,7 +2644,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsBetween(this UInt64 valueArgument,
 													[NotNull] String nameArgument,
 													UInt64 valueBoundLower,
-													UInt64? valueBoundUpper)
+													[CanBeNull] UInt64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -2672,7 +2672,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetween(this UInt64 valueArgument,
 													[NotNull] String nameArgument,
-													UInt64? valueBoundLower,
+													[CanBeNull] UInt64? valueBoundLower,
 													UInt64 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
@@ -2701,8 +2701,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetween(this UInt64 valueArgument,
 													[NotNull] String nameArgument,
-													UInt64? valueBoundLower,
-													UInt64? valueBoundUpper)
+													[CanBeNull] UInt64? valueBoundLower,
+													[CanBeNull] UInt64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -2728,7 +2728,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(this UInt64? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this UInt64? valueArgument,
 													[NotNull] String nameArgument,
 													UInt64 valueBoundLower,
 													UInt64 valueBoundUpper)
@@ -2757,10 +2757,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(this UInt64? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this UInt64? valueArgument,
 													[NotNull] String nameArgument,
 													UInt64 valueBoundLower,
-													UInt64? valueBoundUpper)
+													[CanBeNull] UInt64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -2786,9 +2786,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(this UInt64? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this UInt64? valueArgument,
 													[NotNull] String nameArgument,
-													UInt64? valueBoundLower,
+													[CanBeNull] UInt64? valueBoundLower,
 													UInt64 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
@@ -2815,10 +2815,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(this UInt64? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this UInt64? valueArgument,
 													[NotNull] String nameArgument,
-													UInt64? valueBoundLower,
-													UInt64? valueBoundUpper)
+													[CanBeNull] UInt64? valueBoundLower,
+													[CanBeNull] UInt64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -2876,7 +2876,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsBetween(this UInt16 valueArgument,
 													[NotNull] String nameArgument,
 													UInt16 valueBoundLower,
-													UInt16? valueBoundUpper)
+													[CanBeNull] UInt16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -2904,7 +2904,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetween(this UInt16 valueArgument,
 													[NotNull] String nameArgument,
-													UInt16? valueBoundLower,
+													[CanBeNull] UInt16? valueBoundLower,
 													UInt16 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
@@ -2933,8 +2933,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetween(this UInt16 valueArgument,
 													[NotNull] String nameArgument,
-													UInt16? valueBoundLower,
-													UInt16? valueBoundUpper)
+													[CanBeNull] UInt16? valueBoundLower,
+													[CanBeNull] UInt16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -2960,7 +2960,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(this UInt16? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this UInt16? valueArgument,
 													[NotNull] String nameArgument,
 													UInt16 valueBoundLower,
 													UInt16 valueBoundUpper)
@@ -2989,10 +2989,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(this UInt16? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this UInt16? valueArgument,
 													[NotNull] String nameArgument,
 													UInt16 valueBoundLower,
-													UInt16? valueBoundUpper)
+													[CanBeNull] UInt16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -3018,9 +3018,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(this UInt16? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this UInt16? valueArgument,
 													[NotNull] String nameArgument,
-													UInt16? valueBoundLower,
+													[CanBeNull] UInt16? valueBoundLower,
 													UInt16 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
@@ -3047,10 +3047,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(this UInt16? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] this UInt16? valueArgument,
 													[NotNull] String nameArgument,
-													UInt16? valueBoundLower,
-													UInt16? valueBoundUpper)
+													[CanBeNull] UInt16? valueBoundLower,
+													[CanBeNull] UInt16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetween(valueArgument,
 																		 nameArgument,
@@ -3110,7 +3110,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsBetweenExclusive(this BigInteger valueArgument,
 															 [NotNull] String nameArgument,
 															 BigInteger valueBoundLower,
-															 BigInteger? valueBoundUpper)
+															 [CanBeNull] [CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
 
@@ -3138,7 +3138,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(this BigInteger valueArgument,
 															 [NotNull] String nameArgument,
-															 BigInteger? valueBoundLower,
+															 [CanBeNull] [CanBeNull] BigInteger? valueBoundLower,
 															 BigInteger valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
@@ -3167,8 +3167,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(this BigInteger valueArgument,
 															 [NotNull] String nameArgument,
-															 BigInteger? valueBoundLower,
-															 BigInteger? valueBoundUpper)
+															 [CanBeNull] BigInteger? valueBoundLower,
+															 [CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
 
@@ -3194,7 +3194,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this BigInteger? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this BigInteger? valueArgument,
 															 [NotNull] String nameArgument,
 															 BigInteger valueBoundLower,
 															 BigInteger valueBoundUpper)
@@ -3223,10 +3223,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this BigInteger? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this BigInteger? valueArgument,
 															 [NotNull] String nameArgument,
 															 BigInteger valueBoundLower,
-															 BigInteger? valueBoundUpper)
+															 [CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
 
@@ -3252,9 +3252,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this BigInteger? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this BigInteger? valueArgument,
 															 [NotNull] String nameArgument,
-															 BigInteger? valueBoundLower,
+															 [CanBeNull] BigInteger? valueBoundLower,
 															 BigInteger valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
@@ -3281,10 +3281,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this BigInteger? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this BigInteger? valueArgument,
 															 [NotNull] String nameArgument,
-															 BigInteger? valueBoundLower,
-															 BigInteger? valueBoundUpper)
+															 [CanBeNull] BigInteger? valueBoundLower,
+															 [CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
 
@@ -3344,7 +3344,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsBetweenExclusive(this DateTime valueArgument,
 															 [NotNull] String nameArgument,
 															 DateTime valueBoundLower,
-															 DateTime? valueBoundUpper)
+															 [CanBeNull] DateTime? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -3372,7 +3372,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(this DateTime valueArgument,
 															 [NotNull] String nameArgument,
-															 DateTime? valueBoundLower,
+															 [CanBeNull] DateTime? valueBoundLower,
 															 DateTime valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
@@ -3401,8 +3401,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(this DateTime valueArgument,
 															 [NotNull] String nameArgument,
-															 DateTime? valueBoundLower,
-															 DateTime? valueBoundUpper)
+															 [CanBeNull] DateTime? valueBoundLower,
+															 [CanBeNull] DateTime? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -3428,7 +3428,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this DateTime? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this DateTime? valueArgument,
 															 [NotNull] String nameArgument,
 															 DateTime valueBoundLower,
 															 DateTime valueBoundUpper)
@@ -3457,10 +3457,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this DateTime? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this DateTime? valueArgument,
 															 [NotNull] String nameArgument,
 															 DateTime valueBoundLower,
-															 DateTime? valueBoundUpper)
+															 [CanBeNull] DateTime? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -3486,9 +3486,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this DateTime? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this DateTime? valueArgument,
 															 [NotNull] String nameArgument,
-															 DateTime? valueBoundLower,
+															 [CanBeNull] DateTime? valueBoundLower,
 															 DateTime valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
@@ -3515,10 +3515,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this DateTime? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this DateTime? valueArgument,
 															 [NotNull] String nameArgument,
-															 DateTime? valueBoundLower,
-															 DateTime? valueBoundUpper)
+															 [CanBeNull] DateTime? valueBoundLower,
+															 [CanBeNull] DateTime? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -3576,7 +3576,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsBetweenExclusive(this Byte valueArgument,
 															 [NotNull] String nameArgument,
 															 Byte valueBoundLower,
-															 Byte? valueBoundUpper)
+															 [CanBeNull] Byte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -3604,7 +3604,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(this Byte valueArgument,
 															 [NotNull] String nameArgument,
-															 Byte? valueBoundLower,
+															 [CanBeNull] Byte? valueBoundLower,
 															 Byte valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
@@ -3633,8 +3633,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(this Byte valueArgument,
 															 [NotNull] String nameArgument,
-															 Byte? valueBoundLower,
-															 Byte? valueBoundUpper)
+															 [CanBeNull] Byte? valueBoundLower,
+															 [CanBeNull] Byte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -3660,7 +3660,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this Byte? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this Byte? valueArgument,
 															 [NotNull] String nameArgument,
 															 Byte valueBoundLower,
 															 Byte valueBoundUpper)
@@ -3689,10 +3689,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this Byte? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this Byte? valueArgument,
 															 [NotNull] String nameArgument,
 															 Byte valueBoundLower,
-															 Byte? valueBoundUpper)
+															 [CanBeNull] Byte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -3718,9 +3718,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this Byte? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this Byte? valueArgument,
 															 [NotNull] String nameArgument,
-															 Byte? valueBoundLower,
+															 [CanBeNull] Byte? valueBoundLower,
 															 Byte valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
@@ -3747,10 +3747,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this Byte? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this Byte? valueArgument,
 															 [NotNull] String nameArgument,
-															 Byte? valueBoundLower,
-															 Byte? valueBoundUpper)
+															 [CanBeNull] Byte? valueBoundLower,
+															 [CanBeNull] Byte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -3808,7 +3808,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsBetweenExclusive(this Decimal valueArgument,
 															 [NotNull] String nameArgument,
 															 Decimal valueBoundLower,
-															 Decimal? valueBoundUpper)
+															 [CanBeNull] Decimal? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -3836,7 +3836,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(this Decimal valueArgument,
 															 [NotNull] String nameArgument,
-															 Decimal? valueBoundLower,
+															 [CanBeNull] Decimal? valueBoundLower,
 															 Decimal valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
@@ -3865,8 +3865,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(this Decimal valueArgument,
 															 [NotNull] String nameArgument,
-															 Decimal? valueBoundLower,
-															 Decimal? valueBoundUpper)
+															 [CanBeNull] Decimal? valueBoundLower,
+															 [CanBeNull] Decimal? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -3892,7 +3892,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this Decimal? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this Decimal? valueArgument,
 															 [NotNull] String nameArgument,
 															 Decimal valueBoundLower,
 															 Decimal valueBoundUpper)
@@ -3921,10 +3921,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this Decimal? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this Decimal? valueArgument,
 															 [NotNull] String nameArgument,
 															 Decimal valueBoundLower,
-															 Decimal? valueBoundUpper)
+															 [CanBeNull] Decimal? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -3950,9 +3950,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this Decimal? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this Decimal? valueArgument,
 															 [NotNull] String nameArgument,
-															 Decimal? valueBoundLower,
+															 [CanBeNull] Decimal? valueBoundLower,
 															 Decimal valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
@@ -3979,10 +3979,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this Decimal? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this Decimal? valueArgument,
 															 [NotNull] String nameArgument,
-															 Decimal? valueBoundLower,
-															 Decimal? valueBoundUpper)
+															 [CanBeNull] Decimal? valueBoundLower,
+															 [CanBeNull] Decimal? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -4040,7 +4040,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsBetweenExclusive(this Double valueArgument,
 															 [NotNull] String nameArgument,
 															 Double valueBoundLower,
-															 Double? valueBoundUpper)
+															 [CanBeNull] Double? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -4068,7 +4068,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(this Double valueArgument,
 															 [NotNull] String nameArgument,
-															 Double? valueBoundLower,
+															 [CanBeNull] Double? valueBoundLower,
 															 Double valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
@@ -4097,8 +4097,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(this Double valueArgument,
 															 [NotNull] String nameArgument,
-															 Double? valueBoundLower,
-															 Double? valueBoundUpper)
+															 [CanBeNull] Double? valueBoundLower,
+															 [CanBeNull] Double? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -4124,7 +4124,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this Double? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this Double? valueArgument,
 															 [NotNull] String nameArgument,
 															 Double valueBoundLower,
 															 Double valueBoundUpper)
@@ -4153,10 +4153,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this Double? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this Double? valueArgument,
 															 [NotNull] String nameArgument,
 															 Double valueBoundLower,
-															 Double? valueBoundUpper)
+															 [CanBeNull] Double? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -4182,9 +4182,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this Double? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this Double? valueArgument,
 															 [NotNull] String nameArgument,
-															 Double? valueBoundLower,
+															 [CanBeNull] Double? valueBoundLower,
 															 Double valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
@@ -4211,10 +4211,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this Double? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this Double? valueArgument,
 															 [NotNull] String nameArgument,
-															 Double? valueBoundLower,
-															 Double? valueBoundUpper)
+															 [CanBeNull] Double? valueBoundLower,
+															 [CanBeNull] Double? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -4272,7 +4272,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsBetweenExclusive(this Single valueArgument,
 															 [NotNull] String nameArgument,
 															 Single valueBoundLower,
-															 Single? valueBoundUpper)
+															 [CanBeNull] Single? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -4300,7 +4300,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(this Single valueArgument,
 															 [NotNull] String nameArgument,
-															 Single? valueBoundLower,
+															 [CanBeNull] Single? valueBoundLower,
 															 Single valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
@@ -4329,8 +4329,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(this Single valueArgument,
 															 [NotNull] String nameArgument,
-															 Single? valueBoundLower,
-															 Single? valueBoundUpper)
+															 [CanBeNull] Single? valueBoundLower,
+															 [CanBeNull] Single? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -4356,7 +4356,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this Single? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this Single? valueArgument,
 															 [NotNull] String nameArgument,
 															 Single valueBoundLower,
 															 Single valueBoundUpper)
@@ -4385,10 +4385,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this Single? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this Single? valueArgument,
 															 [NotNull] String nameArgument,
 															 Single valueBoundLower,
-															 Single? valueBoundUpper)
+															 [CanBeNull] Single? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -4414,9 +4414,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this Single? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this Single? valueArgument,
 															 [NotNull] String nameArgument,
-															 Single? valueBoundLower,
+															 [CanBeNull] Single? valueBoundLower,
 															 Single valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
@@ -4443,10 +4443,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this Single? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this Single? valueArgument,
 															 [NotNull] String nameArgument,
-															 Single? valueBoundLower,
-															 Single? valueBoundUpper)
+															 [CanBeNull] Single? valueBoundLower,
+															 [CanBeNull] Single? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -4504,7 +4504,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsBetweenExclusive(this Int32 valueArgument,
 															 [NotNull] String nameArgument,
 															 Int32 valueBoundLower,
-															 Int32? valueBoundUpper)
+															 [CanBeNull] Int32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -4532,7 +4532,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(this Int32 valueArgument,
 															 [NotNull] String nameArgument,
-															 Int32? valueBoundLower,
+															 [CanBeNull] Int32? valueBoundLower,
 															 Int32 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
@@ -4561,8 +4561,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(this Int32 valueArgument,
 															 [NotNull] String nameArgument,
-															 Int32? valueBoundLower,
-															 Int32? valueBoundUpper)
+															 [CanBeNull] Int32? valueBoundLower,
+															 [CanBeNull] Int32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -4588,7 +4588,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this Int32? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this Int32? valueArgument,
 															 [NotNull] String nameArgument,
 															 Int32 valueBoundLower,
 															 Int32 valueBoundUpper)
@@ -4617,10 +4617,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this Int32? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this Int32? valueArgument,
 															 [NotNull] String nameArgument,
 															 Int32 valueBoundLower,
-															 Int32? valueBoundUpper)
+															 [CanBeNull] Int32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -4646,9 +4646,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this Int32? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this Int32? valueArgument,
 															 [NotNull] String nameArgument,
-															 Int32? valueBoundLower,
+															 [CanBeNull] Int32? valueBoundLower,
 															 Int32 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
@@ -4675,10 +4675,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this Int32? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this Int32? valueArgument,
 															 [NotNull] String nameArgument,
-															 Int32? valueBoundLower,
-															 Int32? valueBoundUpper)
+															 [CanBeNull] Int32? valueBoundLower,
+															 [CanBeNull] Int32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -4736,7 +4736,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsBetweenExclusive(this Int64 valueArgument,
 															 [NotNull] String nameArgument,
 															 Int64 valueBoundLower,
-															 Int64? valueBoundUpper)
+															 [CanBeNull] Int64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -4764,7 +4764,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(this Int64 valueArgument,
 															 [NotNull] String nameArgument,
-															 Int64? valueBoundLower,
+															 [CanBeNull] Int64? valueBoundLower,
 															 Int64 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
@@ -4793,8 +4793,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(this Int64 valueArgument,
 															 [NotNull] String nameArgument,
-															 Int64? valueBoundLower,
-															 Int64? valueBoundUpper)
+															 [CanBeNull] Int64? valueBoundLower,
+															 [CanBeNull] Int64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -4820,7 +4820,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this Int64? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this Int64? valueArgument,
 															 [NotNull] String nameArgument,
 															 Int64 valueBoundLower,
 															 Int64 valueBoundUpper)
@@ -4849,10 +4849,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this Int64? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this Int64? valueArgument,
 															 [NotNull] String nameArgument,
 															 Int64 valueBoundLower,
-															 Int64? valueBoundUpper)
+															 [CanBeNull] Int64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -4878,9 +4878,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this Int64? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this Int64? valueArgument,
 															 [NotNull] String nameArgument,
-															 Int64? valueBoundLower,
+															 [CanBeNull] Int64? valueBoundLower,
 															 Int64 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
@@ -4907,10 +4907,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this Int64? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this Int64? valueArgument,
 															 [NotNull] String nameArgument,
-															 Int64? valueBoundLower,
-															 Int64? valueBoundUpper)
+															 [CanBeNull] Int64? valueBoundLower,
+															 [CanBeNull] Int64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -4968,7 +4968,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsBetweenExclusive(this SByte valueArgument,
 															 [NotNull] String nameArgument,
 															 SByte valueBoundLower,
-															 SByte? valueBoundUpper)
+															 [CanBeNull] SByte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -4996,7 +4996,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(this SByte valueArgument,
 															 [NotNull] String nameArgument,
-															 SByte? valueBoundLower,
+															 [CanBeNull] SByte? valueBoundLower,
 															 SByte valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
@@ -5025,8 +5025,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(this SByte valueArgument,
 															 [NotNull] String nameArgument,
-															 SByte? valueBoundLower,
-															 SByte? valueBoundUpper)
+															 [CanBeNull] SByte? valueBoundLower,
+															 [CanBeNull] SByte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -5052,7 +5052,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this SByte? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this SByte? valueArgument,
 															 [NotNull] String nameArgument,
 															 SByte valueBoundLower,
 															 SByte valueBoundUpper)
@@ -5081,10 +5081,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this SByte? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this SByte? valueArgument,
 															 [NotNull] String nameArgument,
 															 SByte valueBoundLower,
-															 SByte? valueBoundUpper)
+															 [CanBeNull] SByte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -5110,9 +5110,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this SByte? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this SByte? valueArgument,
 															 [NotNull] String nameArgument,
-															 SByte? valueBoundLower,
+															 [CanBeNull] SByte? valueBoundLower,
 															 SByte valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
@@ -5139,10 +5139,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this SByte? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this SByte? valueArgument,
 															 [NotNull] String nameArgument,
-															 SByte? valueBoundLower,
-															 SByte? valueBoundUpper)
+															 [CanBeNull] SByte? valueBoundLower,
+															 [CanBeNull] SByte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -5200,7 +5200,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsBetweenExclusive(this Int16 valueArgument,
 															 [NotNull] String nameArgument,
 															 Int16 valueBoundLower,
-															 Int16? valueBoundUpper)
+															 [CanBeNull] Int16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -5228,7 +5228,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(this Int16 valueArgument,
 															 [NotNull] String nameArgument,
-															 Int16? valueBoundLower,
+															 [CanBeNull] Int16? valueBoundLower,
 															 Int16 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
@@ -5257,8 +5257,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(this Int16 valueArgument,
 															 [NotNull] String nameArgument,
-															 Int16? valueBoundLower,
-															 Int16? valueBoundUpper)
+															 [CanBeNull] Int16? valueBoundLower,
+															 [CanBeNull] Int16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -5284,7 +5284,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this Int16? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this Int16? valueArgument,
 															 [NotNull] String nameArgument,
 															 Int16 valueBoundLower,
 															 Int16 valueBoundUpper)
@@ -5313,10 +5313,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this Int16? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this Int16? valueArgument,
 															 [NotNull] String nameArgument,
 															 Int16 valueBoundLower,
-															 Int16? valueBoundUpper)
+															 [CanBeNull] Int16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -5342,9 +5342,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this Int16? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this Int16? valueArgument,
 															 [NotNull] String nameArgument,
-															 Int16? valueBoundLower,
+															 [CanBeNull] Int16? valueBoundLower,
 															 Int16 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
@@ -5371,10 +5371,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this Int16? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this Int16? valueArgument,
 															 [NotNull] String nameArgument,
-															 Int16? valueBoundLower,
-															 Int16? valueBoundUpper)
+															 [CanBeNull] Int16? valueBoundLower,
+															 [CanBeNull] Int16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -5432,7 +5432,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsBetweenExclusive(this UInt32 valueArgument,
 															 [NotNull] String nameArgument,
 															 UInt32 valueBoundLower,
-															 UInt32? valueBoundUpper)
+															 [CanBeNull] UInt32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -5460,7 +5460,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(this UInt32 valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt32? valueBoundLower,
+															 [CanBeNull] UInt32? valueBoundLower,
 															 UInt32 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
@@ -5489,8 +5489,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(this UInt32 valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt32? valueBoundLower,
-															 UInt32? valueBoundUpper)
+															 [CanBeNull] UInt32? valueBoundLower,
+															 [CanBeNull] UInt32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -5516,7 +5516,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this UInt32? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this UInt32? valueArgument,
 															 [NotNull] String nameArgument,
 															 UInt32 valueBoundLower,
 															 UInt32 valueBoundUpper)
@@ -5545,10 +5545,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this UInt32? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this UInt32? valueArgument,
 															 [NotNull] String nameArgument,
 															 UInt32 valueBoundLower,
-															 UInt32? valueBoundUpper)
+															 [CanBeNull] UInt32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -5574,9 +5574,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this UInt32? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this UInt32? valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt32? valueBoundLower,
+															 [CanBeNull] UInt32? valueBoundLower,
 															 UInt32 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
@@ -5603,10 +5603,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this UInt32? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this UInt32? valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt32? valueBoundLower,
-															 UInt32? valueBoundUpper)
+															 [CanBeNull] UInt32? valueBoundLower,
+															 [CanBeNull] UInt32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -5664,7 +5664,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsBetweenExclusive(this UInt64 valueArgument,
 															 [NotNull] String nameArgument,
 															 UInt64 valueBoundLower,
-															 UInt64? valueBoundUpper)
+															 [CanBeNull] UInt64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -5692,7 +5692,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(this UInt64 valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt64? valueBoundLower,
+															 [CanBeNull] UInt64? valueBoundLower,
 															 UInt64 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
@@ -5721,8 +5721,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(this UInt64 valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt64? valueBoundLower,
-															 UInt64? valueBoundUpper)
+															 [CanBeNull] UInt64? valueBoundLower,
+															 [CanBeNull] UInt64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -5748,7 +5748,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this UInt64? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this UInt64? valueArgument,
 															 [NotNull] String nameArgument,
 															 UInt64 valueBoundLower,
 															 UInt64 valueBoundUpper)
@@ -5777,10 +5777,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this UInt64? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this UInt64? valueArgument,
 															 [NotNull] String nameArgument,
 															 UInt64 valueBoundLower,
-															 UInt64? valueBoundUpper)
+															 [CanBeNull] UInt64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -5806,9 +5806,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this UInt64? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this UInt64? valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt64? valueBoundLower,
+															 [CanBeNull] UInt64? valueBoundLower,
 															 UInt64 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
@@ -5835,10 +5835,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this UInt64? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this UInt64? valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt64? valueBoundLower,
-															 UInt64? valueBoundUpper)
+															 [CanBeNull] UInt64? valueBoundLower,
+															 [CanBeNull] UInt64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -5896,7 +5896,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsBetweenExclusive(this UInt16 valueArgument,
 															 [NotNull] String nameArgument,
 															 UInt16 valueBoundLower,
-															 UInt16? valueBoundUpper)
+															 [CanBeNull] UInt16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -5924,7 +5924,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(this UInt16 valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt16? valueBoundLower,
+															 [CanBeNull] UInt16? valueBoundLower,
 															 UInt16 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
@@ -5953,8 +5953,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(this UInt16 valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt16? valueBoundLower,
-															 UInt16? valueBoundUpper)
+															 [CanBeNull] UInt16? valueBoundLower,
+															 [CanBeNull] UInt16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -5980,7 +5980,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this UInt16? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this UInt16? valueArgument,
 															 [NotNull] String nameArgument,
 															 UInt16 valueBoundLower,
 															 UInt16 valueBoundUpper)
@@ -6009,10 +6009,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this UInt16? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this UInt16? valueArgument,
 															 [NotNull] String nameArgument,
 															 UInt16 valueBoundLower,
-															 UInt16? valueBoundUpper)
+															 [CanBeNull] UInt16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -6038,9 +6038,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this UInt16? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this UInt16? valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt16? valueBoundLower,
+															 [CanBeNull] UInt16? valueBoundLower,
 															 UInt16 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
@@ -6067,10 +6067,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(this UInt16? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] this UInt16? valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt16? valueBoundLower,
-															 UInt16? valueBoundUpper)
+															 [CanBeNull] UInt16? valueBoundLower,
+															 [CanBeNull] UInt16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsBetweenExclusive(valueArgument,
 																				  nameArgument,
@@ -6124,7 +6124,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThan(this BigInteger valueArgument,
 														[NotNull] String nameArgument,
-														BigInteger? valueBoundLower)
+														[CanBeNull] BigInteger? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
 
@@ -6149,7 +6149,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(this BigInteger? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] this BigInteger? valueArgument,
 														[NotNull] String nameArgument,
 														BigInteger valueBoundLower)
 		{
@@ -6176,9 +6176,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(this BigInteger? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] this BigInteger? valueArgument,
 														[NotNull] String nameArgument,
-														BigInteger? valueBoundLower)
+														[CanBeNull] BigInteger? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
 
@@ -6231,7 +6231,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThan(this DateTime valueArgument,
 														[NotNull] String nameArgument,
-														DateTime? valueBoundLower)
+														[CanBeNull] DateTime? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThan(valueArgument,
 																			 nameArgument,
@@ -6253,7 +6253,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(this DateTime? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] this DateTime? valueArgument,
 														[NotNull] String nameArgument,
 														DateTime valueBoundLower)
 		{
@@ -6277,9 +6277,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(this DateTime? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] this DateTime? valueArgument,
 														[NotNull] String nameArgument,
-														DateTime? valueBoundLower)
+														[CanBeNull] DateTime? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThan(valueArgument,
 																			 nameArgument,
@@ -6327,7 +6327,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThan(this Byte valueArgument,
 														[NotNull] String nameArgument,
-														Byte? valueBoundLower)
+														[CanBeNull] Byte? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThan(valueArgument,
 																			 nameArgument,
@@ -6349,7 +6349,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(this Byte? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] this Byte? valueArgument,
 														[NotNull] String nameArgument,
 														Byte valueBoundLower)
 		{
@@ -6373,9 +6373,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(this Byte? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] this Byte? valueArgument,
 														[NotNull] String nameArgument,
-														Byte? valueBoundLower)
+														[CanBeNull] Byte? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThan(valueArgument,
 																			 nameArgument,
@@ -6423,7 +6423,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThan(this Decimal valueArgument,
 														[NotNull] String nameArgument,
-														Decimal? valueBoundLower)
+														[CanBeNull] Decimal? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThan(valueArgument,
 																			 nameArgument,
@@ -6445,7 +6445,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(this Decimal? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] this Decimal? valueArgument,
 														[NotNull] String nameArgument,
 														Decimal valueBoundLower)
 		{
@@ -6469,9 +6469,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(this Decimal? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] this Decimal? valueArgument,
 														[NotNull] String nameArgument,
-														Decimal? valueBoundLower)
+														[CanBeNull] Decimal? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThan(valueArgument,
 																			 nameArgument,
@@ -6519,7 +6519,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThan(this Double valueArgument,
 														[NotNull] String nameArgument,
-														Double? valueBoundLower)
+														[CanBeNull] Double? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThan(valueArgument,
 																			 nameArgument,
@@ -6541,7 +6541,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(this Double? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] this Double? valueArgument,
 														[NotNull] String nameArgument,
 														Double valueBoundLower)
 		{
@@ -6565,9 +6565,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(this Double? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] this Double? valueArgument,
 														[NotNull] String nameArgument,
-														Double? valueBoundLower)
+														[CanBeNull] Double? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThan(valueArgument,
 																			 nameArgument,
@@ -6615,7 +6615,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThan(this Single valueArgument,
 														[NotNull] String nameArgument,
-														Single? valueBoundLower)
+														[CanBeNull] Single? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThan(valueArgument,
 																			 nameArgument,
@@ -6637,7 +6637,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(this Single? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] this Single? valueArgument,
 														[NotNull] String nameArgument,
 														Single valueBoundLower)
 		{
@@ -6661,9 +6661,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(this Single? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] this Single? valueArgument,
 														[NotNull] String nameArgument,
-														Single? valueBoundLower)
+														[CanBeNull] Single? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThan(valueArgument,
 																			 nameArgument,
@@ -6711,7 +6711,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThan(this Int32 valueArgument,
 														[NotNull] String nameArgument,
-														Int32? valueBoundLower)
+														[CanBeNull] Int32? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThan(valueArgument,
 																			 nameArgument,
@@ -6733,7 +6733,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(this Int32? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] this Int32? valueArgument,
 														[NotNull] String nameArgument,
 														Int32 valueBoundLower)
 		{
@@ -6757,9 +6757,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(this Int32? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] this Int32? valueArgument,
 														[NotNull] String nameArgument,
-														Int32? valueBoundLower)
+														[CanBeNull] Int32? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThan(valueArgument,
 																			 nameArgument,
@@ -6807,7 +6807,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThan(this Int64 valueArgument,
 														[NotNull] String nameArgument,
-														Int64? valueBoundLower)
+														[CanBeNull] Int64? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThan(valueArgument,
 																			 nameArgument,
@@ -6829,7 +6829,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(this Int64? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] this Int64? valueArgument,
 														[NotNull] String nameArgument,
 														Int64 valueBoundLower)
 		{
@@ -6853,9 +6853,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(this Int64? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] this Int64? valueArgument,
 														[NotNull] String nameArgument,
-														Int64? valueBoundLower)
+														[CanBeNull] Int64? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThan(valueArgument,
 																			 nameArgument,
@@ -6903,7 +6903,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThan(this SByte valueArgument,
 														[NotNull] String nameArgument,
-														SByte? valueBoundLower)
+														[CanBeNull] SByte? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThan(valueArgument,
 																			 nameArgument,
@@ -6925,7 +6925,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(this SByte? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] this SByte? valueArgument,
 														[NotNull] String nameArgument,
 														SByte valueBoundLower)
 		{
@@ -6949,9 +6949,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(this SByte? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] this SByte? valueArgument,
 														[NotNull] String nameArgument,
-														SByte? valueBoundLower)
+														[CanBeNull] SByte? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThan(valueArgument,
 																			 nameArgument,
@@ -6999,7 +6999,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThan(this Int16 valueArgument,
 														[NotNull] String nameArgument,
-														Int16? valueBoundLower)
+														[CanBeNull] Int16? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThan(valueArgument,
 																			 nameArgument,
@@ -7021,7 +7021,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(this Int16? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] this Int16? valueArgument,
 														[NotNull] String nameArgument,
 														Int16 valueBoundLower)
 		{
@@ -7045,9 +7045,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(this Int16? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] this Int16? valueArgument,
 														[NotNull] String nameArgument,
-														Int16? valueBoundLower)
+														[CanBeNull] Int16? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThan(valueArgument,
 																			 nameArgument,
@@ -7095,7 +7095,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThan(this UInt32 valueArgument,
 														[NotNull] String nameArgument,
-														UInt32? valueBoundLower)
+														[CanBeNull] UInt32? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThan(valueArgument,
 																			 nameArgument,
@@ -7117,7 +7117,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(this UInt32? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] this UInt32? valueArgument,
 														[NotNull] String nameArgument,
 														UInt32 valueBoundLower)
 		{
@@ -7141,9 +7141,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(this UInt32? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] this UInt32? valueArgument,
 														[NotNull] String nameArgument,
-														UInt32? valueBoundLower)
+														[CanBeNull] UInt32? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThan(valueArgument,
 																			 nameArgument,
@@ -7191,7 +7191,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThan(this UInt64 valueArgument,
 														[NotNull] String nameArgument,
-														UInt64? valueBoundLower)
+														[CanBeNull] UInt64? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThan(valueArgument,
 																			 nameArgument,
@@ -7213,7 +7213,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(this UInt64? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] this UInt64? valueArgument,
 														[NotNull] String nameArgument,
 														UInt64 valueBoundLower)
 		{
@@ -7237,9 +7237,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(this UInt64? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] this UInt64? valueArgument,
 														[NotNull] String nameArgument,
-														UInt64? valueBoundLower)
+														[CanBeNull] UInt64? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThan(valueArgument,
 																			 nameArgument,
@@ -7287,7 +7287,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThan(this UInt16 valueArgument,
 														[NotNull] String nameArgument,
-														UInt16? valueBoundLower)
+														[CanBeNull] UInt16? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThan(valueArgument,
 																			 nameArgument,
@@ -7309,7 +7309,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(this UInt16? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] this UInt16? valueArgument,
 														[NotNull] String nameArgument,
 														UInt16 valueBoundLower)
 		{
@@ -7333,9 +7333,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(this UInt16? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] this UInt16? valueArgument,
 														[NotNull] String nameArgument,
-														UInt16? valueBoundLower)
+														[CanBeNull] UInt16? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThan(valueArgument,
 																			 nameArgument,
@@ -7388,7 +7388,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThanOrEqual(this BigInteger valueArgument,
 															   [NotNull] String nameArgument,
-															   BigInteger? valueBoundLower)
+															   [CanBeNull] BigInteger? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
 
@@ -7413,7 +7413,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(this BigInteger? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] this BigInteger? valueArgument,
 															   [NotNull] String nameArgument,
 															   BigInteger valueBoundLower)
 		{
@@ -7440,9 +7440,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(this BigInteger? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] this BigInteger? valueArgument,
 															   [NotNull] String nameArgument,
-															   BigInteger? valueBoundLower)
+															   [CanBeNull] BigInteger? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
 
@@ -7495,7 +7495,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThanOrEqual(this DateTime valueArgument,
 															   [NotNull] String nameArgument,
-															   DateTime? valueBoundLower)
+															   [CanBeNull] DateTime? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThanOrEqual(valueArgument,
 																					nameArgument,
@@ -7517,7 +7517,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(this DateTime? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] this DateTime? valueArgument,
 															   [NotNull] String nameArgument,
 															   DateTime valueBoundLower)
 		{
@@ -7541,9 +7541,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(this DateTime? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] this DateTime? valueArgument,
 															   [NotNull] String nameArgument,
-															   DateTime? valueBoundLower)
+															   [CanBeNull] DateTime? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThanOrEqual(valueArgument,
 																					nameArgument,
@@ -7591,7 +7591,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThanOrEqual(this Byte valueArgument,
 															   [NotNull] String nameArgument,
-															   Byte? valueBoundLower)
+															   [CanBeNull] Byte? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThanOrEqual(valueArgument,
 																					nameArgument,
@@ -7613,7 +7613,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(this Byte? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] this Byte? valueArgument,
 															   [NotNull] String nameArgument,
 															   Byte valueBoundLower)
 		{
@@ -7637,9 +7637,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(this Byte? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] this Byte? valueArgument,
 															   [NotNull] String nameArgument,
-															   Byte? valueBoundLower)
+															   [CanBeNull] Byte? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThanOrEqual(valueArgument,
 																					nameArgument,
@@ -7687,7 +7687,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThanOrEqual(this Decimal valueArgument,
 															   [NotNull] String nameArgument,
-															   Decimal? valueBoundLower)
+															   [CanBeNull] Decimal? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThanOrEqual(valueArgument,
 																					nameArgument,
@@ -7709,7 +7709,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(this Decimal? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] this Decimal? valueArgument,
 															   [NotNull] String nameArgument,
 															   Decimal valueBoundLower)
 		{
@@ -7733,9 +7733,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(this Decimal? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] this Decimal? valueArgument,
 															   [NotNull] String nameArgument,
-															   Decimal? valueBoundLower)
+															   [CanBeNull] Decimal? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThanOrEqual(valueArgument,
 																					nameArgument,
@@ -7783,7 +7783,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThanOrEqual(this Double valueArgument,
 															   [NotNull] String nameArgument,
-															   Double? valueBoundLower)
+															   [CanBeNull] Double? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThanOrEqual(valueArgument,
 																					nameArgument,
@@ -7805,7 +7805,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(this Double? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] this Double? valueArgument,
 															   [NotNull] String nameArgument,
 															   Double valueBoundLower)
 		{
@@ -7829,9 +7829,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(this Double? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] this Double? valueArgument,
 															   [NotNull] String nameArgument,
-															   Double? valueBoundLower)
+															   [CanBeNull] Double? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThanOrEqual(valueArgument,
 																					nameArgument,
@@ -7879,7 +7879,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThanOrEqual(this Single valueArgument,
 															   [NotNull] String nameArgument,
-															   Single? valueBoundLower)
+															   [CanBeNull] Single? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThanOrEqual(valueArgument,
 																					nameArgument,
@@ -7901,7 +7901,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(this Single? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] this Single? valueArgument,
 															   [NotNull] String nameArgument,
 															   Single valueBoundLower)
 		{
@@ -7925,9 +7925,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(this Single? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] this Single? valueArgument,
 															   [NotNull] String nameArgument,
-															   Single? valueBoundLower)
+															   [CanBeNull] Single? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThanOrEqual(valueArgument,
 																					nameArgument,
@@ -7975,7 +7975,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThanOrEqual(this Int32 valueArgument,
 															   [NotNull] String nameArgument,
-															   Int32? valueBoundLower)
+															   [CanBeNull] Int32? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThanOrEqual(valueArgument,
 																					nameArgument,
@@ -7997,7 +7997,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(this Int32? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] this Int32? valueArgument,
 															   [NotNull] String nameArgument,
 															   Int32 valueBoundLower)
 		{
@@ -8021,9 +8021,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(this Int32? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] this Int32? valueArgument,
 															   [NotNull] String nameArgument,
-															   Int32? valueBoundLower)
+															   [CanBeNull] Int32? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThanOrEqual(valueArgument,
 																					nameArgument,
@@ -8071,7 +8071,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThanOrEqual(this Int64 valueArgument,
 															   [NotNull] String nameArgument,
-															   Int64? valueBoundLower)
+															   [CanBeNull] Int64? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThanOrEqual(valueArgument,
 																					nameArgument,
@@ -8093,7 +8093,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(this Int64? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] this Int64? valueArgument,
 															   [NotNull] String nameArgument,
 															   Int64 valueBoundLower)
 		{
@@ -8117,9 +8117,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(this Int64? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] this Int64? valueArgument,
 															   [NotNull] String nameArgument,
-															   Int64? valueBoundLower)
+															   [CanBeNull] Int64? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThanOrEqual(valueArgument,
 																					nameArgument,
@@ -8167,7 +8167,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThanOrEqual(this SByte valueArgument,
 															   [NotNull] String nameArgument,
-															   SByte? valueBoundLower)
+															   [CanBeNull] SByte? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThanOrEqual(valueArgument,
 																					nameArgument,
@@ -8189,7 +8189,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(this SByte? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] this SByte? valueArgument,
 															   [NotNull] String nameArgument,
 															   SByte valueBoundLower)
 		{
@@ -8213,9 +8213,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(this SByte? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] this SByte? valueArgument,
 															   [NotNull] String nameArgument,
-															   SByte? valueBoundLower)
+															   [CanBeNull] SByte? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThanOrEqual(valueArgument,
 																					nameArgument,
@@ -8263,7 +8263,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThanOrEqual(this Int16 valueArgument,
 															   [NotNull] String nameArgument,
-															   Int16? valueBoundLower)
+															   [CanBeNull] Int16? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThanOrEqual(valueArgument,
 																					nameArgument,
@@ -8285,7 +8285,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(this Int16? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] this Int16? valueArgument,
 															   [NotNull] String nameArgument,
 															   Int16 valueBoundLower)
 		{
@@ -8309,9 +8309,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(this Int16? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] this Int16? valueArgument,
 															   [NotNull] String nameArgument,
-															   Int16? valueBoundLower)
+															   [CanBeNull] Int16? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThanOrEqual(valueArgument,
 																					nameArgument,
@@ -8359,7 +8359,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThanOrEqual(this UInt32 valueArgument,
 															   [NotNull] String nameArgument,
-															   UInt32? valueBoundLower)
+															   [CanBeNull] UInt32? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThanOrEqual(valueArgument,
 																					nameArgument,
@@ -8381,7 +8381,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(this UInt32? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] this UInt32? valueArgument,
 															   [NotNull] String nameArgument,
 															   UInt32 valueBoundLower)
 		{
@@ -8405,9 +8405,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(this UInt32? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] this UInt32? valueArgument,
 															   [NotNull] String nameArgument,
-															   UInt32? valueBoundLower)
+															   [CanBeNull] UInt32? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThanOrEqual(valueArgument,
 																					nameArgument,
@@ -8455,7 +8455,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThanOrEqual(this UInt64 valueArgument,
 															   [NotNull] String nameArgument,
-															   UInt64? valueBoundLower)
+															   [CanBeNull] UInt64? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThanOrEqual(valueArgument,
 																					nameArgument,
@@ -8477,7 +8477,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(this UInt64? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] this UInt64? valueArgument,
 															   [NotNull] String nameArgument,
 															   UInt64 valueBoundLower)
 		{
@@ -8501,9 +8501,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(this UInt64? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] this UInt64? valueArgument,
 															   [NotNull] String nameArgument,
-															   UInt64? valueBoundLower)
+															   [CanBeNull] UInt64? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThanOrEqual(valueArgument,
 																					nameArgument,
@@ -8551,7 +8551,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThanOrEqual(this UInt16 valueArgument,
 															   [NotNull] String nameArgument,
-															   UInt16? valueBoundLower)
+															   [CanBeNull] UInt16? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThanOrEqual(valueArgument,
 																					nameArgument,
@@ -8573,7 +8573,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(this UInt16? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] this UInt16? valueArgument,
 															   [NotNull] String nameArgument,
 															   UInt16 valueBoundLower)
 		{
@@ -8597,9 +8597,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(this UInt16? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] this UInt16? valueArgument,
 															   [NotNull] String nameArgument,
-															   UInt16? valueBoundLower)
+															   [CanBeNull] UInt16? valueBoundLower)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsGreaterThanOrEqual(valueArgument,
 																					nameArgument,
@@ -8652,7 +8652,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThan(this BigInteger valueArgument,
 													 [NotNull] String nameArgument,
-													 BigInteger? valueBoundUpper)
+													 [CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
 
@@ -8677,7 +8677,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(this BigInteger? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] this BigInteger? valueArgument,
 													 [NotNull] String nameArgument,
 													 BigInteger valueBoundUpper)
 		{
@@ -8704,9 +8704,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(this BigInteger? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] this BigInteger? valueArgument,
 													 [NotNull] String nameArgument,
-													 BigInteger? valueBoundUpper)
+													 [CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
 
@@ -8759,7 +8759,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThan(this DateTime valueArgument,
 													 [NotNull] String nameArgument,
-													 DateTime? valueBoundUpper)
+													 [CanBeNull] DateTime? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThan(valueArgument,
 																		  nameArgument,
@@ -8781,7 +8781,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(this DateTime? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] this DateTime? valueArgument,
 													 [NotNull] String nameArgument,
 													 DateTime valueBoundUpper)
 		{
@@ -8805,9 +8805,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(this DateTime? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] this DateTime? valueArgument,
 													 [NotNull] String nameArgument,
-													 DateTime? valueBoundUpper)
+													 [CanBeNull] DateTime? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThan(valueArgument,
 																		  nameArgument,
@@ -8855,7 +8855,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThan(this Byte valueArgument,
 													 [NotNull] String nameArgument,
-													 Byte? valueBoundUpper)
+													 [CanBeNull] Byte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThan(valueArgument,
 																		  nameArgument,
@@ -8877,7 +8877,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(this Byte? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] this Byte? valueArgument,
 													 [NotNull] String nameArgument,
 													 Byte valueBoundUpper)
 		{
@@ -8901,9 +8901,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(this Byte? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] this Byte? valueArgument,
 													 [NotNull] String nameArgument,
-													 Byte? valueBoundUpper)
+													 [CanBeNull] Byte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThan(valueArgument,
 																		  nameArgument,
@@ -8951,7 +8951,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThan(this Decimal valueArgument,
 													 [NotNull] String nameArgument,
-													 Decimal? valueBoundUpper)
+													 [CanBeNull] Decimal? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThan(valueArgument,
 																		  nameArgument,
@@ -8973,7 +8973,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(this Decimal? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] this Decimal? valueArgument,
 													 [NotNull] String nameArgument,
 													 Decimal valueBoundUpper)
 		{
@@ -8997,9 +8997,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(this Decimal? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] this Decimal? valueArgument,
 													 [NotNull] String nameArgument,
-													 Decimal? valueBoundUpper)
+													 [CanBeNull] Decimal? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThan(valueArgument,
 																		  nameArgument,
@@ -9047,7 +9047,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThan(this Double valueArgument,
 													 [NotNull] String nameArgument,
-													 Double? valueBoundUpper)
+													 [CanBeNull] Double? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThan(valueArgument,
 																		  nameArgument,
@@ -9069,7 +9069,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(this Double? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] this Double? valueArgument,
 													 [NotNull] String nameArgument,
 													 Double valueBoundUpper)
 		{
@@ -9093,9 +9093,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(this Double? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] this Double? valueArgument,
 													 [NotNull] String nameArgument,
-													 Double? valueBoundUpper)
+													 [CanBeNull] Double? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThan(valueArgument,
 																		  nameArgument,
@@ -9143,7 +9143,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThan(this Single valueArgument,
 													 [NotNull] String nameArgument,
-													 Single? valueBoundUpper)
+													 [CanBeNull] Single? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThan(valueArgument,
 																		  nameArgument,
@@ -9165,7 +9165,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(this Single? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] this Single? valueArgument,
 													 [NotNull] String nameArgument,
 													 Single valueBoundUpper)
 		{
@@ -9189,9 +9189,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(this Single? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] this Single? valueArgument,
 													 [NotNull] String nameArgument,
-													 Single? valueBoundUpper)
+													 [CanBeNull] Single? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThan(valueArgument,
 																		  nameArgument,
@@ -9239,7 +9239,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThan(this Int32 valueArgument,
 													 [NotNull] String nameArgument,
-													 Int32? valueBoundUpper)
+													 [CanBeNull] Int32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThan(valueArgument,
 																		  nameArgument,
@@ -9261,7 +9261,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(this Int32? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] this Int32? valueArgument,
 													 [NotNull] String nameArgument,
 													 Int32 valueBoundUpper)
 		{
@@ -9285,9 +9285,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(this Int32? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] this Int32? valueArgument,
 													 [NotNull] String nameArgument,
-													 Int32? valueBoundUpper)
+													 [CanBeNull] Int32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThan(valueArgument,
 																		  nameArgument,
@@ -9335,7 +9335,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThan(this Int64 valueArgument,
 													 [NotNull] String nameArgument,
-													 Int64? valueBoundUpper)
+													 [CanBeNull] Int64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThan(valueArgument,
 																		  nameArgument,
@@ -9357,7 +9357,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(this Int64? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] this Int64? valueArgument,
 													 [NotNull] String nameArgument,
 													 Int64 valueBoundUpper)
 		{
@@ -9381,9 +9381,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(this Int64? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] this Int64? valueArgument,
 													 [NotNull] String nameArgument,
-													 Int64? valueBoundUpper)
+													 [CanBeNull] Int64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThan(valueArgument,
 																		  nameArgument,
@@ -9431,7 +9431,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThan(this SByte valueArgument,
 													 [NotNull] String nameArgument,
-													 SByte? valueBoundUpper)
+													 [CanBeNull] SByte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThan(valueArgument,
 																		  nameArgument,
@@ -9453,7 +9453,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(this SByte? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] this SByte? valueArgument,
 													 [NotNull] String nameArgument,
 													 SByte valueBoundUpper)
 		{
@@ -9477,9 +9477,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(this SByte? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] this SByte? valueArgument,
 													 [NotNull] String nameArgument,
-													 SByte? valueBoundUpper)
+													 [CanBeNull] SByte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThan(valueArgument,
 																		  nameArgument,
@@ -9527,7 +9527,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThan(this Int16 valueArgument,
 													 [NotNull] String nameArgument,
-													 Int16? valueBoundUpper)
+													 [CanBeNull] Int16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThan(valueArgument,
 																		  nameArgument,
@@ -9549,7 +9549,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(this Int16? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] this Int16? valueArgument,
 													 [NotNull] String nameArgument,
 													 Int16 valueBoundUpper)
 		{
@@ -9573,9 +9573,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(this Int16? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] this Int16? valueArgument,
 													 [NotNull] String nameArgument,
-													 Int16? valueBoundUpper)
+													 [CanBeNull] Int16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThan(valueArgument,
 																		  nameArgument,
@@ -9623,7 +9623,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThan(this UInt32 valueArgument,
 													 [NotNull] String nameArgument,
-													 UInt32? valueBoundUpper)
+													 [CanBeNull] UInt32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThan(valueArgument,
 																		  nameArgument,
@@ -9645,7 +9645,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(this UInt32? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] this UInt32? valueArgument,
 													 [NotNull] String nameArgument,
 													 UInt32 valueBoundUpper)
 		{
@@ -9669,9 +9669,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(this UInt32? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] this UInt32? valueArgument,
 													 [NotNull] String nameArgument,
-													 UInt32? valueBoundUpper)
+													 [CanBeNull] UInt32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThan(valueArgument,
 																		  nameArgument,
@@ -9719,7 +9719,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThan(this UInt64 valueArgument,
 													 [NotNull] String nameArgument,
-													 UInt64? valueBoundUpper)
+													 [CanBeNull] UInt64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThan(valueArgument,
 																		  nameArgument,
@@ -9741,7 +9741,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(this UInt64? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] this UInt64? valueArgument,
 													 [NotNull] String nameArgument,
 													 UInt64 valueBoundUpper)
 		{
@@ -9765,9 +9765,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(this UInt64? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] this UInt64? valueArgument,
 													 [NotNull] String nameArgument,
-													 UInt64? valueBoundUpper)
+													 [CanBeNull] UInt64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThan(valueArgument,
 																		  nameArgument,
@@ -9815,7 +9815,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThan(this UInt16 valueArgument,
 													 [NotNull] String nameArgument,
-													 UInt16? valueBoundUpper)
+													 [CanBeNull] UInt16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThan(valueArgument,
 																		  nameArgument,
@@ -9837,7 +9837,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(this UInt16? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] this UInt16? valueArgument,
 													 [NotNull] String nameArgument,
 													 UInt16 valueBoundUpper)
 		{
@@ -9861,9 +9861,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(this UInt16? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] this UInt16? valueArgument,
 													 [NotNull] String nameArgument,
-													 UInt16? valueBoundUpper)
+													 [CanBeNull] UInt16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThan(valueArgument,
 																		  nameArgument,
@@ -9916,7 +9916,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThanOrEqual(this BigInteger valueArgument,
 															[NotNull] String nameArgument,
-															BigInteger? valueBoundUpper)
+															[CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
 
@@ -9941,7 +9941,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(this BigInteger? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] this BigInteger? valueArgument,
 															[NotNull] String nameArgument,
 															BigInteger valueBoundUpper)
 		{
@@ -9968,9 +9968,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(this BigInteger? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] this BigInteger? valueArgument,
 															[NotNull] String nameArgument,
-															BigInteger? valueBoundUpper)
+															[CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
 
@@ -10023,7 +10023,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThanOrEqual(this DateTime valueArgument,
 															[NotNull] String nameArgument,
-															DateTime? valueBoundUpper)
+															[CanBeNull] DateTime? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThanOrEqual(valueArgument,
 																				 nameArgument,
@@ -10045,7 +10045,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(this DateTime? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] this DateTime? valueArgument,
 															[NotNull] String nameArgument,
 															DateTime valueBoundUpper)
 		{
@@ -10069,9 +10069,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(this DateTime? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] this DateTime? valueArgument,
 															[NotNull] String nameArgument,
-															DateTime? valueBoundUpper)
+															[CanBeNull] DateTime? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThanOrEqual(valueArgument,
 																				 nameArgument,
@@ -10119,7 +10119,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThanOrEqual(this Byte valueArgument,
 															[NotNull] String nameArgument,
-															Byte? valueBoundUpper)
+															[CanBeNull] Byte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThanOrEqual(valueArgument,
 																				 nameArgument,
@@ -10141,7 +10141,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(this Byte? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] this Byte? valueArgument,
 															[NotNull] String nameArgument,
 															Byte valueBoundUpper)
 		{
@@ -10165,9 +10165,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(this Byte? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] this Byte? valueArgument,
 															[NotNull] String nameArgument,
-															Byte? valueBoundUpper)
+															[CanBeNull] Byte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThanOrEqual(valueArgument,
 																				 nameArgument,
@@ -10215,7 +10215,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThanOrEqual(this Decimal valueArgument,
 															[NotNull] String nameArgument,
-															Decimal? valueBoundUpper)
+															[CanBeNull] Decimal? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThanOrEqual(valueArgument,
 																				 nameArgument,
@@ -10237,7 +10237,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(this Decimal? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] this Decimal? valueArgument,
 															[NotNull] String nameArgument,
 															Decimal valueBoundUpper)
 		{
@@ -10261,9 +10261,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(this Decimal? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] this Decimal? valueArgument,
 															[NotNull] String nameArgument,
-															Decimal? valueBoundUpper)
+															[CanBeNull] Decimal? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThanOrEqual(valueArgument,
 																				 nameArgument,
@@ -10311,7 +10311,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThanOrEqual(this Double valueArgument,
 															[NotNull] String nameArgument,
-															Double? valueBoundUpper)
+															[CanBeNull] Double? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThanOrEqual(valueArgument,
 																				 nameArgument,
@@ -10333,7 +10333,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(this Double? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] this Double? valueArgument,
 															[NotNull] String nameArgument,
 															Double valueBoundUpper)
 		{
@@ -10357,9 +10357,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(this Double? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] this Double? valueArgument,
 															[NotNull] String nameArgument,
-															Double? valueBoundUpper)
+															[CanBeNull] Double? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThanOrEqual(valueArgument,
 																				 nameArgument,
@@ -10407,7 +10407,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThanOrEqual(this Single valueArgument,
 															[NotNull] String nameArgument,
-															Single? valueBoundUpper)
+															[CanBeNull] Single? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThanOrEqual(valueArgument,
 																				 nameArgument,
@@ -10429,7 +10429,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(this Single? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] this Single? valueArgument,
 															[NotNull] String nameArgument,
 															Single valueBoundUpper)
 		{
@@ -10453,9 +10453,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(this Single? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] this Single? valueArgument,
 															[NotNull] String nameArgument,
-															Single? valueBoundUpper)
+															[CanBeNull] Single? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThanOrEqual(valueArgument,
 																				 nameArgument,
@@ -10503,7 +10503,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThanOrEqual(this Int32 valueArgument,
 															[NotNull] String nameArgument,
-															Int32? valueBoundUpper)
+															[CanBeNull] Int32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThanOrEqual(valueArgument,
 																				 nameArgument,
@@ -10525,7 +10525,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(this Int32? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] this Int32? valueArgument,
 															[NotNull] String nameArgument,
 															Int32 valueBoundUpper)
 		{
@@ -10549,9 +10549,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(this Int32? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] this Int32? valueArgument,
 															[NotNull] String nameArgument,
-															Int32? valueBoundUpper)
+															[CanBeNull] Int32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThanOrEqual(valueArgument,
 																				 nameArgument,
@@ -10599,7 +10599,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThanOrEqual(this Int64 valueArgument,
 															[NotNull] String nameArgument,
-															Int64? valueBoundUpper)
+															[CanBeNull] Int64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThanOrEqual(valueArgument,
 																				 nameArgument,
@@ -10621,7 +10621,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(this Int64? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] this Int64? valueArgument,
 															[NotNull] String nameArgument,
 															Int64 valueBoundUpper)
 		{
@@ -10645,9 +10645,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(this Int64? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] this Int64? valueArgument,
 															[NotNull] String nameArgument,
-															Int64? valueBoundUpper)
+															[CanBeNull] Int64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThanOrEqual(valueArgument,
 																				 nameArgument,
@@ -10695,7 +10695,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThanOrEqual(this SByte valueArgument,
 															[NotNull] String nameArgument,
-															SByte? valueBoundUpper)
+															[CanBeNull] SByte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThanOrEqual(valueArgument,
 																				 nameArgument,
@@ -10717,7 +10717,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(this SByte? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] this SByte? valueArgument,
 															[NotNull] String nameArgument,
 															SByte valueBoundUpper)
 		{
@@ -10741,9 +10741,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(this SByte? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] this SByte? valueArgument,
 															[NotNull] String nameArgument,
-															SByte? valueBoundUpper)
+															[CanBeNull] SByte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThanOrEqual(valueArgument,
 																				 nameArgument,
@@ -10791,7 +10791,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThanOrEqual(this Int16 valueArgument,
 															[NotNull] String nameArgument,
-															Int16? valueBoundUpper)
+															[CanBeNull] Int16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThanOrEqual(valueArgument,
 																				 nameArgument,
@@ -10813,7 +10813,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(this Int16? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] this Int16? valueArgument,
 															[NotNull] String nameArgument,
 															Int16 valueBoundUpper)
 		{
@@ -10837,9 +10837,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(this Int16? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] this Int16? valueArgument,
 															[NotNull] String nameArgument,
-															Int16? valueBoundUpper)
+															[CanBeNull] Int16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThanOrEqual(valueArgument,
 																				 nameArgument,
@@ -10887,7 +10887,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThanOrEqual(this UInt32 valueArgument,
 															[NotNull] String nameArgument,
-															UInt32? valueBoundUpper)
+															[CanBeNull] UInt32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThanOrEqual(valueArgument,
 																				 nameArgument,
@@ -10909,7 +10909,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(this UInt32? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] this UInt32? valueArgument,
 															[NotNull] String nameArgument,
 															UInt32 valueBoundUpper)
 		{
@@ -10933,9 +10933,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(this UInt32? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] this UInt32? valueArgument,
 															[NotNull] String nameArgument,
-															UInt32? valueBoundUpper)
+															[CanBeNull] UInt32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThanOrEqual(valueArgument,
 																				 nameArgument,
@@ -10983,7 +10983,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThanOrEqual(this UInt64 valueArgument,
 															[NotNull] String nameArgument,
-															UInt64? valueBoundUpper)
+															[CanBeNull] UInt64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThanOrEqual(valueArgument,
 																				 nameArgument,
@@ -11005,7 +11005,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(this UInt64? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] this UInt64? valueArgument,
 															[NotNull] String nameArgument,
 															UInt64 valueBoundUpper)
 		{
@@ -11029,9 +11029,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(this UInt64? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] this UInt64? valueArgument,
 															[NotNull] String nameArgument,
-															UInt64? valueBoundUpper)
+															[CanBeNull] UInt64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThanOrEqual(valueArgument,
 																				 nameArgument,
@@ -11079,7 +11079,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThanOrEqual(this UInt16 valueArgument,
 															[NotNull] String nameArgument,
-															UInt16? valueBoundUpper)
+															[CanBeNull] UInt16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThanOrEqual(valueArgument,
 																				 nameArgument,
@@ -11101,7 +11101,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(this UInt16? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] this UInt16? valueArgument,
 															[NotNull] String nameArgument,
 															UInt16 valueBoundUpper)
 		{
@@ -11125,9 +11125,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(this UInt16? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] this UInt16? valueArgument,
 															[NotNull] String nameArgument,
-															UInt16? valueBoundUpper)
+															[CanBeNull] UInt16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsLessThanOrEqual(valueArgument,
 																				 nameArgument,
@@ -11186,7 +11186,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsOutside(this BigInteger valueArgument,
 													[NotNull] String nameArgument,
 													BigInteger valueBoundLower,
-													BigInteger? valueBoundUpper)
+													[CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
 
@@ -11214,7 +11214,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(this BigInteger valueArgument,
 													[NotNull] String nameArgument,
-													BigInteger? valueBoundLower,
+													[CanBeNull] BigInteger? valueBoundLower,
 													BigInteger valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
@@ -11243,8 +11243,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(this BigInteger valueArgument,
 													[NotNull] String nameArgument,
-													BigInteger? valueBoundLower,
-													BigInteger? valueBoundUpper)
+													[CanBeNull] BigInteger? valueBoundLower,
+													[CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
 
@@ -11270,7 +11270,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this BigInteger? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this BigInteger? valueArgument,
 													[NotNull] String nameArgument,
 													BigInteger valueBoundLower,
 													BigInteger valueBoundUpper)
@@ -11299,10 +11299,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this BigInteger? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this BigInteger? valueArgument,
 													[NotNull] String nameArgument,
 													BigInteger valueBoundLower,
-													BigInteger? valueBoundUpper)
+													[CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
 
@@ -11328,9 +11328,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this BigInteger? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this BigInteger? valueArgument,
 													[NotNull] String nameArgument,
-													BigInteger? valueBoundLower,
+													[CanBeNull] BigInteger? valueBoundLower,
 													BigInteger valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
@@ -11357,10 +11357,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this BigInteger? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this BigInteger? valueArgument,
 													[NotNull] String nameArgument,
-													BigInteger? valueBoundLower,
-													BigInteger? valueBoundUpper)
+													[CanBeNull] BigInteger? valueBoundLower,
+													[CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
 
@@ -11420,7 +11420,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsOutside(this DateTime valueArgument,
 													[NotNull] String nameArgument,
 													DateTime valueBoundLower,
-													DateTime? valueBoundUpper)
+													[CanBeNull] DateTime? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -11448,7 +11448,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(this DateTime valueArgument,
 													[NotNull] String nameArgument,
-													DateTime? valueBoundLower,
+													[CanBeNull] DateTime? valueBoundLower,
 													DateTime valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
@@ -11477,8 +11477,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(this DateTime valueArgument,
 													[NotNull] String nameArgument,
-													DateTime? valueBoundLower,
-													DateTime? valueBoundUpper)
+													[CanBeNull] DateTime? valueBoundLower,
+													[CanBeNull] DateTime? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -11504,7 +11504,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this DateTime? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this DateTime? valueArgument,
 													[NotNull] String nameArgument,
 													DateTime valueBoundLower,
 													DateTime valueBoundUpper)
@@ -11533,10 +11533,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this DateTime? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this DateTime? valueArgument,
 													[NotNull] String nameArgument,
 													DateTime valueBoundLower,
-													DateTime? valueBoundUpper)
+													[CanBeNull] DateTime? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -11562,9 +11562,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this DateTime? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this DateTime? valueArgument,
 													[NotNull] String nameArgument,
-													DateTime? valueBoundLower,
+													[CanBeNull] DateTime? valueBoundLower,
 													DateTime valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
@@ -11591,10 +11591,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this DateTime? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this DateTime? valueArgument,
 													[NotNull] String nameArgument,
-													DateTime? valueBoundLower,
-													DateTime? valueBoundUpper)
+													[CanBeNull] DateTime? valueBoundLower,
+													[CanBeNull] DateTime? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -11652,7 +11652,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsOutside(this Byte valueArgument,
 													[NotNull] String nameArgument,
 													Byte valueBoundLower,
-													Byte? valueBoundUpper)
+													[CanBeNull] Byte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -11680,7 +11680,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(this Byte valueArgument,
 													[NotNull] String nameArgument,
-													Byte? valueBoundLower,
+													[CanBeNull] Byte? valueBoundLower,
 													Byte valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
@@ -11709,8 +11709,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(this Byte valueArgument,
 													[NotNull] String nameArgument,
-													Byte? valueBoundLower,
-													Byte? valueBoundUpper)
+													[CanBeNull] Byte? valueBoundLower,
+													[CanBeNull] Byte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -11736,7 +11736,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this Byte? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this Byte? valueArgument,
 													[NotNull] String nameArgument,
 													Byte valueBoundLower,
 													Byte valueBoundUpper)
@@ -11765,10 +11765,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this Byte? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this Byte? valueArgument,
 													[NotNull] String nameArgument,
 													Byte valueBoundLower,
-													Byte? valueBoundUpper)
+													[CanBeNull] Byte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -11794,9 +11794,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this Byte? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this Byte? valueArgument,
 													[NotNull] String nameArgument,
-													Byte? valueBoundLower,
+													[CanBeNull] Byte? valueBoundLower,
 													Byte valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
@@ -11823,10 +11823,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this Byte? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this Byte? valueArgument,
 													[NotNull] String nameArgument,
-													Byte? valueBoundLower,
-													Byte? valueBoundUpper)
+													[CanBeNull] Byte? valueBoundLower,
+													[CanBeNull] Byte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -11884,7 +11884,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsOutside(this Decimal valueArgument,
 													[NotNull] String nameArgument,
 													Decimal valueBoundLower,
-													Decimal? valueBoundUpper)
+													[CanBeNull] Decimal? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -11912,7 +11912,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(this Decimal valueArgument,
 													[NotNull] String nameArgument,
-													Decimal? valueBoundLower,
+													[CanBeNull] Decimal? valueBoundLower,
 													Decimal valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
@@ -11941,8 +11941,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(this Decimal valueArgument,
 													[NotNull] String nameArgument,
-													Decimal? valueBoundLower,
-													Decimal? valueBoundUpper)
+													[CanBeNull] Decimal? valueBoundLower,
+													[CanBeNull] Decimal? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -11968,7 +11968,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this Decimal? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this Decimal? valueArgument,
 													[NotNull] String nameArgument,
 													Decimal valueBoundLower,
 													Decimal valueBoundUpper)
@@ -11997,10 +11997,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this Decimal? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this Decimal? valueArgument,
 													[NotNull] String nameArgument,
 													Decimal valueBoundLower,
-													Decimal? valueBoundUpper)
+													[CanBeNull] Decimal? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -12026,9 +12026,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this Decimal? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this Decimal? valueArgument,
 													[NotNull] String nameArgument,
-													Decimal? valueBoundLower,
+													[CanBeNull] Decimal? valueBoundLower,
 													Decimal valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
@@ -12055,10 +12055,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this Decimal? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this Decimal? valueArgument,
 													[NotNull] String nameArgument,
-													Decimal? valueBoundLower,
-													Decimal? valueBoundUpper)
+													[CanBeNull] Decimal? valueBoundLower,
+													[CanBeNull] Decimal? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -12116,7 +12116,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsOutside(this Double valueArgument,
 													[NotNull] String nameArgument,
 													Double valueBoundLower,
-													Double? valueBoundUpper)
+													[CanBeNull] Double? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -12144,7 +12144,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(this Double valueArgument,
 													[NotNull] String nameArgument,
-													Double? valueBoundLower,
+													[CanBeNull] Double? valueBoundLower,
 													Double valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
@@ -12173,8 +12173,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(this Double valueArgument,
 													[NotNull] String nameArgument,
-													Double? valueBoundLower,
-													Double? valueBoundUpper)
+													[CanBeNull] Double? valueBoundLower,
+													[CanBeNull] Double? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -12200,7 +12200,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this Double? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this Double? valueArgument,
 													[NotNull] String nameArgument,
 													Double valueBoundLower,
 													Double valueBoundUpper)
@@ -12229,10 +12229,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this Double? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this Double? valueArgument,
 													[NotNull] String nameArgument,
 													Double valueBoundLower,
-													Double? valueBoundUpper)
+													[CanBeNull] Double? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -12258,9 +12258,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this Double? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this Double? valueArgument,
 													[NotNull] String nameArgument,
-													Double? valueBoundLower,
+													[CanBeNull] Double? valueBoundLower,
 													Double valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
@@ -12287,10 +12287,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this Double? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this Double? valueArgument,
 													[NotNull] String nameArgument,
-													Double? valueBoundLower,
-													Double? valueBoundUpper)
+													[CanBeNull] Double? valueBoundLower,
+													[CanBeNull] Double? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -12348,7 +12348,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsOutside(this Single valueArgument,
 													[NotNull] String nameArgument,
 													Single valueBoundLower,
-													Single? valueBoundUpper)
+													[CanBeNull] Single? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -12376,7 +12376,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(this Single valueArgument,
 													[NotNull] String nameArgument,
-													Single? valueBoundLower,
+													[CanBeNull] Single? valueBoundLower,
 													Single valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
@@ -12405,8 +12405,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(this Single valueArgument,
 													[NotNull] String nameArgument,
-													Single? valueBoundLower,
-													Single? valueBoundUpper)
+													[CanBeNull] Single? valueBoundLower,
+													[CanBeNull] Single? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -12432,7 +12432,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this Single? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this Single? valueArgument,
 													[NotNull] String nameArgument,
 													Single valueBoundLower,
 													Single valueBoundUpper)
@@ -12461,10 +12461,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this Single? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this Single? valueArgument,
 													[NotNull] String nameArgument,
 													Single valueBoundLower,
-													Single? valueBoundUpper)
+													[CanBeNull] Single? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -12490,9 +12490,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this Single? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this Single? valueArgument,
 													[NotNull] String nameArgument,
-													Single? valueBoundLower,
+													[CanBeNull] Single? valueBoundLower,
 													Single valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
@@ -12519,10 +12519,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this Single? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this Single? valueArgument,
 													[NotNull] String nameArgument,
-													Single? valueBoundLower,
-													Single? valueBoundUpper)
+													[CanBeNull] Single? valueBoundLower,
+													[CanBeNull] Single? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -12580,7 +12580,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsOutside(this Int32 valueArgument,
 													[NotNull] String nameArgument,
 													Int32 valueBoundLower,
-													Int32? valueBoundUpper)
+													[CanBeNull] Int32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -12608,7 +12608,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(this Int32 valueArgument,
 													[NotNull] String nameArgument,
-													Int32? valueBoundLower,
+													[CanBeNull] Int32? valueBoundLower,
 													Int32 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
@@ -12637,8 +12637,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(this Int32 valueArgument,
 													[NotNull] String nameArgument,
-													Int32? valueBoundLower,
-													Int32? valueBoundUpper)
+													[CanBeNull] Int32? valueBoundLower,
+													[CanBeNull] Int32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -12664,7 +12664,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this Int32? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this Int32? valueArgument,
 													[NotNull] String nameArgument,
 													Int32 valueBoundLower,
 													Int32 valueBoundUpper)
@@ -12693,10 +12693,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this Int32? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this Int32? valueArgument,
 													[NotNull] String nameArgument,
 													Int32 valueBoundLower,
-													Int32? valueBoundUpper)
+													[CanBeNull] Int32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -12722,9 +12722,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this Int32? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this Int32? valueArgument,
 													[NotNull] String nameArgument,
-													Int32? valueBoundLower,
+													[CanBeNull] Int32? valueBoundLower,
 													Int32 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
@@ -12751,10 +12751,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this Int32? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this Int32? valueArgument,
 													[NotNull] String nameArgument,
-													Int32? valueBoundLower,
-													Int32? valueBoundUpper)
+													[CanBeNull] Int32? valueBoundLower,
+													[CanBeNull] Int32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -12812,7 +12812,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsOutside(this Int64 valueArgument,
 													[NotNull] String nameArgument,
 													Int64 valueBoundLower,
-													Int64? valueBoundUpper)
+													[CanBeNull] Int64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -12840,7 +12840,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(this Int64 valueArgument,
 													[NotNull] String nameArgument,
-													Int64? valueBoundLower,
+													[CanBeNull] Int64? valueBoundLower,
 													Int64 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
@@ -12869,8 +12869,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(this Int64 valueArgument,
 													[NotNull] String nameArgument,
-													Int64? valueBoundLower,
-													Int64? valueBoundUpper)
+													[CanBeNull] Int64? valueBoundLower,
+													[CanBeNull] Int64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -12896,7 +12896,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this Int64? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this Int64? valueArgument,
 													[NotNull] String nameArgument,
 													Int64 valueBoundLower,
 													Int64 valueBoundUpper)
@@ -12925,10 +12925,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this Int64? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this Int64? valueArgument,
 													[NotNull] String nameArgument,
 													Int64 valueBoundLower,
-													Int64? valueBoundUpper)
+													[CanBeNull] Int64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -12954,9 +12954,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this Int64? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this Int64? valueArgument,
 													[NotNull] String nameArgument,
-													Int64? valueBoundLower,
+													[CanBeNull] Int64? valueBoundLower,
 													Int64 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
@@ -12983,10 +12983,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this Int64? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this Int64? valueArgument,
 													[NotNull] String nameArgument,
-													Int64? valueBoundLower,
-													Int64? valueBoundUpper)
+													[CanBeNull] Int64? valueBoundLower,
+													[CanBeNull] Int64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -13044,7 +13044,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsOutside(this SByte valueArgument,
 													[NotNull] String nameArgument,
 													SByte valueBoundLower,
-													SByte? valueBoundUpper)
+													[CanBeNull] SByte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -13072,7 +13072,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(this SByte valueArgument,
 													[NotNull] String nameArgument,
-													SByte? valueBoundLower,
+													[CanBeNull] SByte? valueBoundLower,
 													SByte valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
@@ -13101,8 +13101,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(this SByte valueArgument,
 													[NotNull] String nameArgument,
-													SByte? valueBoundLower,
-													SByte? valueBoundUpper)
+													[CanBeNull] SByte? valueBoundLower,
+													[CanBeNull] SByte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -13128,7 +13128,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this SByte? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this SByte? valueArgument,
 													[NotNull] String nameArgument,
 													SByte valueBoundLower,
 													SByte valueBoundUpper)
@@ -13157,10 +13157,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this SByte? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this SByte? valueArgument,
 													[NotNull] String nameArgument,
 													SByte valueBoundLower,
-													SByte? valueBoundUpper)
+													[CanBeNull] SByte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -13186,9 +13186,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this SByte? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this SByte? valueArgument,
 													[NotNull] String nameArgument,
-													SByte? valueBoundLower,
+													[CanBeNull] SByte? valueBoundLower,
 													SByte valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
@@ -13215,10 +13215,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this SByte? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this SByte? valueArgument,
 													[NotNull] String nameArgument,
-													SByte? valueBoundLower,
-													SByte? valueBoundUpper)
+													[CanBeNull] SByte? valueBoundLower,
+													[CanBeNull] SByte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -13276,7 +13276,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsOutside(this Int16 valueArgument,
 													[NotNull] String nameArgument,
 													Int16 valueBoundLower,
-													Int16? valueBoundUpper)
+													[CanBeNull] Int16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -13304,7 +13304,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(this Int16 valueArgument,
 													[NotNull] String nameArgument,
-													Int16? valueBoundLower,
+													[CanBeNull] Int16? valueBoundLower,
 													Int16 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
@@ -13333,8 +13333,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(this Int16 valueArgument,
 													[NotNull] String nameArgument,
-													Int16? valueBoundLower,
-													Int16? valueBoundUpper)
+													[CanBeNull] Int16? valueBoundLower,
+													[CanBeNull] Int16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -13360,7 +13360,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this Int16? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this Int16? valueArgument,
 													[NotNull] String nameArgument,
 													Int16 valueBoundLower,
 													Int16 valueBoundUpper)
@@ -13389,10 +13389,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this Int16? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this Int16? valueArgument,
 													[NotNull] String nameArgument,
 													Int16 valueBoundLower,
-													Int16? valueBoundUpper)
+													[CanBeNull] Int16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -13418,9 +13418,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this Int16? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this Int16? valueArgument,
 													[NotNull] String nameArgument,
-													Int16? valueBoundLower,
+													[CanBeNull] Int16? valueBoundLower,
 													Int16 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
@@ -13447,10 +13447,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this Int16? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this Int16? valueArgument,
 													[NotNull] String nameArgument,
-													Int16? valueBoundLower,
-													Int16? valueBoundUpper)
+													[CanBeNull] Int16? valueBoundLower,
+													[CanBeNull] Int16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -13508,7 +13508,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsOutside(this UInt32 valueArgument,
 													[NotNull] String nameArgument,
 													UInt32 valueBoundLower,
-													UInt32? valueBoundUpper)
+													[CanBeNull] UInt32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -13536,7 +13536,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(this UInt32 valueArgument,
 													[NotNull] String nameArgument,
-													UInt32? valueBoundLower,
+													[CanBeNull] UInt32? valueBoundLower,
 													UInt32 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
@@ -13565,8 +13565,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(this UInt32 valueArgument,
 													[NotNull] String nameArgument,
-													UInt32? valueBoundLower,
-													UInt32? valueBoundUpper)
+													[CanBeNull] UInt32? valueBoundLower,
+													[CanBeNull] UInt32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -13592,7 +13592,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this UInt32? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this UInt32? valueArgument,
 													[NotNull] String nameArgument,
 													UInt32 valueBoundLower,
 													UInt32 valueBoundUpper)
@@ -13621,10 +13621,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this UInt32? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this UInt32? valueArgument,
 													[NotNull] String nameArgument,
 													UInt32 valueBoundLower,
-													UInt32? valueBoundUpper)
+													[CanBeNull] UInt32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -13650,9 +13650,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this UInt32? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this UInt32? valueArgument,
 													[NotNull] String nameArgument,
-													UInt32? valueBoundLower,
+													[CanBeNull] UInt32? valueBoundLower,
 													UInt32 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
@@ -13679,10 +13679,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this UInt32? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this UInt32? valueArgument,
 													[NotNull] String nameArgument,
-													UInt32? valueBoundLower,
-													UInt32? valueBoundUpper)
+													[CanBeNull] UInt32? valueBoundLower,
+													[CanBeNull] UInt32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -13740,7 +13740,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsOutside(this UInt64 valueArgument,
 													[NotNull] String nameArgument,
 													UInt64 valueBoundLower,
-													UInt64? valueBoundUpper)
+													[CanBeNull] UInt64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -13768,7 +13768,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(this UInt64 valueArgument,
 													[NotNull] String nameArgument,
-													UInt64? valueBoundLower,
+													[CanBeNull] UInt64? valueBoundLower,
 													UInt64 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
@@ -13797,8 +13797,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(this UInt64 valueArgument,
 													[NotNull] String nameArgument,
-													UInt64? valueBoundLower,
-													UInt64? valueBoundUpper)
+													[CanBeNull] UInt64? valueBoundLower,
+													[CanBeNull] UInt64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -13824,7 +13824,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this UInt64? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this UInt64? valueArgument,
 													[NotNull] String nameArgument,
 													UInt64 valueBoundLower,
 													UInt64 valueBoundUpper)
@@ -13853,10 +13853,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this UInt64? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this UInt64? valueArgument,
 													[NotNull] String nameArgument,
 													UInt64 valueBoundLower,
-													UInt64? valueBoundUpper)
+													[CanBeNull] UInt64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -13882,9 +13882,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this UInt64? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this UInt64? valueArgument,
 													[NotNull] String nameArgument,
-													UInt64? valueBoundLower,
+													[CanBeNull] UInt64? valueBoundLower,
 													UInt64 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
@@ -13911,10 +13911,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this UInt64? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this UInt64? valueArgument,
 													[NotNull] String nameArgument,
-													UInt64? valueBoundLower,
-													UInt64? valueBoundUpper)
+													[CanBeNull] UInt64? valueBoundLower,
+													[CanBeNull] UInt64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -13972,7 +13972,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsOutside(this UInt16 valueArgument,
 													[NotNull] String nameArgument,
 													UInt16 valueBoundLower,
-													UInt16? valueBoundUpper)
+													[CanBeNull] UInt16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -14000,7 +14000,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(this UInt16 valueArgument,
 													[NotNull] String nameArgument,
-													UInt16? valueBoundLower,
+													[CanBeNull] UInt16? valueBoundLower,
 													UInt16 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
@@ -14029,8 +14029,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(this UInt16 valueArgument,
 													[NotNull] String nameArgument,
-													UInt16? valueBoundLower,
-													UInt16? valueBoundUpper)
+													[CanBeNull] UInt16? valueBoundLower,
+													[CanBeNull] UInt16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -14056,7 +14056,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this UInt16? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this UInt16? valueArgument,
 													[NotNull] String nameArgument,
 													UInt16 valueBoundLower,
 													UInt16 valueBoundUpper)
@@ -14085,10 +14085,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this UInt16? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this UInt16? valueArgument,
 													[NotNull] String nameArgument,
 													UInt16 valueBoundLower,
-													UInt16? valueBoundUpper)
+													[CanBeNull] UInt16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -14114,9 +14114,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this UInt16? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this UInt16? valueArgument,
 													[NotNull] String nameArgument,
-													UInt16? valueBoundLower,
+													[CanBeNull] UInt16? valueBoundLower,
 													UInt16 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
@@ -14143,10 +14143,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(this UInt16? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] this UInt16? valueArgument,
 													[NotNull] String nameArgument,
-													UInt16? valueBoundLower,
-													UInt16? valueBoundUpper)
+													[CanBeNull] UInt16? valueBoundLower,
+													[CanBeNull] UInt16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutside(valueArgument,
 																		 nameArgument,
@@ -14206,7 +14206,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsOutsideExclusive(this BigInteger valueArgument,
 															 [NotNull] String nameArgument,
 															 BigInteger valueBoundLower,
-															 BigInteger? valueBoundUpper)
+															 [CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
 
@@ -14234,7 +14234,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(this BigInteger valueArgument,
 															 [NotNull] String nameArgument,
-															 BigInteger? valueBoundLower,
+															 [CanBeNull] BigInteger? valueBoundLower,
 															 BigInteger valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
@@ -14263,8 +14263,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(this BigInteger valueArgument,
 															 [NotNull] String nameArgument,
-															 BigInteger? valueBoundLower,
-															 BigInteger? valueBoundUpper)
+															 [CanBeNull] BigInteger? valueBoundLower,
+															 [CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
 
@@ -14290,7 +14290,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this BigInteger? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this BigInteger? valueArgument,
 															 [NotNull] String nameArgument,
 															 BigInteger valueBoundLower,
 															 BigInteger valueBoundUpper)
@@ -14319,10 +14319,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this BigInteger? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this BigInteger? valueArgument,
 															 [NotNull] String nameArgument,
 															 BigInteger valueBoundLower,
-															 BigInteger? valueBoundUpper)
+															 [CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
 
@@ -14348,9 +14348,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this BigInteger? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this BigInteger? valueArgument,
 															 [NotNull] String nameArgument,
-															 BigInteger? valueBoundLower,
+															 [CanBeNull] BigInteger? valueBoundLower,
 															 BigInteger valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
@@ -14377,10 +14377,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this BigInteger? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this BigInteger? valueArgument,
 															 [NotNull] String nameArgument,
-															 BigInteger? valueBoundLower,
-															 BigInteger? valueBoundUpper)
+															 [CanBeNull] BigInteger? valueBoundLower,
+															 [CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
 
@@ -14440,7 +14440,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsOutsideExclusive(this DateTime valueArgument,
 															 [NotNull] String nameArgument,
 															 DateTime valueBoundLower,
-															 DateTime? valueBoundUpper)
+															 [CanBeNull] DateTime? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -14468,7 +14468,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(this DateTime valueArgument,
 															 [NotNull] String nameArgument,
-															 DateTime? valueBoundLower,
+															 [CanBeNull] DateTime? valueBoundLower,
 															 DateTime valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
@@ -14497,8 +14497,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(this DateTime valueArgument,
 															 [NotNull] String nameArgument,
-															 DateTime? valueBoundLower,
-															 DateTime? valueBoundUpper)
+															 [CanBeNull] DateTime? valueBoundLower,
+															 [CanBeNull] DateTime? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -14524,7 +14524,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this DateTime? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this DateTime? valueArgument,
 															 [NotNull] String nameArgument,
 															 DateTime valueBoundLower,
 															 DateTime valueBoundUpper)
@@ -14553,10 +14553,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this DateTime? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this DateTime? valueArgument,
 															 [NotNull] String nameArgument,
 															 DateTime valueBoundLower,
-															 DateTime? valueBoundUpper)
+															 [CanBeNull] DateTime? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -14582,9 +14582,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this DateTime? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this DateTime? valueArgument,
 															 [NotNull] String nameArgument,
-															 DateTime? valueBoundLower,
+															 [CanBeNull] DateTime? valueBoundLower,
 															 DateTime valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
@@ -14611,10 +14611,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this DateTime? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this DateTime? valueArgument,
 															 [NotNull] String nameArgument,
-															 DateTime? valueBoundLower,
-															 DateTime? valueBoundUpper)
+															 [CanBeNull] DateTime? valueBoundLower,
+															 [CanBeNull] DateTime? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -14672,7 +14672,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsOutsideExclusive(this Byte valueArgument,
 															 [NotNull] String nameArgument,
 															 Byte valueBoundLower,
-															 Byte? valueBoundUpper)
+															 [CanBeNull] Byte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -14700,7 +14700,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(this Byte valueArgument,
 															 [NotNull] String nameArgument,
-															 Byte? valueBoundLower,
+															 [CanBeNull] Byte? valueBoundLower,
 															 Byte valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
@@ -14729,8 +14729,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(this Byte valueArgument,
 															 [NotNull] String nameArgument,
-															 Byte? valueBoundLower,
-															 Byte? valueBoundUpper)
+															 [CanBeNull] Byte? valueBoundLower,
+															 [CanBeNull] Byte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -14756,7 +14756,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this Byte? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this Byte? valueArgument,
 															 [NotNull] String nameArgument,
 															 Byte valueBoundLower,
 															 Byte valueBoundUpper)
@@ -14785,10 +14785,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this Byte? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this Byte? valueArgument,
 															 [NotNull] String nameArgument,
 															 Byte valueBoundLower,
-															 Byte? valueBoundUpper)
+															 [CanBeNull] Byte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -14814,9 +14814,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this Byte? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this Byte? valueArgument,
 															 [NotNull] String nameArgument,
-															 Byte? valueBoundLower,
+															 [CanBeNull] Byte? valueBoundLower,
 															 Byte valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
@@ -14843,10 +14843,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this Byte? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this Byte? valueArgument,
 															 [NotNull] String nameArgument,
-															 Byte? valueBoundLower,
-															 Byte? valueBoundUpper)
+															 [CanBeNull] Byte? valueBoundLower,
+															 [CanBeNull] Byte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -14904,7 +14904,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsOutsideExclusive(this Decimal valueArgument,
 															 [NotNull] String nameArgument,
 															 Decimal valueBoundLower,
-															 Decimal? valueBoundUpper)
+															 [CanBeNull] Decimal? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -14932,7 +14932,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(this Decimal valueArgument,
 															 [NotNull] String nameArgument,
-															 Decimal? valueBoundLower,
+															 [CanBeNull] Decimal? valueBoundLower,
 															 Decimal valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
@@ -14961,8 +14961,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(this Decimal valueArgument,
 															 [NotNull] String nameArgument,
-															 Decimal? valueBoundLower,
-															 Decimal? valueBoundUpper)
+															 [CanBeNull] Decimal? valueBoundLower,
+															 [CanBeNull] Decimal? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -14988,7 +14988,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this Decimal? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this Decimal? valueArgument,
 															 [NotNull] String nameArgument,
 															 Decimal valueBoundLower,
 															 Decimal valueBoundUpper)
@@ -15017,10 +15017,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this Decimal? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this Decimal? valueArgument,
 															 [NotNull] String nameArgument,
 															 Decimal valueBoundLower,
-															 Decimal? valueBoundUpper)
+															 [CanBeNull] Decimal? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -15046,9 +15046,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this Decimal? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this Decimal? valueArgument,
 															 [NotNull] String nameArgument,
-															 Decimal? valueBoundLower,
+															 [CanBeNull] Decimal? valueBoundLower,
 															 Decimal valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
@@ -15075,10 +15075,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this Decimal? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this Decimal? valueArgument,
 															 [NotNull] String nameArgument,
-															 Decimal? valueBoundLower,
-															 Decimal? valueBoundUpper)
+															 [CanBeNull] Decimal? valueBoundLower,
+															 [CanBeNull] Decimal? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -15136,7 +15136,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsOutsideExclusive(this Double valueArgument,
 															 [NotNull] String nameArgument,
 															 Double valueBoundLower,
-															 Double? valueBoundUpper)
+															 [CanBeNull] Double? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -15164,7 +15164,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(this Double valueArgument,
 															 [NotNull] String nameArgument,
-															 Double? valueBoundLower,
+															 [CanBeNull] Double? valueBoundLower,
 															 Double valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
@@ -15193,8 +15193,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(this Double valueArgument,
 															 [NotNull] String nameArgument,
-															 Double? valueBoundLower,
-															 Double? valueBoundUpper)
+															 [CanBeNull] Double? valueBoundLower,
+															 [CanBeNull] Double? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -15220,7 +15220,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this Double? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this Double? valueArgument,
 															 [NotNull] String nameArgument,
 															 Double valueBoundLower,
 															 Double valueBoundUpper)
@@ -15249,10 +15249,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this Double? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this Double? valueArgument,
 															 [NotNull] String nameArgument,
 															 Double valueBoundLower,
-															 Double? valueBoundUpper)
+															 [CanBeNull] Double? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -15278,9 +15278,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this Double? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this Double? valueArgument,
 															 [NotNull] String nameArgument,
-															 Double? valueBoundLower,
+															 [CanBeNull] Double? valueBoundLower,
 															 Double valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
@@ -15307,10 +15307,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this Double? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this Double? valueArgument,
 															 [NotNull] String nameArgument,
-															 Double? valueBoundLower,
-															 Double? valueBoundUpper)
+															 [CanBeNull] Double? valueBoundLower,
+															 [CanBeNull] Double? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -15368,7 +15368,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsOutsideExclusive(this Single valueArgument,
 															 [NotNull] String nameArgument,
 															 Single valueBoundLower,
-															 Single? valueBoundUpper)
+															 [CanBeNull] Single? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -15396,7 +15396,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(this Single valueArgument,
 															 [NotNull] String nameArgument,
-															 Single? valueBoundLower,
+															 [CanBeNull] Single? valueBoundLower,
 															 Single valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
@@ -15425,8 +15425,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(this Single valueArgument,
 															 [NotNull] String nameArgument,
-															 Single? valueBoundLower,
-															 Single? valueBoundUpper)
+															 [CanBeNull] Single? valueBoundLower,
+															 [CanBeNull] Single? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -15452,7 +15452,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this Single? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this Single? valueArgument,
 															 [NotNull] String nameArgument,
 															 Single valueBoundLower,
 															 Single valueBoundUpper)
@@ -15481,10 +15481,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this Single? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this Single? valueArgument,
 															 [NotNull] String nameArgument,
 															 Single valueBoundLower,
-															 Single? valueBoundUpper)
+															 [CanBeNull] Single? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -15510,9 +15510,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this Single? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this Single? valueArgument,
 															 [NotNull] String nameArgument,
-															 Single? valueBoundLower,
+															 [CanBeNull] Single? valueBoundLower,
 															 Single valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
@@ -15539,10 +15539,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this Single? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this Single? valueArgument,
 															 [NotNull] String nameArgument,
-															 Single? valueBoundLower,
-															 Single? valueBoundUpper)
+															 [CanBeNull] Single? valueBoundLower,
+															 [CanBeNull] Single? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -15600,7 +15600,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsOutsideExclusive(this Int32 valueArgument,
 															 [NotNull] String nameArgument,
 															 Int32 valueBoundLower,
-															 Int32? valueBoundUpper)
+															 [CanBeNull] Int32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -15628,7 +15628,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(this Int32 valueArgument,
 															 [NotNull] String nameArgument,
-															 Int32? valueBoundLower,
+															 [CanBeNull] Int32? valueBoundLower,
 															 Int32 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
@@ -15657,8 +15657,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(this Int32 valueArgument,
 															 [NotNull] String nameArgument,
-															 Int32? valueBoundLower,
-															 Int32? valueBoundUpper)
+															 [CanBeNull] Int32? valueBoundLower,
+															 [CanBeNull] Int32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -15684,7 +15684,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this Int32? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this Int32? valueArgument,
 															 [NotNull] String nameArgument,
 															 Int32 valueBoundLower,
 															 Int32 valueBoundUpper)
@@ -15713,10 +15713,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this Int32? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this Int32? valueArgument,
 															 [NotNull] String nameArgument,
 															 Int32 valueBoundLower,
-															 Int32? valueBoundUpper)
+															 [CanBeNull] Int32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -15742,9 +15742,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this Int32? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this Int32? valueArgument,
 															 [NotNull] String nameArgument,
-															 Int32? valueBoundLower,
+															 [CanBeNull] Int32? valueBoundLower,
 															 Int32 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
@@ -15771,10 +15771,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this Int32? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this Int32? valueArgument,
 															 [NotNull] String nameArgument,
-															 Int32? valueBoundLower,
-															 Int32? valueBoundUpper)
+															 [CanBeNull] Int32? valueBoundLower,
+															 [CanBeNull] Int32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -15832,7 +15832,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsOutsideExclusive(this Int64 valueArgument,
 															 [NotNull] String nameArgument,
 															 Int64 valueBoundLower,
-															 Int64? valueBoundUpper)
+															 [CanBeNull] Int64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -15860,7 +15860,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(this Int64 valueArgument,
 															 [NotNull] String nameArgument,
-															 Int64? valueBoundLower,
+															 [CanBeNull] Int64? valueBoundLower,
 															 Int64 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
@@ -15889,8 +15889,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(this Int64 valueArgument,
 															 [NotNull] String nameArgument,
-															 Int64? valueBoundLower,
-															 Int64? valueBoundUpper)
+															 [CanBeNull] Int64? valueBoundLower,
+															 [CanBeNull] Int64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -15916,7 +15916,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this Int64? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this Int64? valueArgument,
 															 [NotNull] String nameArgument,
 															 Int64 valueBoundLower,
 															 Int64 valueBoundUpper)
@@ -15945,10 +15945,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this Int64? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this Int64? valueArgument,
 															 [NotNull] String nameArgument,
 															 Int64 valueBoundLower,
-															 Int64? valueBoundUpper)
+															 [CanBeNull] Int64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -15974,9 +15974,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this Int64? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this Int64? valueArgument,
 															 [NotNull] String nameArgument,
-															 Int64? valueBoundLower,
+															 [CanBeNull] Int64? valueBoundLower,
 															 Int64 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
@@ -16003,10 +16003,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this Int64? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this Int64? valueArgument,
 															 [NotNull] String nameArgument,
-															 Int64? valueBoundLower,
-															 Int64? valueBoundUpper)
+															 [CanBeNull] Int64? valueBoundLower,
+															 [CanBeNull] Int64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -16064,7 +16064,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsOutsideExclusive(this SByte valueArgument,
 															 [NotNull] String nameArgument,
 															 SByte valueBoundLower,
-															 SByte? valueBoundUpper)
+															 [CanBeNull] SByte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -16092,7 +16092,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(this SByte valueArgument,
 															 [NotNull] String nameArgument,
-															 SByte? valueBoundLower,
+															 [CanBeNull] SByte? valueBoundLower,
 															 SByte valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
@@ -16121,8 +16121,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(this SByte valueArgument,
 															 [NotNull] String nameArgument,
-															 SByte? valueBoundLower,
-															 SByte? valueBoundUpper)
+															 [CanBeNull] SByte? valueBoundLower,
+															 [CanBeNull] SByte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -16148,7 +16148,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this SByte? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this SByte? valueArgument,
 															 [NotNull] String nameArgument,
 															 SByte valueBoundLower,
 															 SByte valueBoundUpper)
@@ -16177,10 +16177,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this SByte? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this SByte? valueArgument,
 															 [NotNull] String nameArgument,
 															 SByte valueBoundLower,
-															 SByte? valueBoundUpper)
+															 [CanBeNull] SByte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -16206,9 +16206,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this SByte? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this SByte? valueArgument,
 															 [NotNull] String nameArgument,
-															 SByte? valueBoundLower,
+															 [CanBeNull] SByte? valueBoundLower,
 															 SByte valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
@@ -16235,10 +16235,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this SByte? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this SByte? valueArgument,
 															 [NotNull] String nameArgument,
-															 SByte? valueBoundLower,
-															 SByte? valueBoundUpper)
+															 [CanBeNull] SByte? valueBoundLower,
+															 [CanBeNull] SByte? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -16296,7 +16296,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsOutsideExclusive(this Int16 valueArgument,
 															 [NotNull] String nameArgument,
 															 Int16 valueBoundLower,
-															 Int16? valueBoundUpper)
+															 [CanBeNull] Int16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -16324,7 +16324,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(this Int16 valueArgument,
 															 [NotNull] String nameArgument,
-															 Int16? valueBoundLower,
+															 [CanBeNull] Int16? valueBoundLower,
 															 Int16 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
@@ -16353,8 +16353,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(this Int16 valueArgument,
 															 [NotNull] String nameArgument,
-															 Int16? valueBoundLower,
-															 Int16? valueBoundUpper)
+															 [CanBeNull] Int16? valueBoundLower,
+															 [CanBeNull] Int16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -16380,7 +16380,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this Int16? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this Int16? valueArgument,
 															 [NotNull] String nameArgument,
 															 Int16 valueBoundLower,
 															 Int16 valueBoundUpper)
@@ -16409,10 +16409,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this Int16? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this Int16? valueArgument,
 															 [NotNull] String nameArgument,
 															 Int16 valueBoundLower,
-															 Int16? valueBoundUpper)
+															 [CanBeNull] Int16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -16438,9 +16438,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this Int16? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this Int16? valueArgument,
 															 [NotNull] String nameArgument,
-															 Int16? valueBoundLower,
+															 [CanBeNull] Int16? valueBoundLower,
 															 Int16 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
@@ -16467,10 +16467,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this Int16? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this Int16? valueArgument,
 															 [NotNull] String nameArgument,
-															 Int16? valueBoundLower,
-															 Int16? valueBoundUpper)
+															 [CanBeNull] Int16? valueBoundLower,
+															 [CanBeNull] Int16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -16528,7 +16528,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsOutsideExclusive(this UInt32 valueArgument,
 															 [NotNull] String nameArgument,
 															 UInt32 valueBoundLower,
-															 UInt32? valueBoundUpper)
+															 [CanBeNull] UInt32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -16556,7 +16556,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(this UInt32 valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt32? valueBoundLower,
+															 [CanBeNull] UInt32? valueBoundLower,
 															 UInt32 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
@@ -16585,8 +16585,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(this UInt32 valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt32? valueBoundLower,
-															 UInt32? valueBoundUpper)
+															 [CanBeNull] UInt32? valueBoundLower,
+															 [CanBeNull] UInt32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -16612,7 +16612,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this UInt32? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this UInt32? valueArgument,
 															 [NotNull] String nameArgument,
 															 UInt32 valueBoundLower,
 															 UInt32 valueBoundUpper)
@@ -16641,10 +16641,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this UInt32? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this UInt32? valueArgument,
 															 [NotNull] String nameArgument,
 															 UInt32 valueBoundLower,
-															 UInt32? valueBoundUpper)
+															 [CanBeNull] UInt32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -16670,9 +16670,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this UInt32? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this UInt32? valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt32? valueBoundLower,
+															 [CanBeNull] UInt32? valueBoundLower,
 															 UInt32 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
@@ -16699,10 +16699,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this UInt32? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this UInt32? valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt32? valueBoundLower,
-															 UInt32? valueBoundUpper)
+															 [CanBeNull] UInt32? valueBoundLower,
+															 [CanBeNull] UInt32? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -16760,7 +16760,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsOutsideExclusive(this UInt64 valueArgument,
 															 [NotNull] String nameArgument,
 															 UInt64 valueBoundLower,
-															 UInt64? valueBoundUpper)
+															 [CanBeNull] UInt64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -16788,7 +16788,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(this UInt64 valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt64? valueBoundLower,
+															 [CanBeNull] UInt64? valueBoundLower,
 															 UInt64 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
@@ -16817,8 +16817,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(this UInt64 valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt64? valueBoundLower,
-															 UInt64? valueBoundUpper)
+															 [CanBeNull] UInt64? valueBoundLower,
+															 [CanBeNull] UInt64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -16844,7 +16844,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this UInt64? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this UInt64? valueArgument,
 															 [NotNull] String nameArgument,
 															 UInt64 valueBoundLower,
 															 UInt64 valueBoundUpper)
@@ -16873,10 +16873,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this UInt64? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this UInt64? valueArgument,
 															 [NotNull] String nameArgument,
 															 UInt64 valueBoundLower,
-															 UInt64? valueBoundUpper)
+															 [CanBeNull] UInt64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -16902,9 +16902,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this UInt64? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this UInt64? valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt64? valueBoundLower,
+															 [CanBeNull] UInt64? valueBoundLower,
 															 UInt64 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
@@ -16931,10 +16931,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this UInt64? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this UInt64? valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt64? valueBoundLower,
-															 UInt64? valueBoundUpper)
+															 [CanBeNull] UInt64? valueBoundLower,
+															 [CanBeNull] UInt64? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -16992,7 +16992,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		public static void RequireArgumentIsOutsideExclusive(this UInt16 valueArgument,
 															 [NotNull] String nameArgument,
 															 UInt16 valueBoundLower,
-															 UInt16? valueBoundUpper)
+															 [CanBeNull] UInt16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -17020,7 +17020,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(this UInt16 valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt16? valueBoundLower,
+															 [CanBeNull] UInt16? valueBoundLower,
 															 UInt16 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
@@ -17049,8 +17049,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(this UInt16 valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt16? valueBoundLower,
-															 UInt16? valueBoundUpper)
+															 [CanBeNull] UInt16? valueBoundLower,
+															 [CanBeNull] UInt16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -17076,7 +17076,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this UInt16? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this UInt16? valueArgument,
 															 [NotNull] String nameArgument,
 															 UInt16 valueBoundLower,
 															 UInt16 valueBoundUpper)
@@ -17105,10 +17105,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this UInt16? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this UInt16? valueArgument,
 															 [NotNull] String nameArgument,
 															 UInt16 valueBoundLower,
-															 UInt16? valueBoundUpper)
+															 [CanBeNull] UInt16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,
@@ -17134,9 +17134,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this UInt16? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this UInt16? valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt16? valueBoundLower,
+															 [CanBeNull] UInt16? valueBoundLower,
 															 UInt16 valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
@@ -17163,10 +17163,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(this UInt16? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] this UInt16? valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt16? valueBoundLower,
-															 UInt16? valueBoundUpper)
+															 [CanBeNull] UInt16? valueBoundLower,
+															 [CanBeNull] UInt16? valueBoundUpper)
 		{
 			ArgumentRelationalValidationUtility.RequireArgumentIsOutsideExclusive(valueArgument,
 																				  nameArgument,

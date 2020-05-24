@@ -129,7 +129,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is <see langword="null"/> or odd.</exception>
-		public static void RequireArgumentIsEven(this BigInteger? valueArgument,
+		public static void RequireArgumentIsEven([CanBeNull] this BigInteger? valueArgument,
 												 [NotNull] String nameArgument)
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
@@ -162,7 +162,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Byte"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is <see langword="null"/> or odd.</exception>
-		public static void RequireArgumentIsEven(this Byte? valueArgument,
+		public static void RequireArgumentIsEven([CanBeNull] this Byte? valueArgument,
 												 [NotNull] String nameArgument)
 		{
 			ArgumentIntegralParityValidationUtility.RequireArgumentIsEven(valueArgument, nameArgument);
@@ -188,7 +188,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Decimal"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is <see langword="null"/> or odd.</exception>
-		public static void RequireArgumentIsEven(this Decimal? valueArgument,
+		public static void RequireArgumentIsEven([CanBeNull] this Decimal? valueArgument,
 												 [NotNull] String nameArgument)
 		{
 			ArgumentIntegralParityValidationUtility.RequireArgumentIsEven(valueArgument, nameArgument);
@@ -214,7 +214,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Int32"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is <see langword="null"/> or odd.</exception>
-		public static void RequireArgumentIsEven(this Int32? valueArgument,
+		public static void RequireArgumentIsEven([CanBeNull] this Int32? valueArgument,
 												 [NotNull] String nameArgument)
 		{
 			ArgumentIntegralParityValidationUtility.RequireArgumentIsEven(valueArgument, nameArgument);
@@ -240,7 +240,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Int64"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is <see langword="null"/> or odd.</exception>
-		public static void RequireArgumentIsEven(this Int64? valueArgument,
+		public static void RequireArgumentIsEven([CanBeNull] this Int64? valueArgument,
 												 [NotNull] String nameArgument)
 		{
 			ArgumentIntegralParityValidationUtility.RequireArgumentIsEven(valueArgument, nameArgument);
@@ -268,7 +268,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is <see langword="null"/> or odd.</exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsEven(this SByte? valueArgument,
+		public static void RequireArgumentIsEven([CanBeNull] this SByte? valueArgument,
 												 [NotNull] String nameArgument)
 		{
 			ArgumentIntegralParityValidationUtility.RequireArgumentIsEven(valueArgument, nameArgument);
@@ -294,7 +294,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Int16"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is <see langword="null"/> or odd.</exception>
-		public static void RequireArgumentIsEven(this Int16? valueArgument,
+		public static void RequireArgumentIsEven([CanBeNull] this Int16? valueArgument,
 												 [NotNull] String nameArgument)
 		{
 			ArgumentIntegralParityValidationUtility.RequireArgumentIsEven(valueArgument, nameArgument);
@@ -322,7 +322,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is <see langword="null"/> or odd.</exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsEven(this UInt32? valueArgument,
+		public static void RequireArgumentIsEven([CanBeNull] this UInt32? valueArgument,
 												 [NotNull] String nameArgument)
 		{
 			ArgumentIntegralParityValidationUtility.RequireArgumentIsEven(valueArgument, nameArgument);
@@ -350,7 +350,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is <see langword="null"/> or odd.</exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsEven(this UInt64? valueArgument,
+		public static void RequireArgumentIsEven([CanBeNull] this UInt64? valueArgument,
 												 [NotNull] String nameArgument)
 		{
 			ArgumentIntegralParityValidationUtility.RequireArgumentIsEven(valueArgument, nameArgument);
@@ -378,7 +378,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is <see langword="null"/> or odd.</exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsEven(this UInt16? valueArgument,
+		public static void RequireArgumentIsEven([CanBeNull] this UInt16? valueArgument,
 												 [NotNull] String nameArgument)
 		{
 			ArgumentIntegralParityValidationUtility.RequireArgumentIsEven(valueArgument, nameArgument);
@@ -394,7 +394,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is even.</exception>
 		public static void RequireArgumentIsOdd(this BigInteger valueArgument,
-												 [NotNull] String nameArgument)
+												[NotNull] String nameArgument)
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
 
@@ -411,8 +411,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is <see langword="null"/> or even.</exception>
-		public static void RequireArgumentIsOdd(this BigInteger? valueArgument,
-												 [NotNull] String nameArgument)
+		public static void RequireArgumentIsOdd([CanBeNull] this BigInteger? valueArgument,
+												[NotNull] String nameArgument)
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
 
@@ -432,7 +432,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is even.</exception>
 		public static void RequireArgumentIsOdd(this Byte valueArgument,
-												 [NotNull] String nameArgument)
+												[NotNull] String nameArgument)
 		{
 			ArgumentIntegralParityValidationUtility.RequireArgumentIsOdd(valueArgument, nameArgument);
 		}
@@ -444,8 +444,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Byte"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is <see langword="null"/> or even.</exception>
-		public static void RequireArgumentIsOdd(this Byte? valueArgument,
-												 [NotNull] String nameArgument)
+		public static void RequireArgumentIsOdd([CanBeNull] this Byte? valueArgument,
+												[NotNull] String nameArgument)
 		{
 			ArgumentIntegralParityValidationUtility.RequireArgumentIsOdd(valueArgument, nameArgument);
 		}
@@ -458,7 +458,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is even.</exception>
 		public static void RequireArgumentIsOdd(this Decimal valueArgument,
-												 [NotNull] String nameArgument)
+												[NotNull] String nameArgument)
 		{
 			ArgumentIntegralParityValidationUtility.RequireArgumentIsOdd(valueArgument, nameArgument);
 		}
@@ -470,8 +470,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Decimal"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is <see langword="null"/> or even.</exception>
-		public static void RequireArgumentIsOdd(this Decimal? valueArgument,
-												 [NotNull] String nameArgument)
+		public static void RequireArgumentIsOdd([CanBeNull] this Decimal? valueArgument,
+												[NotNull] String nameArgument)
 		{
 			ArgumentIntegralParityValidationUtility.RequireArgumentIsOdd(valueArgument, nameArgument);
 		}
@@ -484,7 +484,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is even.</exception>
 		public static void RequireArgumentIsOdd(this Int32 valueArgument,
-												 [NotNull] String nameArgument)
+												[NotNull] String nameArgument)
 		{
 			ArgumentIntegralParityValidationUtility.RequireArgumentIsOdd(valueArgument, nameArgument);
 		}
@@ -496,8 +496,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Int32"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is <see langword="null"/> or even.</exception>
-		public static void RequireArgumentIsOdd(this Int32? valueArgument,
-												 [NotNull] String nameArgument)
+		public static void RequireArgumentIsOdd([CanBeNull] this Int32? valueArgument,
+												[NotNull] String nameArgument)
 		{
 			ArgumentIntegralParityValidationUtility.RequireArgumentIsOdd(valueArgument, nameArgument);
 		}
@@ -537,7 +537,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is even.</exception>
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOdd(this SByte valueArgument,
-												 [NotNull] String nameArgument)
+												[NotNull] String nameArgument)
 		{
 			ArgumentIntegralParityValidationUtility.RequireArgumentIsOdd(valueArgument, nameArgument);
 		}
@@ -550,8 +550,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is <see langword="null"/> or even.</exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOdd(this SByte? valueArgument,
-												 [NotNull] String nameArgument)
+		public static void RequireArgumentIsOdd([CanBeNull] this SByte? valueArgument,
+												[NotNull] String nameArgument)
 		{
 			ArgumentIntegralParityValidationUtility.RequireArgumentIsOdd(valueArgument, nameArgument);
 		}
@@ -564,7 +564,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is even.</exception>
 		public static void RequireArgumentIsOdd(this Int16 valueArgument,
-												 [NotNull] String nameArgument)
+												[NotNull] String nameArgument)
 		{
 			ArgumentIntegralParityValidationUtility.RequireArgumentIsOdd(valueArgument, nameArgument);
 		}
@@ -576,8 +576,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Int16"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is <see langword="null"/> or even.</exception>
-		public static void RequireArgumentIsOdd(this Int16? valueArgument,
-												 [NotNull] String nameArgument)
+		public static void RequireArgumentIsOdd([CanBeNull] this Int16? valueArgument,
+												[NotNull] String nameArgument)
 		{
 			ArgumentIntegralParityValidationUtility.RequireArgumentIsOdd(valueArgument, nameArgument);
 		}
@@ -591,7 +591,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is even.</exception>
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOdd(this UInt32 valueArgument,
-												 [NotNull] String nameArgument)
+												[NotNull] String nameArgument)
 		{
 			ArgumentIntegralParityValidationUtility.RequireArgumentIsOdd(valueArgument, nameArgument);
 		}
@@ -604,8 +604,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is <see langword="null"/> or even.</exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOdd(this UInt32? valueArgument,
-												 [NotNull] String nameArgument)
+		public static void RequireArgumentIsOdd([CanBeNull] this UInt32? valueArgument,
+												[NotNull] String nameArgument)
 		{
 			ArgumentIntegralParityValidationUtility.RequireArgumentIsOdd(valueArgument, nameArgument);
 		}
@@ -619,7 +619,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is even.</exception>
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOdd(this UInt64 valueArgument,
-												 [NotNull] String nameArgument)
+												[NotNull] String nameArgument)
 		{
 			ArgumentIntegralParityValidationUtility.RequireArgumentIsOdd(valueArgument, nameArgument);
 		}
@@ -632,8 +632,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is <see langword="null"/> or even.</exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOdd(this UInt64? valueArgument,
-												 [NotNull] String nameArgument)
+		public static void RequireArgumentIsOdd([CanBeNull] this UInt64? valueArgument,
+												[NotNull] String nameArgument)
 		{
 			ArgumentIntegralParityValidationUtility.RequireArgumentIsOdd(valueArgument, nameArgument);
 		}
@@ -647,7 +647,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is even.</exception>
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOdd(this UInt16 valueArgument,
-												 [NotNull] String nameArgument)
+												[NotNull] String nameArgument)
 		{
 			ArgumentIntegralParityValidationUtility.RequireArgumentIsOdd(valueArgument, nameArgument);
 		}
@@ -660,8 +660,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is <see langword="null"/> or even.</exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOdd(this UInt16? valueArgument,
-												 [NotNull] String nameArgument)
+		public static void RequireArgumentIsOdd([CanBeNull] this UInt16? valueArgument,
+												[NotNull] String nameArgument)
 		{
 			ArgumentIntegralParityValidationUtility.RequireArgumentIsOdd(valueArgument, nameArgument);
 		}

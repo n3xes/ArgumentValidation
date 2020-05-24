@@ -115,7 +115,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Double"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is <see langword="null"/> or odd.</exception>
-		public static void RequireArgumentIsEven(this Double? valueArgument,
+		public static void RequireArgumentIsEven([CanBeNull] this Double? valueArgument,
 												 [NotNull] String nameArgument)
 		{
 			ArgumentFloatingPointNumberParityValidationUtility.RequireArgumentIsEven(valueArgument, nameArgument);
@@ -141,7 +141,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Single"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is <see langword="null"/> or odd.</exception>
-		public static void RequireArgumentIsEven(this Single? valueArgument,
+		public static void RequireArgumentIsEven([CanBeNull] this Single? valueArgument,
 												 [NotNull] String nameArgument)
 		{
 			ArgumentFloatingPointNumberParityValidationUtility.RequireArgumentIsEven(valueArgument, nameArgument);
@@ -167,7 +167,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Double"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is <see langword="null"/> or even.</exception>
-		public static void RequireArgumentIsOdd(this Double? valueArgument,
+		public static void RequireArgumentIsOdd([CanBeNull] this Double? valueArgument,
 												[NotNull] String nameArgument)
 		{
 			ArgumentFloatingPointNumberParityValidationUtility.RequireArgumentIsOdd(valueArgument, nameArgument);
@@ -193,7 +193,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Single"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is <see langword="null"/> or even.</exception>
-		public static void RequireArgumentIsOdd(this Single? valueArgument,
+		public static void RequireArgumentIsOdd([CanBeNull] this Single? valueArgument,
 												[NotNull] String nameArgument)
 		{
 			ArgumentFloatingPointNumberParityValidationUtility.RequireArgumentIsOdd(valueArgument, nameArgument);

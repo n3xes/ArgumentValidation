@@ -115,7 +115,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Double"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is positive.</exception>
-		public static void RequireArgumentIsNegative(this Double? valueArgument,
+		public static void RequireArgumentIsNegative([CanBeNull] this Double? valueArgument,
 													 [NotNull] String nameArgument)
 		{
 			ArgumentSignedFloatingPointNumberValidationUtility.RequireArgumentIsNegative(valueArgument, nameArgument);
@@ -141,7 +141,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Single"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is positive.</exception>
-		public static void RequireArgumentIsNegative(this Single? valueArgument,
+		public static void RequireArgumentIsNegative([CanBeNull] this Single? valueArgument,
 													 [NotNull] String nameArgument)
 		{
 			ArgumentSignedFloatingPointNumberValidationUtility.RequireArgumentIsNegative(valueArgument, nameArgument);
@@ -167,7 +167,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Double"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is negative.</exception>
-		public static void RequireArgumentIsPositive(this Double? valueArgument,
+		public static void RequireArgumentIsPositive([CanBeNull] this Double? valueArgument,
 													 [NotNull] String nameArgument)
 		{
 			ArgumentSignedFloatingPointNumberValidationUtility.RequireArgumentIsPositive(valueArgument, nameArgument);
@@ -193,7 +193,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Single"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is negative.</exception>
-		public static void RequireArgumentIsPositive(this Single? valueArgument,
+		public static void RequireArgumentIsPositive([CanBeNull] this Single? valueArgument,
 													 [NotNull] String nameArgument)
 		{
 			ArgumentSignedFloatingPointNumberValidationUtility.RequireArgumentIsPositive(valueArgument, nameArgument);

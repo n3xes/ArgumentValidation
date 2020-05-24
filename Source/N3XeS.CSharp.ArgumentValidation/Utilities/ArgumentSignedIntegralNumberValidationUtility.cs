@@ -134,7 +134,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is positive.</exception>
-		public static void RequireArgumentIsNegative(BigInteger? valueArgument,
+		public static void RequireArgumentIsNegative([CanBeNull] BigInteger? valueArgument,
 													 [NotNull] String nameArgument)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -172,7 +172,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Decimal"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is positive.</exception>
-		public static void RequireArgumentIsNegative(Decimal? valueArgument,
+		public static void RequireArgumentIsNegative([CanBeNull] Decimal? valueArgument,
 													 [NotNull] String nameArgument)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -208,7 +208,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Int32"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is positive.</exception>
-		public static void RequireArgumentIsNegative(Int32? valueArgument,
+		public static void RequireArgumentIsNegative([CanBeNull] Int32? valueArgument,
 													 [NotNull] String nameArgument)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -244,7 +244,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Int64"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is positive.</exception>
-		public static void RequireArgumentIsNegative(Int64? valueArgument,
+		public static void RequireArgumentIsNegative([CanBeNull] Int64? valueArgument,
 													 [NotNull] String nameArgument)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -282,7 +282,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is positive.</exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsNegative(SByte? valueArgument,
+		public static void RequireArgumentIsNegative([CanBeNull] SByte? valueArgument,
 													 [NotNull] String nameArgument)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -318,7 +318,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Int16"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is positive.</exception>
-		public static void RequireArgumentIsNegative(Int16? valueArgument,
+		public static void RequireArgumentIsNegative([CanBeNull] Int16? valueArgument,
 													 [NotNull] String nameArgument)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -356,7 +356,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is negative.</exception>
-		public static void RequireArgumentIsPositive(BigInteger? valueArgument,
+		public static void RequireArgumentIsPositive([CanBeNull] BigInteger? valueArgument,
 													 [NotNull] String nameArgument)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -394,7 +394,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Decimal"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is negative.</exception>
-		public static void RequireArgumentIsPositive(Decimal? valueArgument,
+		public static void RequireArgumentIsPositive([CanBeNull] Decimal? valueArgument,
 													 [NotNull] String nameArgument)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -430,7 +430,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Int32"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is negative.</exception>
-		public static void RequireArgumentIsPositive(Int32? valueArgument,
+		public static void RequireArgumentIsPositive([CanBeNull] Int32? valueArgument,
 													 [NotNull] String nameArgument)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -466,7 +466,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Int64"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is negative.</exception>
-		public static void RequireArgumentIsPositive(Int64? valueArgument,
+		public static void RequireArgumentIsPositive([CanBeNull] Int64? valueArgument,
 													 [NotNull] String nameArgument)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -504,7 +504,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is negative.</exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsPositive(SByte? valueArgument,
+		public static void RequireArgumentIsPositive([CanBeNull] SByte? valueArgument,
 													 [NotNull] String nameArgument)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -540,7 +540,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Int16"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is negative.</exception>
-		public static void RequireArgumentIsPositive(Int16? valueArgument,
+		public static void RequireArgumentIsPositive([CanBeNull] Int16? valueArgument,
 													 [NotNull] String nameArgument)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");

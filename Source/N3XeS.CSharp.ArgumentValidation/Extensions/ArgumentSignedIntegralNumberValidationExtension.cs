@@ -128,7 +128,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is positive.</exception>
-		public static void RequireArgumentIsNegative(this BigInteger? valueArgument,
+		public static void RequireArgumentIsNegative([CanBeNull] this BigInteger? valueArgument,
 													 [NotNull] String nameArgument)
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
@@ -161,7 +161,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Decimal"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is positive.</exception>
-		public static void RequireArgumentIsNegative(this Decimal? valueArgument,
+		public static void RequireArgumentIsNegative([CanBeNull] this Decimal? valueArgument,
 													 [NotNull] String nameArgument)
 		{
 			ArgumentSignedIntegralNumberValidationUtility.RequireArgumentIsNegative(valueArgument, nameArgument);
@@ -187,7 +187,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Int32"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is positive.</exception>
-		public static void RequireArgumentIsNegative(this Int32? valueArgument,
+		public static void RequireArgumentIsNegative([CanBeNull] this Int32? valueArgument,
 													 [NotNull] String nameArgument)
 		{
 			ArgumentSignedIntegralNumberValidationUtility.RequireArgumentIsNegative(valueArgument, nameArgument);
@@ -213,7 +213,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Int64"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is positive.</exception>
-		public static void RequireArgumentIsNegative(this Int64? valueArgument,
+		public static void RequireArgumentIsNegative([CanBeNull] this Int64? valueArgument,
 													 [NotNull] String nameArgument)
 		{
 			ArgumentSignedIntegralNumberValidationUtility.RequireArgumentIsNegative(valueArgument, nameArgument);
@@ -241,7 +241,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is positive.</exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsNegative(this SByte? valueArgument,
+		public static void RequireArgumentIsNegative([CanBeNull] this SByte? valueArgument,
 													 [NotNull] String nameArgument)
 		{
 			ArgumentSignedIntegralNumberValidationUtility.RequireArgumentIsNegative(valueArgument, nameArgument);
@@ -267,7 +267,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Int16"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is positive.</exception>
-		public static void RequireArgumentIsNegative(this Int16? valueArgument,
+		public static void RequireArgumentIsNegative([CanBeNull] this Int16? valueArgument,
 													 [NotNull] String nameArgument)
 		{
 			ArgumentSignedIntegralNumberValidationUtility.RequireArgumentIsNegative(valueArgument, nameArgument);
@@ -300,7 +300,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is negative.</exception>
-		public static void RequireArgumentIsPositive(this BigInteger? valueArgument,
+		public static void RequireArgumentIsPositive([CanBeNull] this BigInteger? valueArgument,
 													 [NotNull] String nameArgument)
 		{
 			nameArgument.RequireArgumentHasNonwhiteSpaceValue("nameArgument");
@@ -333,7 +333,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Decimal"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is negative.</exception>
-		public static void RequireArgumentIsPositive(this Decimal? valueArgument,
+		public static void RequireArgumentIsPositive([CanBeNull] this Decimal? valueArgument,
 													 [NotNull] String nameArgument)
 		{
 			ArgumentSignedIntegralNumberValidationUtility.RequireArgumentIsPositive(valueArgument, nameArgument);
@@ -359,7 +359,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Int32"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is negative.</exception>
-		public static void RequireArgumentIsPositive(this Int32? valueArgument,
+		public static void RequireArgumentIsPositive([CanBeNull] this Int32? valueArgument,
 													 [NotNull] String nameArgument)
 		{
 			ArgumentSignedIntegralNumberValidationUtility.RequireArgumentIsPositive(valueArgument, nameArgument);
@@ -385,7 +385,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Int64"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is negative.</exception>
-		public static void RequireArgumentIsPositive(this Int64? valueArgument,
+		public static void RequireArgumentIsPositive([CanBeNull] this Int64? valueArgument,
 													 [NotNull] String nameArgument)
 		{
 			ArgumentSignedIntegralNumberValidationUtility.RequireArgumentIsPositive(valueArgument, nameArgument);
@@ -413,7 +413,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is negative.</exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsPositive(this SByte? valueArgument,
+		public static void RequireArgumentIsPositive([CanBeNull] this SByte? valueArgument,
 													 [NotNull] String nameArgument)
 		{
 			ArgumentSignedIntegralNumberValidationUtility.RequireArgumentIsPositive(valueArgument, nameArgument);
@@ -439,7 +439,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 		/// <param name="nameArgument">The argument name of the <see cref="T:System.Nullable`1"/> of <see cref="T:System.Int16"/> value.</param>
 		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
 		/// <exception cref="ArgumentOutOfRangeException">The <paramref name="valueArgument"/> is negative.</exception>
-		public static void RequireArgumentIsPositive(this Int16? valueArgument,
+		public static void RequireArgumentIsPositive([CanBeNull] this Int16? valueArgument,
 													 [NotNull] String nameArgument)
 		{
 			ArgumentSignedIntegralNumberValidationUtility.RequireArgumentIsPositive(valueArgument, nameArgument);

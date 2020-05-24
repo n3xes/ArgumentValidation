@@ -156,7 +156,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsBetween(BigInteger valueArgument,
 													[NotNull] String nameArgument,
 													BigInteger valueBoundLower,
-													BigInteger? valueBoundUpper)
+													[CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -183,7 +183,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// </exception>
 		public static void RequireArgumentIsBetween(BigInteger valueArgument,
 													[NotNull] String nameArgument,
-													BigInteger? valueBoundLower,
+													[CanBeNull] BigInteger? valueBoundLower,
 													BigInteger valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -211,8 +211,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// </exception>
 		public static void RequireArgumentIsBetween(BigInteger valueArgument,
 													[NotNull] String nameArgument,
-													BigInteger? valueBoundLower,
-													BigInteger? valueBoundUpper)
+													[CanBeNull] BigInteger? valueBoundLower,
+													[CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -237,7 +237,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(BigInteger? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] BigInteger? valueArgument,
 													[NotNull] String nameArgument,
 													BigInteger valueBoundLower,
 													BigInteger valueBoundUpper)
@@ -265,10 +265,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(BigInteger? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] BigInteger? valueArgument,
 													[NotNull] String nameArgument,
 													BigInteger valueBoundLower,
-													BigInteger? valueBoundUpper)
+													[CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -293,9 +293,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(BigInteger? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] BigInteger? valueArgument,
 													[NotNull] String nameArgument,
-													BigInteger? valueBoundLower,
+													[CanBeNull] BigInteger? valueBoundLower,
 													BigInteger valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -321,10 +321,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(BigInteger? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] BigInteger? valueArgument,
 													[NotNull] String nameArgument,
-													BigInteger? valueBoundLower,
-													BigInteger? valueBoundUpper)
+													[CanBeNull] BigInteger? valueBoundLower,
+													[CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -382,7 +382,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsBetween(DateTime valueArgument,
 													[NotNull] String nameArgument,
 													DateTime valueBoundLower,
-													DateTime? valueBoundUpper)
+													[CanBeNull] DateTime? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -409,7 +409,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// </exception>
 		public static void RequireArgumentIsBetween(DateTime valueArgument,
 													[NotNull] String nameArgument,
-													DateTime? valueBoundLower,
+													[CanBeNull] DateTime? valueBoundLower,
 													DateTime valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -437,8 +437,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// </exception>
 		public static void RequireArgumentIsBetween(DateTime valueArgument,
 													[NotNull] String nameArgument,
-													DateTime? valueBoundLower,
-													DateTime? valueBoundUpper)
+													[CanBeNull] DateTime? valueBoundLower,
+													[CanBeNull] DateTime? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -463,7 +463,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(DateTime? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] DateTime? valueArgument,
 													[NotNull] String nameArgument,
 													DateTime valueBoundLower,
 													DateTime valueBoundUpper)
@@ -491,10 +491,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(DateTime? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] DateTime? valueArgument,
 													[NotNull] String nameArgument,
 													DateTime valueBoundLower,
-													DateTime? valueBoundUpper)
+													[CanBeNull] DateTime? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -519,9 +519,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(DateTime? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] DateTime? valueArgument,
 													[NotNull] String nameArgument,
-													DateTime? valueBoundLower,
+													[CanBeNull] DateTime? valueBoundLower,
 													DateTime valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -547,10 +547,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(DateTime? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] DateTime? valueArgument,
 													[NotNull] String nameArgument,
-													DateTime? valueBoundLower,
-													DateTime? valueBoundUpper)
+													[CanBeNull] DateTime? valueBoundLower,
+													[CanBeNull] DateTime? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -606,7 +606,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsBetween(Byte valueArgument,
 													[NotNull] String nameArgument,
 													Byte valueBoundLower,
-													Byte? valueBoundUpper)
+													[CanBeNull] Byte? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -633,7 +633,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// </exception>
 		public static void RequireArgumentIsBetween(Byte valueArgument,
 													[NotNull] String nameArgument,
-													Byte? valueBoundLower,
+													[CanBeNull] Byte? valueBoundLower,
 													Byte valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -661,8 +661,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// </exception>
 		public static void RequireArgumentIsBetween(Byte valueArgument,
 													[NotNull] String nameArgument,
-													Byte? valueBoundLower,
-													Byte? valueBoundUpper)
+													[CanBeNull] Byte? valueBoundLower,
+													[CanBeNull] Byte? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -687,7 +687,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(Byte? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] Byte? valueArgument,
 													[NotNull] String nameArgument,
 													Byte valueBoundLower,
 													Byte valueBoundUpper)
@@ -715,10 +715,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(Byte? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] Byte? valueArgument,
 													[NotNull] String nameArgument,
 													Byte valueBoundLower,
-													Byte? valueBoundUpper)
+													[CanBeNull] Byte? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -743,9 +743,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(Byte? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] Byte? valueArgument,
 													[NotNull] String nameArgument,
-													Byte? valueBoundLower,
+													[CanBeNull] Byte? valueBoundLower,
 													Byte valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -771,10 +771,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(Byte? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] Byte? valueArgument,
 													[NotNull] String nameArgument,
-													Byte? valueBoundLower,
-													Byte? valueBoundUpper)
+													[CanBeNull] Byte? valueBoundLower,
+													[CanBeNull] Byte? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -830,7 +830,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsBetween(Decimal valueArgument,
 													[NotNull] String nameArgument,
 													Decimal valueBoundLower,
-													Decimal? valueBoundUpper)
+													[CanBeNull] Decimal? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -857,7 +857,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// </exception>
 		public static void RequireArgumentIsBetween(Decimal valueArgument,
 													[NotNull] String nameArgument,
-													Decimal? valueBoundLower,
+													[CanBeNull] Decimal? valueBoundLower,
 													Decimal valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -885,8 +885,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// </exception>
 		public static void RequireArgumentIsBetween(Decimal valueArgument,
 													[NotNull] String nameArgument,
-													Decimal? valueBoundLower,
-													Decimal? valueBoundUpper)
+													[CanBeNull] Decimal? valueBoundLower,
+													[CanBeNull] Decimal? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -911,7 +911,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(Decimal? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] Decimal? valueArgument,
 													[NotNull] String nameArgument,
 													Decimal valueBoundLower,
 													Decimal valueBoundUpper)
@@ -939,10 +939,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(Decimal? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] Decimal? valueArgument,
 													[NotNull] String nameArgument,
 													Decimal valueBoundLower,
-													Decimal? valueBoundUpper)
+													[CanBeNull] Decimal? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -967,9 +967,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(Decimal? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] Decimal? valueArgument,
 													[NotNull] String nameArgument,
-													Decimal? valueBoundLower,
+													[CanBeNull] Decimal? valueBoundLower,
 													Decimal valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -995,10 +995,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(Decimal? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] Decimal? valueArgument,
 													[NotNull] String nameArgument,
-													Decimal? valueBoundLower,
-													Decimal? valueBoundUpper)
+													[CanBeNull] Decimal? valueBoundLower,
+													[CanBeNull] Decimal? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -1054,7 +1054,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsBetween(Double valueArgument,
 													[NotNull] String nameArgument,
 													Double valueBoundLower,
-													Double? valueBoundUpper)
+													[CanBeNull] Double? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -1081,7 +1081,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// </exception>
 		public static void RequireArgumentIsBetween(Double valueArgument,
 													[NotNull] String nameArgument,
-													Double? valueBoundLower,
+													[CanBeNull] Double? valueBoundLower,
 													Double valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -1109,8 +1109,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// </exception>
 		public static void RequireArgumentIsBetween(Double valueArgument,
 													[NotNull] String nameArgument,
-													Double? valueBoundLower,
-													Double? valueBoundUpper)
+													[CanBeNull] Double? valueBoundLower,
+													[CanBeNull] Double? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -1135,7 +1135,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(Double? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] Double? valueArgument,
 													[NotNull] String nameArgument,
 													Double valueBoundLower,
 													Double valueBoundUpper)
@@ -1163,10 +1163,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(Double? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] Double? valueArgument,
 													[NotNull] String nameArgument,
 													Double valueBoundLower,
-													Double? valueBoundUpper)
+													[CanBeNull] Double? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -1191,9 +1191,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(Double? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] Double? valueArgument,
 													[NotNull] String nameArgument,
-													Double? valueBoundLower,
+													[CanBeNull] Double? valueBoundLower,
 													Double valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -1219,10 +1219,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(Double? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] Double? valueArgument,
 													[NotNull] String nameArgument,
-													Double? valueBoundLower,
-													Double? valueBoundUpper)
+													[CanBeNull] Double? valueBoundLower,
+													[CanBeNull] Double? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -1278,7 +1278,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsBetween(Single valueArgument,
 													[NotNull] String nameArgument,
 													Single valueBoundLower,
-													Single? valueBoundUpper)
+													[CanBeNull] Single? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -1305,7 +1305,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// </exception>
 		public static void RequireArgumentIsBetween(Single valueArgument,
 													[NotNull] String nameArgument,
-													Single? valueBoundLower,
+													[CanBeNull] Single? valueBoundLower,
 													Single valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -1333,8 +1333,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// </exception>
 		public static void RequireArgumentIsBetween(Single valueArgument,
 													[NotNull] String nameArgument,
-													Single? valueBoundLower,
-													Single? valueBoundUpper)
+													[CanBeNull] Single? valueBoundLower,
+													[CanBeNull] Single? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -1359,7 +1359,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(Single? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] Single? valueArgument,
 													[NotNull] String nameArgument,
 													Single valueBoundLower,
 													Single valueBoundUpper)
@@ -1387,10 +1387,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(Single? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] Single? valueArgument,
 													[NotNull] String nameArgument,
 													Single valueBoundLower,
-													Single? valueBoundUpper)
+													[CanBeNull] Single? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -1415,9 +1415,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(Single? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] Single? valueArgument,
 													[NotNull] String nameArgument,
-													Single? valueBoundLower,
+													[CanBeNull] Single? valueBoundLower,
 													Single valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -1443,10 +1443,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(Single? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] Single? valueArgument,
 													[NotNull] String nameArgument,
-													Single? valueBoundLower,
-													Single? valueBoundUpper)
+													[CanBeNull] Single? valueBoundLower,
+													[CanBeNull] Single? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -1502,7 +1502,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsBetween(Int32 valueArgument,
 													[NotNull] String nameArgument,
 													Int32 valueBoundLower,
-													Int32? valueBoundUpper)
+													[CanBeNull] Int32? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -1529,7 +1529,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// </exception>
 		public static void RequireArgumentIsBetween(Int32 valueArgument,
 													[NotNull] String nameArgument,
-													Int32? valueBoundLower,
+													[CanBeNull] Int32? valueBoundLower,
 													Int32 valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -1557,8 +1557,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// </exception>
 		public static void RequireArgumentIsBetween(Int32 valueArgument,
 													[NotNull] String nameArgument,
-													Int32? valueBoundLower,
-													Int32? valueBoundUpper)
+													[CanBeNull] Int32? valueBoundLower,
+													[CanBeNull] Int32? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -1583,7 +1583,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(Int32? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] Int32? valueArgument,
 													[NotNull] String nameArgument,
 													Int32 valueBoundLower,
 													Int32 valueBoundUpper)
@@ -1611,10 +1611,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(Int32? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] Int32? valueArgument,
 													[NotNull] String nameArgument,
 													Int32 valueBoundLower,
-													Int32? valueBoundUpper)
+													[CanBeNull] Int32? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -1639,9 +1639,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(Int32? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] Int32? valueArgument,
 													[NotNull] String nameArgument,
-													Int32? valueBoundLower,
+													[CanBeNull] Int32? valueBoundLower,
 													Int32 valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -1667,10 +1667,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(Int32? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] Int32? valueArgument,
 													[NotNull] String nameArgument,
-													Int32? valueBoundLower,
-													Int32? valueBoundUpper)
+													[CanBeNull] Int32? valueBoundLower,
+													[CanBeNull] Int32? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -1726,7 +1726,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsBetween(Int64 valueArgument,
 													[NotNull] String nameArgument,
 													Int64 valueBoundLower,
-													Int64? valueBoundUpper)
+													[CanBeNull] Int64? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -1753,7 +1753,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// </exception>
 		public static void RequireArgumentIsBetween(Int64 valueArgument,
 													[NotNull] String nameArgument,
-													Int64? valueBoundLower,
+													[CanBeNull] Int64? valueBoundLower,
 													Int64 valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -1781,8 +1781,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// </exception>
 		public static void RequireArgumentIsBetween(Int64 valueArgument,
 													[NotNull] String nameArgument,
-													Int64? valueBoundLower,
-													Int64? valueBoundUpper)
+													[CanBeNull] Int64? valueBoundLower,
+													[CanBeNull] Int64? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -1807,7 +1807,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(Int64? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] Int64? valueArgument,
 													[NotNull] String nameArgument,
 													Int64 valueBoundLower,
 													Int64 valueBoundUpper)
@@ -1835,10 +1835,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(Int64? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] Int64? valueArgument,
 													[NotNull] String nameArgument,
 													Int64 valueBoundLower,
-													Int64? valueBoundUpper)
+													[CanBeNull] Int64? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -1863,9 +1863,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(Int64? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] Int64? valueArgument,
 													[NotNull] String nameArgument,
-													Int64? valueBoundLower,
+													[CanBeNull] Int64? valueBoundLower,
 													Int64 valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -1891,10 +1891,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		-or-  
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
-		public static void RequireArgumentIsBetween(Int64? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] Int64? valueArgument,
 													[NotNull] String nameArgument,
-													Int64? valueBoundLower,
-													Int64? valueBoundUpper)
+													[CanBeNull] Int64? valueBoundLower,
+													[CanBeNull] Int64? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -1952,7 +1952,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsBetween(SByte valueArgument,
 													[NotNull] String nameArgument,
 													SByte valueBoundLower,
-													SByte? valueBoundUpper)
+													[CanBeNull] SByte? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -1980,7 +1980,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetween(SByte valueArgument,
 													[NotNull] String nameArgument,
-													SByte? valueBoundLower,
+													[CanBeNull] SByte? valueBoundLower,
 													SByte valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -2009,8 +2009,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetween(SByte valueArgument,
 													[NotNull] String nameArgument,
-													SByte? valueBoundLower,
-													SByte? valueBoundUpper)
+													[CanBeNull] SByte? valueBoundLower,
+													[CanBeNull] SByte? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -2036,7 +2036,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(SByte? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] SByte? valueArgument,
 													[NotNull] String nameArgument,
 													SByte valueBoundLower,
 													SByte valueBoundUpper)
@@ -2065,10 +2065,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(SByte? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] SByte? valueArgument,
 													[NotNull] String nameArgument,
 													SByte valueBoundLower,
-													SByte? valueBoundUpper)
+													[CanBeNull] SByte? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -2094,9 +2094,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(SByte? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] SByte? valueArgument,
 													[NotNull] String nameArgument,
-													SByte? valueBoundLower,
+													[CanBeNull] SByte? valueBoundLower,
 													SByte valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -2123,10 +2123,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(SByte? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] SByte? valueArgument,
 													[NotNull] String nameArgument,
-													SByte? valueBoundLower,
-													SByte? valueBoundUpper)
+													[CanBeNull] SByte? valueBoundLower,
+													[CanBeNull] SByte? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -2184,7 +2184,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsBetween(Int16 valueArgument,
 													[NotNull] String nameArgument,
 													Int16 valueBoundLower,
-													Int16? valueBoundUpper)
+													[CanBeNull] Int16? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -2212,7 +2212,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetween(Int16 valueArgument,
 													[NotNull] String nameArgument,
-													Int16? valueBoundLower,
+													[CanBeNull] Int16? valueBoundLower,
 													Int16 valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -2241,8 +2241,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetween(Int16 valueArgument,
 													[NotNull] String nameArgument,
-													Int16? valueBoundLower,
-													Int16? valueBoundUpper)
+													[CanBeNull] Int16? valueBoundLower,
+													[CanBeNull] Int16? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -2268,7 +2268,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(Int16? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] Int16? valueArgument,
 													[NotNull] String nameArgument,
 													Int16 valueBoundLower,
 													Int16 valueBoundUpper)
@@ -2297,10 +2297,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(Int16? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] Int16? valueArgument,
 													[NotNull] String nameArgument,
 													Int16 valueBoundLower,
-													Int16? valueBoundUpper)
+													[CanBeNull] Int16? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -2326,9 +2326,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(Int16? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] Int16? valueArgument,
 													[NotNull] String nameArgument,
-													Int16? valueBoundLower,
+													[CanBeNull] Int16? valueBoundLower,
 													Int16 valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -2355,10 +2355,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(Int16? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] Int16? valueArgument,
 													[NotNull] String nameArgument,
-													Int16? valueBoundLower,
-													Int16? valueBoundUpper)
+													[CanBeNull] Int16? valueBoundLower,
+													[CanBeNull] Int16? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -2416,7 +2416,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsBetween(UInt32 valueArgument,
 													[NotNull] String nameArgument,
 													UInt32 valueBoundLower,
-													UInt32? valueBoundUpper)
+													[CanBeNull] UInt32? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -2444,7 +2444,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetween(UInt32 valueArgument,
 													[NotNull] String nameArgument,
-													UInt32? valueBoundLower,
+													[CanBeNull] UInt32? valueBoundLower,
 													UInt32 valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -2473,8 +2473,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetween(UInt32 valueArgument,
 													[NotNull] String nameArgument,
-													UInt32? valueBoundLower,
-													UInt32? valueBoundUpper)
+													[CanBeNull] UInt32? valueBoundLower,
+													[CanBeNull] UInt32? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -2500,7 +2500,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(UInt32? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] UInt32? valueArgument,
 													[NotNull] String nameArgument,
 													UInt32 valueBoundLower,
 													UInt32 valueBoundUpper)
@@ -2529,10 +2529,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(UInt32? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] UInt32? valueArgument,
 													[NotNull] String nameArgument,
 													UInt32 valueBoundLower,
-													UInt32? valueBoundUpper)
+													[CanBeNull] UInt32? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -2558,9 +2558,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(UInt32? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] UInt32? valueArgument,
 													[NotNull] String nameArgument,
-													UInt32? valueBoundLower,
+													[CanBeNull] UInt32? valueBoundLower,
 													UInt32 valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -2587,10 +2587,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(UInt32? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] UInt32? valueArgument,
 													[NotNull] String nameArgument,
-													UInt32? valueBoundLower,
-													UInt32? valueBoundUpper)
+													[CanBeNull] UInt32? valueBoundLower,
+													[CanBeNull] UInt32? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -2648,7 +2648,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsBetween(UInt64 valueArgument,
 													[NotNull] String nameArgument,
 													UInt64 valueBoundLower,
-													UInt64? valueBoundUpper)
+													[CanBeNull] UInt64? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -2676,7 +2676,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetween(UInt64 valueArgument,
 													[NotNull] String nameArgument,
-													UInt64? valueBoundLower,
+													[CanBeNull] UInt64? valueBoundLower,
 													UInt64 valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -2705,8 +2705,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetween(UInt64 valueArgument,
 													[NotNull] String nameArgument,
-													UInt64? valueBoundLower,
-													UInt64? valueBoundUpper)
+													[CanBeNull] UInt64? valueBoundLower,
+													[CanBeNull] UInt64? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -2732,7 +2732,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(UInt64? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] UInt64? valueArgument,
 													[NotNull] String nameArgument,
 													UInt64 valueBoundLower,
 													UInt64 valueBoundUpper)
@@ -2761,10 +2761,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(UInt64? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] UInt64? valueArgument,
 													[NotNull] String nameArgument,
 													UInt64 valueBoundLower,
-													UInt64? valueBoundUpper)
+													[CanBeNull] UInt64? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -2790,9 +2790,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(UInt64? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] UInt64? valueArgument,
 													[NotNull] String nameArgument,
-													UInt64? valueBoundLower,
+													[CanBeNull] UInt64? valueBoundLower,
 													UInt64 valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -2819,10 +2819,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(UInt64? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] UInt64? valueArgument,
 													[NotNull] String nameArgument,
-													UInt64? valueBoundLower,
-													UInt64? valueBoundUpper)
+													[CanBeNull] UInt64? valueBoundLower,
+													[CanBeNull] UInt64? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -2880,7 +2880,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsBetween(UInt16 valueArgument,
 													[NotNull] String nameArgument,
 													UInt16 valueBoundLower,
-													UInt16? valueBoundUpper)
+													[CanBeNull] UInt16? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -2908,7 +2908,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetween(UInt16 valueArgument,
 													[NotNull] String nameArgument,
-													UInt16? valueBoundLower,
+													[CanBeNull] UInt16? valueBoundLower,
 													UInt16 valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -2937,8 +2937,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetween(UInt16 valueArgument,
 													[NotNull] String nameArgument,
-													UInt16? valueBoundLower,
-													UInt16? valueBoundUpper)
+													[CanBeNull] UInt16? valueBoundLower,
+													[CanBeNull] UInt16? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -2964,7 +2964,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(UInt16? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] UInt16? valueArgument,
 													[NotNull] String nameArgument,
 													UInt16 valueBoundLower,
 													UInt16 valueBoundUpper)
@@ -2993,10 +2993,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(UInt16? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] UInt16? valueArgument,
 													[NotNull] String nameArgument,
 													UInt16 valueBoundLower,
-													UInt16? valueBoundUpper)
+													[CanBeNull] UInt16? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -3022,9 +3022,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(UInt16? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] UInt16? valueArgument,
 													[NotNull] String nameArgument,
-													UInt16? valueBoundLower,
+													[CanBeNull] UInt16? valueBoundLower,
 													UInt16 valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -3051,10 +3051,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween(UInt16? valueArgument,
+		public static void RequireArgumentIsBetween([CanBeNull] UInt16? valueArgument,
 													[NotNull] String nameArgument,
-													UInt16? valueBoundLower,
-													UInt16? valueBoundUpper)
+													[CanBeNull] UInt16? valueBoundLower,
+													[CanBeNull] UInt16? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -3114,7 +3114,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsBetweenExclusive(BigInteger valueArgument,
 															 [NotNull] String nameArgument,
 															 BigInteger valueBoundLower,
-															 BigInteger? valueBoundUpper)
+															 [CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -3142,7 +3142,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(BigInteger valueArgument,
 															 [NotNull] String nameArgument,
-															 BigInteger? valueBoundLower,
+															 [CanBeNull] BigInteger? valueBoundLower,
 															 BigInteger valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -3171,8 +3171,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(BigInteger valueArgument,
 															 [NotNull] String nameArgument,
-															 BigInteger? valueBoundLower,
-															 BigInteger? valueBoundUpper)
+															 [CanBeNull] BigInteger? valueBoundLower,
+															 [CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -3198,7 +3198,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(BigInteger? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] BigInteger? valueArgument,
 															 [NotNull] String nameArgument,
 															 BigInteger valueBoundLower,
 															 BigInteger valueBoundUpper)
@@ -3227,10 +3227,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(BigInteger? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] BigInteger? valueArgument,
 															 [NotNull] String nameArgument,
 															 BigInteger valueBoundLower,
-															 BigInteger? valueBoundUpper)
+															 [CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -3256,9 +3256,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(BigInteger? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] BigInteger? valueArgument,
 															 [NotNull] String nameArgument,
-															 BigInteger? valueBoundLower,
+															 [CanBeNull] BigInteger? valueBoundLower,
 															 BigInteger valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -3285,10 +3285,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(BigInteger? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] BigInteger? valueArgument,
 															 [NotNull] String nameArgument,
-															 BigInteger? valueBoundLower,
-															 BigInteger? valueBoundUpper)
+															 [CanBeNull] BigInteger? valueBoundLower,
+															 [CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -3348,7 +3348,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsBetweenExclusive(DateTime valueArgument,
 															 [NotNull] String nameArgument,
 															 DateTime valueBoundLower,
-															 DateTime? valueBoundUpper)
+															 [CanBeNull] DateTime? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -3376,7 +3376,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(DateTime valueArgument,
 															 [NotNull] String nameArgument,
-															 DateTime? valueBoundLower,
+															 [CanBeNull] DateTime? valueBoundLower,
 															 DateTime valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -3405,8 +3405,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(DateTime valueArgument,
 															 [NotNull] String nameArgument,
-															 DateTime? valueBoundLower,
-															 DateTime? valueBoundUpper)
+															 [CanBeNull] DateTime? valueBoundLower,
+															 [CanBeNull] DateTime? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -3432,7 +3432,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(DateTime? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] DateTime? valueArgument,
 															 [NotNull] String nameArgument,
 															 DateTime valueBoundLower,
 															 DateTime valueBoundUpper)
@@ -3461,10 +3461,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(DateTime? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] DateTime? valueArgument,
 															 [NotNull] String nameArgument,
 															 DateTime valueBoundLower,
-															 DateTime? valueBoundUpper)
+															 [CanBeNull] DateTime? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -3490,9 +3490,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(DateTime? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] DateTime? valueArgument,
 															 [NotNull] String nameArgument,
-															 DateTime? valueBoundLower,
+															 [CanBeNull] DateTime? valueBoundLower,
 															 DateTime valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -3519,10 +3519,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(DateTime? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] DateTime? valueArgument,
 															 [NotNull] String nameArgument,
-															 DateTime? valueBoundLower,
-															 DateTime? valueBoundUpper)
+															 [CanBeNull] DateTime? valueBoundLower,
+															 [CanBeNull] DateTime? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -3664,7 +3664,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(Byte? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] Byte? valueArgument,
 															 [NotNull] String nameArgument,
 															 Byte valueBoundLower,
 															 Byte valueBoundUpper)
@@ -3693,7 +3693,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(Byte? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] Byte? valueArgument,
 															 [NotNull] String nameArgument,
 															 Byte valueBoundLower,
 															 Byte? valueBoundUpper)
@@ -3722,7 +3722,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(Byte? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] Byte? valueArgument,
 															 [NotNull] String nameArgument,
 															 Byte? valueBoundLower,
 															 Byte valueBoundUpper)
@@ -3751,7 +3751,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(Byte? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] Byte? valueArgument,
 															 [NotNull] String nameArgument,
 															 Byte? valueBoundLower,
 															 Byte? valueBoundUpper)
@@ -3812,7 +3812,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsBetweenExclusive(Decimal valueArgument,
 															 [NotNull] String nameArgument,
 															 Decimal valueBoundLower,
-															 Decimal? valueBoundUpper)
+															 [CanBeNull] Decimal? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -3840,7 +3840,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(Decimal valueArgument,
 															 [NotNull] String nameArgument,
-															 Decimal? valueBoundLower,
+															 [CanBeNull] Decimal? valueBoundLower,
 															 Decimal valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -3869,8 +3869,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(Decimal valueArgument,
 															 [NotNull] String nameArgument,
-															 Decimal? valueBoundLower,
-															 Decimal? valueBoundUpper)
+															 [CanBeNull] Decimal? valueBoundLower,
+															 [CanBeNull] Decimal? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -3896,7 +3896,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(Decimal? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] Decimal? valueArgument,
 															 [NotNull] String nameArgument,
 															 Decimal valueBoundLower,
 															 Decimal valueBoundUpper)
@@ -3925,10 +3925,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(Decimal? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] Decimal? valueArgument,
 															 [NotNull] String nameArgument,
 															 Decimal valueBoundLower,
-															 Decimal? valueBoundUpper)
+															 [CanBeNull] Decimal? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -3954,9 +3954,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(Decimal? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] Decimal? valueArgument,
 															 [NotNull] String nameArgument,
-															 Decimal? valueBoundLower,
+															 [CanBeNull] Decimal? valueBoundLower,
 															 Decimal valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -3983,10 +3983,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(Decimal? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] Decimal? valueArgument,
 															 [NotNull] String nameArgument,
-															 Decimal? valueBoundLower,
-															 Decimal? valueBoundUpper)
+															 [CanBeNull] Decimal? valueBoundLower,
+															 [CanBeNull] Decimal? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -4044,7 +4044,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsBetweenExclusive(Double valueArgument,
 															 [NotNull] String nameArgument,
 															 Double valueBoundLower,
-															 Double? valueBoundUpper)
+															 [CanBeNull] Double? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -4072,7 +4072,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(Double valueArgument,
 															 [NotNull] String nameArgument,
-															 Double? valueBoundLower,
+															 [CanBeNull] Double? valueBoundLower,
 															 Double valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -4101,8 +4101,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(Double valueArgument,
 															 [NotNull] String nameArgument,
-															 Double? valueBoundLower,
-															 Double? valueBoundUpper)
+															 [CanBeNull] Double? valueBoundLower,
+															 [CanBeNull] Double? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -4128,7 +4128,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(Double? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] Double? valueArgument,
 															 [NotNull] String nameArgument,
 															 Double valueBoundLower,
 															 Double valueBoundUpper)
@@ -4157,10 +4157,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(Double? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] Double? valueArgument,
 															 [NotNull] String nameArgument,
 															 Double valueBoundLower,
-															 Double? valueBoundUpper)
+															 [CanBeNull] Double? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -4186,9 +4186,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(Double? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] Double? valueArgument,
 															 [NotNull] String nameArgument,
-															 Double? valueBoundLower,
+															 [CanBeNull] Double? valueBoundLower,
 															 Double valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -4215,10 +4215,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(Double? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] Double? valueArgument,
 															 [NotNull] String nameArgument,
-															 Double? valueBoundLower,
-															 Double? valueBoundUpper)
+															 [CanBeNull] Double? valueBoundLower,
+															 [CanBeNull] Double? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -4276,7 +4276,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsBetweenExclusive(Single valueArgument,
 															 [NotNull] String nameArgument,
 															 Single valueBoundLower,
-															 Single? valueBoundUpper)
+															 [CanBeNull] Single? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -4304,7 +4304,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(Single valueArgument,
 															 [NotNull] String nameArgument,
-															 Single? valueBoundLower,
+															 [CanBeNull] Single? valueBoundLower,
 															 Single valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -4333,8 +4333,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(Single valueArgument,
 															 [NotNull] String nameArgument,
-															 Single? valueBoundLower,
-															 Single? valueBoundUpper)
+															 [CanBeNull] Single? valueBoundLower,
+															 [CanBeNull] Single? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -4360,7 +4360,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(Single? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] Single? valueArgument,
 															 [NotNull] String nameArgument,
 															 Single valueBoundLower,
 															 Single valueBoundUpper)
@@ -4389,10 +4389,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(Single? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] Single? valueArgument,
 															 [NotNull] String nameArgument,
 															 Single valueBoundLower,
-															 Single? valueBoundUpper)
+															 [CanBeNull] Single? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -4418,9 +4418,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(Single? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] Single? valueArgument,
 															 [NotNull] String nameArgument,
-															 Single? valueBoundLower,
+															 [CanBeNull] Single? valueBoundLower,
 															 Single valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -4447,10 +4447,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(Single? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] Single? valueArgument,
 															 [NotNull] String nameArgument,
-															 Single? valueBoundLower,
-															 Single? valueBoundUpper)
+															 [CanBeNull] Single? valueBoundLower,
+															 [CanBeNull] Single? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -4592,7 +4592,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(Int32? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] Int32? valueArgument,
 															 [NotNull] String nameArgument,
 															 Int32 valueBoundLower,
 															 Int32 valueBoundUpper)
@@ -4621,7 +4621,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(Int32? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] Int32? valueArgument,
 															 [NotNull] String nameArgument,
 															 Int32 valueBoundLower,
 															 Int32? valueBoundUpper)
@@ -4650,7 +4650,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(Int32? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] Int32? valueArgument,
 															 [NotNull] String nameArgument,
 															 Int32? valueBoundLower,
 															 Int32 valueBoundUpper)
@@ -4679,7 +4679,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(Int32? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] Int32? valueArgument,
 															 [NotNull] String nameArgument,
 															 Int32? valueBoundLower,
 															 Int32? valueBoundUpper)
@@ -4824,7 +4824,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(Int64? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] Int64? valueArgument,
 															 [NotNull] String nameArgument,
 															 Int64 valueBoundLower,
 															 Int64 valueBoundUpper)
@@ -4853,7 +4853,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(Int64? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] Int64? valueArgument,
 															 [NotNull] String nameArgument,
 															 Int64 valueBoundLower,
 															 Int64? valueBoundUpper)
@@ -4882,7 +4882,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(Int64? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] Int64? valueArgument,
 															 [NotNull] String nameArgument,
 															 Int64? valueBoundLower,
 															 Int64 valueBoundUpper)
@@ -4911,7 +4911,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(Int64? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] Int64? valueArgument,
 															 [NotNull] String nameArgument,
 															 Int64? valueBoundLower,
 															 Int64? valueBoundUpper)
@@ -4972,7 +4972,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsBetweenExclusive(SByte valueArgument,
 															 [NotNull] String nameArgument,
 															 SByte valueBoundLower,
-															 SByte? valueBoundUpper)
+															 [CanBeNull] SByte? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -5000,7 +5000,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(SByte valueArgument,
 															 [NotNull] String nameArgument,
-															 SByte? valueBoundLower,
+															 [CanBeNull] SByte? valueBoundLower,
 															 SByte valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -5029,8 +5029,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(SByte valueArgument,
 															 [NotNull] String nameArgument,
-															 SByte? valueBoundLower,
-															 SByte? valueBoundUpper)
+															 [CanBeNull] SByte? valueBoundLower,
+															 [CanBeNull] SByte? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -5056,7 +5056,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(SByte? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] SByte? valueArgument,
 															 [NotNull] String nameArgument,
 															 SByte valueBoundLower,
 															 SByte valueBoundUpper)
@@ -5085,10 +5085,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(SByte? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] SByte? valueArgument,
 															 [NotNull] String nameArgument,
 															 SByte valueBoundLower,
-															 SByte? valueBoundUpper)
+															 [CanBeNull] SByte? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -5114,9 +5114,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(SByte? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] SByte? valueArgument,
 															 [NotNull] String nameArgument,
-															 SByte? valueBoundLower,
+															 [CanBeNull] SByte? valueBoundLower,
 															 SByte valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -5143,10 +5143,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(SByte? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] SByte? valueArgument,
 															 [NotNull] String nameArgument,
-															 SByte? valueBoundLower,
-															 SByte? valueBoundUpper)
+															 [CanBeNull] SByte? valueBoundLower,
+															 [CanBeNull] SByte? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -5288,7 +5288,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(Int16? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] Int16? valueArgument,
 															 [NotNull] String nameArgument,
 															 Int16 valueBoundLower,
 															 Int16 valueBoundUpper)
@@ -5317,7 +5317,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(Int16? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] Int16? valueArgument,
 															 [NotNull] String nameArgument,
 															 Int16 valueBoundLower,
 															 Int16? valueBoundUpper)
@@ -5346,7 +5346,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(Int16? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] Int16? valueArgument,
 															 [NotNull] String nameArgument,
 															 Int16? valueBoundLower,
 															 Int16 valueBoundUpper)
@@ -5375,7 +5375,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(Int16? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] Int16? valueArgument,
 															 [NotNull] String nameArgument,
 															 Int16? valueBoundLower,
 															 Int16? valueBoundUpper)
@@ -5436,7 +5436,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsBetweenExclusive(UInt32 valueArgument,
 															 [NotNull] String nameArgument,
 															 UInt32 valueBoundLower,
-															 UInt32? valueBoundUpper)
+															 [CanBeNull] UInt32? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -5464,7 +5464,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(UInt32 valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt32? valueBoundLower,
+															 [CanBeNull] UInt32? valueBoundLower,
 															 UInt32 valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -5493,8 +5493,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(UInt32 valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt32? valueBoundLower,
-															 UInt32? valueBoundUpper)
+															 [CanBeNull] UInt32? valueBoundLower,
+															 [CanBeNull] UInt32? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -5520,7 +5520,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(UInt32? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] UInt32? valueArgument,
 															 [NotNull] String nameArgument,
 															 UInt32 valueBoundLower,
 															 UInt32 valueBoundUpper)
@@ -5549,10 +5549,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(UInt32? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] UInt32? valueArgument,
 															 [NotNull] String nameArgument,
 															 UInt32 valueBoundLower,
-															 UInt32? valueBoundUpper)
+															 [CanBeNull] UInt32? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -5578,9 +5578,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(UInt32? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] UInt32? valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt32? valueBoundLower,
+															 [CanBeNull] UInt32? valueBoundLower,
 															 UInt32 valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -5607,10 +5607,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(UInt32? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] UInt32? valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt32? valueBoundLower,
-															 UInt32? valueBoundUpper)
+															 [CanBeNull] UInt32? valueBoundLower,
+															 [CanBeNull] UInt32? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -5668,7 +5668,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsBetweenExclusive(UInt64 valueArgument,
 															 [NotNull] String nameArgument,
 															 UInt64 valueBoundLower,
-															 UInt64? valueBoundUpper)
+															 [CanBeNull] UInt64? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -5696,7 +5696,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(UInt64 valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt64? valueBoundLower,
+															 [CanBeNull] UInt64? valueBoundLower,
 															 UInt64 valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -5725,8 +5725,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(UInt64 valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt64? valueBoundLower,
-															 UInt64? valueBoundUpper)
+															 [CanBeNull] UInt64? valueBoundLower,
+															 [CanBeNull] UInt64? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -5752,7 +5752,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(UInt64? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] UInt64? valueArgument,
 															 [NotNull] String nameArgument,
 															 UInt64 valueBoundLower,
 															 UInt64 valueBoundUpper)
@@ -5781,10 +5781,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(UInt64? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] UInt64? valueArgument,
 															 [NotNull] String nameArgument,
 															 UInt64 valueBoundLower,
-															 UInt64? valueBoundUpper)
+															 [CanBeNull] UInt64? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -5810,9 +5810,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(UInt64? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] UInt64? valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt64? valueBoundLower,
+															 [CanBeNull] UInt64? valueBoundLower,
 															 UInt64 valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -5839,10 +5839,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(UInt64? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] UInt64? valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt64? valueBoundLower,
-															 UInt64? valueBoundUpper)
+															 [CanBeNull] UInt64? valueBoundLower,
+															 [CanBeNull] UInt64? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -5900,7 +5900,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsBetweenExclusive(UInt16 valueArgument,
 															 [NotNull] String nameArgument,
 															 UInt16 valueBoundLower,
-															 UInt16? valueBoundUpper)
+															 [CanBeNull] UInt16? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -5928,7 +5928,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(UInt16 valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt16? valueBoundLower,
+															 [CanBeNull] UInt16? valueBoundLower,
 															 UInt16 valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -5957,8 +5957,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive(UInt16 valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt16? valueBoundLower,
-															 UInt16? valueBoundUpper)
+															 [CanBeNull] UInt16? valueBoundLower,
+															 [CanBeNull] UInt16? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -5984,7 +5984,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(UInt16? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] UInt16? valueArgument,
 															 [NotNull] String nameArgument,
 															 UInt16 valueBoundLower,
 															 UInt16 valueBoundUpper)
@@ -6013,10 +6013,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(UInt16? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] UInt16? valueArgument,
 															 [NotNull] String nameArgument,
 															 UInt16 valueBoundLower,
-															 UInt16? valueBoundUpper)
+															 [CanBeNull] UInt16? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -6042,9 +6042,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(UInt16? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] UInt16? valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt16? valueBoundLower,
+															 [CanBeNull] UInt16? valueBoundLower,
 															 UInt16 valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -6071,10 +6071,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive(UInt16? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive([CanBeNull] UInt16? valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt16? valueBoundLower,
-															 UInt16? valueBoundUpper)
+															 [CanBeNull] UInt16? valueBoundLower,
+															 [CanBeNull] UInt16? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -6128,7 +6128,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThan(BigInteger valueArgument,
 														[NotNull] String nameArgument,
-														BigInteger? valueBoundLower)
+														[CanBeNull] BigInteger? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -6153,7 +6153,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(BigInteger? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] BigInteger? valueArgument,
 														[NotNull] String nameArgument,
 														BigInteger valueBoundLower)
 		{
@@ -6180,9 +6180,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(BigInteger? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] BigInteger? valueArgument,
 														[NotNull] String nameArgument,
-														BigInteger? valueBoundLower)
+														[CanBeNull] BigInteger? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -6238,7 +6238,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThan(DateTime valueArgument,
 														[NotNull] String nameArgument,
-														DateTime? valueBoundLower)
+														[CanBeNull] DateTime? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -6263,7 +6263,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(DateTime? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] DateTime? valueArgument,
 														[NotNull] String nameArgument,
 														DateTime valueBoundLower)
 		{
@@ -6290,9 +6290,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(DateTime? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] DateTime? valueArgument,
 														[NotNull] String nameArgument,
-														DateTime? valueBoundLower)
+														[CanBeNull] DateTime? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -6346,7 +6346,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThan(Byte valueArgument,
 														[NotNull] String nameArgument,
-														Byte? valueBoundLower)
+														[CanBeNull] Byte? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -6371,7 +6371,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(Byte? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] Byte? valueArgument,
 														[NotNull] String nameArgument,
 														Byte valueBoundLower)
 		{
@@ -6398,9 +6398,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(Byte? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] Byte? valueArgument,
 														[NotNull] String nameArgument,
-														Byte? valueBoundLower)
+														[CanBeNull] Byte? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -6454,7 +6454,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThan(Decimal valueArgument,
 														[NotNull] String nameArgument,
-														Decimal? valueBoundLower)
+														[CanBeNull] Decimal? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -6479,7 +6479,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(Decimal? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] Decimal? valueArgument,
 														[NotNull] String nameArgument,
 														Decimal valueBoundLower)
 		{
@@ -6506,9 +6506,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(Decimal? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] Decimal? valueArgument,
 														[NotNull] String nameArgument,
-														Decimal? valueBoundLower)
+														[CanBeNull] Decimal? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -6562,7 +6562,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThan(Double valueArgument,
 														[NotNull] String nameArgument,
-														Double? valueBoundLower)
+														[CanBeNull] Double? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -6587,7 +6587,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(Double? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] Double? valueArgument,
 														[NotNull] String nameArgument,
 														Double valueBoundLower)
 		{
@@ -6614,9 +6614,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(Double? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] Double? valueArgument,
 														[NotNull] String nameArgument,
-														Double? valueBoundLower)
+														[CanBeNull] Double? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -6670,7 +6670,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThan(Single valueArgument,
 														[NotNull] String nameArgument,
-														Single? valueBoundLower)
+														[CanBeNull] Single? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -6695,7 +6695,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(Single? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] Single? valueArgument,
 														[NotNull] String nameArgument,
 														Single valueBoundLower)
 		{
@@ -6722,9 +6722,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(Single? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] Single? valueArgument,
 														[NotNull] String nameArgument,
-														Single? valueBoundLower)
+														[CanBeNull] Single? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -6778,7 +6778,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThan(Int32 valueArgument,
 														[NotNull] String nameArgument,
-														Int32? valueBoundLower)
+														[CanBeNull] Int32? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -6803,7 +6803,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(Int32? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] Int32? valueArgument,
 														[NotNull] String nameArgument,
 														Int32 valueBoundLower)
 		{
@@ -6830,9 +6830,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(Int32? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] Int32? valueArgument,
 														[NotNull] String nameArgument,
-														Int32? valueBoundLower)
+														[CanBeNull] Int32? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -6886,7 +6886,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThan(Int64 valueArgument,
 														[NotNull] String nameArgument,
-														Int64? valueBoundLower)
+														[CanBeNull] Int64? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -6911,7 +6911,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(Int64? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] Int64? valueArgument,
 														[NotNull] String nameArgument,
 														Int64 valueBoundLower)
 		{
@@ -6938,9 +6938,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(Int64? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] Int64? valueArgument,
 														[NotNull] String nameArgument,
-														Int64? valueBoundLower)
+														[CanBeNull] Int64? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -6994,7 +6994,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThan(SByte valueArgument,
 														[NotNull] String nameArgument,
-														SByte? valueBoundLower)
+														[CanBeNull] SByte? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -7019,7 +7019,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(SByte? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] SByte? valueArgument,
 														[NotNull] String nameArgument,
 														SByte valueBoundLower)
 		{
@@ -7046,9 +7046,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(SByte? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] SByte? valueArgument,
 														[NotNull] String nameArgument,
-														SByte? valueBoundLower)
+														[CanBeNull] SByte? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -7102,7 +7102,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThan(Int16 valueArgument,
 														[NotNull] String nameArgument,
-														Int16? valueBoundLower)
+														[CanBeNull] Int16? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -7127,7 +7127,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(Int16? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] Int16? valueArgument,
 														[NotNull] String nameArgument,
 														Int16 valueBoundLower)
 		{
@@ -7154,9 +7154,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(Int16? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] Int16? valueArgument,
 														[NotNull] String nameArgument,
-														Int16? valueBoundLower)
+														[CanBeNull] Int16? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -7210,7 +7210,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThan(UInt32 valueArgument,
 														[NotNull] String nameArgument,
-														UInt32? valueBoundLower)
+														[CanBeNull] UInt32? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -7235,7 +7235,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(UInt32? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] UInt32? valueArgument,
 														[NotNull] String nameArgument,
 														UInt32 valueBoundLower)
 		{
@@ -7262,9 +7262,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(UInt32? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] UInt32? valueArgument,
 														[NotNull] String nameArgument,
-														UInt32? valueBoundLower)
+														[CanBeNull] UInt32? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -7318,7 +7318,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThan(UInt64 valueArgument,
 														[NotNull] String nameArgument,
-														UInt64? valueBoundLower)
+														[CanBeNull] UInt64? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -7343,7 +7343,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(UInt64? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] UInt64? valueArgument,
 														[NotNull] String nameArgument,
 														UInt64 valueBoundLower)
 		{
@@ -7370,9 +7370,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(UInt64? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] UInt64? valueArgument,
 														[NotNull] String nameArgument,
-														UInt64? valueBoundLower)
+														[CanBeNull] UInt64? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -7426,7 +7426,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThan(UInt16 valueArgument,
 														[NotNull] String nameArgument,
-														UInt16? valueBoundLower)
+														[CanBeNull] UInt16? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -7451,7 +7451,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(UInt16? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] UInt16? valueArgument,
 														[NotNull] String nameArgument,
 														UInt16 valueBoundLower)
 		{
@@ -7478,9 +7478,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan(UInt16? valueArgument,
+		public static void RequireArgumentIsGreaterThan([CanBeNull] UInt16? valueArgument,
 														[NotNull] String nameArgument,
-														UInt16? valueBoundLower)
+														[CanBeNull] UInt16? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -7536,7 +7536,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThanOrEqual(BigInteger valueArgument,
 															   [NotNull] String nameArgument,
-															   BigInteger? valueBoundLower)
+															   [CanBeNull] BigInteger? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -7561,7 +7561,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(BigInteger? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] BigInteger? valueArgument,
 															   [NotNull] String nameArgument,
 															   BigInteger valueBoundLower)
 		{
@@ -7588,9 +7588,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(BigInteger? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] BigInteger? valueArgument,
 															   [NotNull] String nameArgument,
-															   BigInteger? valueBoundLower)
+															   [CanBeNull] BigInteger? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -7646,7 +7646,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThanOrEqual(DateTime valueArgument,
 															   [NotNull] String nameArgument,
-															   DateTime? valueBoundLower)
+															   [CanBeNull] DateTime? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -7671,7 +7671,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(DateTime? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] DateTime? valueArgument,
 															   [NotNull] String nameArgument,
 															   DateTime valueBoundLower)
 		{
@@ -7698,9 +7698,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(DateTime? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] DateTime? valueArgument,
 															   [NotNull] String nameArgument,
-															   DateTime? valueBoundLower)
+															   [CanBeNull] DateTime? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -7779,7 +7779,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(Byte? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] Byte? valueArgument,
 															   [NotNull] String nameArgument,
 															   Byte valueBoundLower)
 		{
@@ -7806,7 +7806,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(Byte? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] Byte? valueArgument,
 															   [NotNull] String nameArgument,
 															   Byte? valueBoundLower)
 		{
@@ -7862,7 +7862,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThanOrEqual(Decimal valueArgument,
 															   [NotNull] String nameArgument,
-															   Decimal? valueBoundLower)
+															   [CanBeNull] Decimal? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -7887,7 +7887,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(Decimal? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] Decimal? valueArgument,
 															   [NotNull] String nameArgument,
 															   Decimal valueBoundLower)
 		{
@@ -7914,9 +7914,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(Decimal? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] Decimal? valueArgument,
 															   [NotNull] String nameArgument,
-															   Decimal? valueBoundLower)
+															   [CanBeNull] Decimal? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -7970,7 +7970,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThanOrEqual(Double valueArgument,
 															   [NotNull] String nameArgument,
-															   Double? valueBoundLower)
+															   [CanBeNull] Double? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -7995,7 +7995,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(Double? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] Double? valueArgument,
 															   [NotNull] String nameArgument,
 															   Double valueBoundLower)
 		{
@@ -8022,9 +8022,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(Double? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] Double? valueArgument,
 															   [NotNull] String nameArgument,
-															   Double? valueBoundLower)
+															   [CanBeNull] Double? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -8078,7 +8078,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThanOrEqual(Single valueArgument,
 															   [NotNull] String nameArgument,
-															   Single? valueBoundLower)
+															   [CanBeNull] Single? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -8103,7 +8103,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(Single? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] Single? valueArgument,
 															   [NotNull] String nameArgument,
 															   Single valueBoundLower)
 		{
@@ -8130,9 +8130,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(Single? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] Single? valueArgument,
 															   [NotNull] String nameArgument,
-															   Single? valueBoundLower)
+															   [CanBeNull] Single? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -8211,7 +8211,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(Int32? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] Int32? valueArgument,
 															   [NotNull] String nameArgument,
 															   Int32 valueBoundLower)
 		{
@@ -8238,7 +8238,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(Int32? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] Int32? valueArgument,
 															   [NotNull] String nameArgument,
 															   Int32? valueBoundLower)
 		{
@@ -8319,7 +8319,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(Int64? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] Int64? valueArgument,
 															   [NotNull] String nameArgument,
 															   Int64 valueBoundLower)
 		{
@@ -8346,7 +8346,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(Int64? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] Int64? valueArgument,
 															   [NotNull] String nameArgument,
 															   Int64? valueBoundLower)
 		{
@@ -8402,7 +8402,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThanOrEqual(SByte valueArgument,
 															   [NotNull] String nameArgument,
-															   SByte? valueBoundLower)
+															   [CanBeNull] SByte? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -8427,7 +8427,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(SByte? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] SByte? valueArgument,
 															   [NotNull] String nameArgument,
 															   SByte valueBoundLower)
 		{
@@ -8454,9 +8454,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(SByte? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] SByte? valueArgument,
 															   [NotNull] String nameArgument,
-															   SByte? valueBoundLower)
+															   [CanBeNull] SByte? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -8535,7 +8535,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(Int16? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] Int16? valueArgument,
 															   [NotNull] String nameArgument,
 															   Int16 valueBoundLower)
 		{
@@ -8562,7 +8562,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(Int16? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] Int16? valueArgument,
 															   [NotNull] String nameArgument,
 															   Int16? valueBoundLower)
 		{
@@ -8618,7 +8618,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThanOrEqual(UInt32 valueArgument,
 															   [NotNull] String nameArgument,
-															   UInt32? valueBoundLower)
+															   [CanBeNull] UInt32? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -8643,7 +8643,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(UInt32? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] UInt32? valueArgument,
 															   [NotNull] String nameArgument,
 															   UInt32 valueBoundLower)
 		{
@@ -8670,9 +8670,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(UInt32? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] UInt32? valueArgument,
 															   [NotNull] String nameArgument,
-															   UInt32? valueBoundLower)
+															   [CanBeNull] UInt32? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -8726,7 +8726,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThanOrEqual(UInt64 valueArgument,
 															   [NotNull] String nameArgument,
-															   UInt64? valueBoundLower)
+															   [CanBeNull] UInt64? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -8751,7 +8751,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(UInt64? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] UInt64? valueArgument,
 															   [NotNull] String nameArgument,
 															   UInt64 valueBoundLower)
 		{
@@ -8778,9 +8778,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(UInt64? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] UInt64? valueArgument,
 															   [NotNull] String nameArgument,
-															   UInt64? valueBoundLower)
+															   [CanBeNull] UInt64? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -8834,7 +8834,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThanOrEqual(UInt16 valueArgument,
 															   [NotNull] String nameArgument,
-															   UInt16? valueBoundLower)
+															   [CanBeNull] UInt16? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -8859,7 +8859,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(UInt16? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] UInt16? valueArgument,
 															   [NotNull] String nameArgument,
 															   UInt16 valueBoundLower)
 		{
@@ -8886,9 +8886,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual(UInt16? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual([CanBeNull] UInt16? valueArgument,
 															   [NotNull] String nameArgument,
-															   UInt16? valueBoundLower)
+															   [CanBeNull] UInt16? valueBoundLower)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -8944,7 +8944,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThan(BigInteger valueArgument,
 													 [NotNull] String nameArgument,
-													 BigInteger? valueBoundUpper)
+													 [CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -8969,7 +8969,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(BigInteger? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] BigInteger? valueArgument,
 													 [NotNull] String nameArgument,
 													 BigInteger valueBoundUpper)
 		{
@@ -8996,9 +8996,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(BigInteger? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] BigInteger? valueArgument,
 													 [NotNull] String nameArgument,
-													 BigInteger? valueBoundUpper)
+													 [CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -9054,7 +9054,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThan(DateTime valueArgument,
 													 [NotNull] String nameArgument,
-													 DateTime? valueBoundUpper)
+													 [CanBeNull] DateTime? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -9079,7 +9079,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(DateTime? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] DateTime? valueArgument,
 													 [NotNull] String nameArgument,
 													 DateTime valueBoundUpper)
 		{
@@ -9106,9 +9106,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(DateTime? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] DateTime? valueArgument,
 													 [NotNull] String nameArgument,
-													 DateTime? valueBoundUpper)
+													 [CanBeNull] DateTime? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -9187,7 +9187,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(Byte? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] Byte? valueArgument,
 													 [NotNull] String nameArgument,
 													 Byte valueBoundUpper)
 		{
@@ -9214,7 +9214,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(Byte? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] Byte? valueArgument,
 													 [NotNull] String nameArgument,
 													 Byte? valueBoundUpper)
 		{
@@ -9270,7 +9270,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThan(Decimal valueArgument,
 													 [NotNull] String nameArgument,
-													 Decimal? valueBoundUpper)
+													 [CanBeNull] Decimal? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -9295,7 +9295,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(Decimal? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] Decimal? valueArgument,
 													 [NotNull] String nameArgument,
 													 Decimal valueBoundUpper)
 		{
@@ -9322,9 +9322,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(Decimal? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] Decimal? valueArgument,
 													 [NotNull] String nameArgument,
-													 Decimal? valueBoundUpper)
+													 [CanBeNull] Decimal? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -9378,7 +9378,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThan(Double valueArgument,
 													 [NotNull] String nameArgument,
-													 Double? valueBoundUpper)
+													 [CanBeNull] Double? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -9403,7 +9403,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(Double? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] Double? valueArgument,
 													 [NotNull] String nameArgument,
 													 Double valueBoundUpper)
 		{
@@ -9430,9 +9430,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(Double? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] Double? valueArgument,
 													 [NotNull] String nameArgument,
-													 Double? valueBoundUpper)
+													 [CanBeNull] Double? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -9486,7 +9486,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThan(Single valueArgument,
 													 [NotNull] String nameArgument,
-													 Single? valueBoundUpper)
+													 [CanBeNull] Single? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -9511,7 +9511,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(Single? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] Single? valueArgument,
 													 [NotNull] String nameArgument,
 													 Single valueBoundUpper)
 		{
@@ -9538,9 +9538,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(Single? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] Single? valueArgument,
 													 [NotNull] String nameArgument,
-													 Single? valueBoundUpper)
+													 [CanBeNull] Single? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -9619,7 +9619,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(Int32? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] Int32? valueArgument,
 													 [NotNull] String nameArgument,
 													 Int32 valueBoundUpper)
 		{
@@ -9646,7 +9646,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(Int32? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] Int32? valueArgument,
 													 [NotNull] String nameArgument,
 													 Int32? valueBoundUpper)
 		{
@@ -9727,7 +9727,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(Int64? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] Int64? valueArgument,
 													 [NotNull] String nameArgument,
 													 Int64 valueBoundUpper)
 		{
@@ -9754,7 +9754,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(Int64? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] Int64? valueArgument,
 													 [NotNull] String nameArgument,
 													 Int64? valueBoundUpper)
 		{
@@ -9810,7 +9810,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThan(SByte valueArgument,
 													 [NotNull] String nameArgument,
-													 SByte? valueBoundUpper)
+													 [CanBeNull] SByte? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -9835,7 +9835,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(SByte? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] SByte? valueArgument,
 													 [NotNull] String nameArgument,
 													 SByte valueBoundUpper)
 		{
@@ -9862,9 +9862,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(SByte? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] SByte? valueArgument,
 													 [NotNull] String nameArgument,
-													 SByte? valueBoundUpper)
+													 [CanBeNull] SByte? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -9943,7 +9943,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(Int16? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] Int16? valueArgument,
 													 [NotNull] String nameArgument,
 													 Int16 valueBoundUpper)
 		{
@@ -9970,7 +9970,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(Int16? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] Int16? valueArgument,
 													 [NotNull] String nameArgument,
 													 Int16? valueBoundUpper)
 		{
@@ -10026,7 +10026,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThan(UInt32 valueArgument,
 													 [NotNull] String nameArgument,
-													 UInt32? valueBoundUpper)
+													 [CanBeNull] UInt32? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -10051,7 +10051,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(UInt32? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] UInt32? valueArgument,
 													 [NotNull] String nameArgument,
 													 UInt32 valueBoundUpper)
 		{
@@ -10078,9 +10078,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(UInt32? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] UInt32? valueArgument,
 													 [NotNull] String nameArgument,
-													 UInt32? valueBoundUpper)
+													 [CanBeNull] UInt32? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -10134,7 +10134,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThan(UInt64 valueArgument,
 													 [NotNull] String nameArgument,
-													 UInt64? valueBoundUpper)
+													 [CanBeNull] UInt64? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -10159,7 +10159,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(UInt64? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] UInt64? valueArgument,
 													 [NotNull] String nameArgument,
 													 UInt64 valueBoundUpper)
 		{
@@ -10186,9 +10186,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(UInt64? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] UInt64? valueArgument,
 													 [NotNull] String nameArgument,
-													 UInt64? valueBoundUpper)
+													 [CanBeNull] UInt64? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -10242,7 +10242,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThan(UInt16 valueArgument,
 													 [NotNull] String nameArgument,
-													 UInt16? valueBoundUpper)
+													 [CanBeNull] UInt16? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -10267,7 +10267,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(UInt16? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] UInt16? valueArgument,
 													 [NotNull] String nameArgument,
 													 UInt16 valueBoundUpper)
 		{
@@ -10294,9 +10294,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan(UInt16? valueArgument,
+		public static void RequireArgumentIsLessThan([CanBeNull] UInt16? valueArgument,
 													 [NotNull] String nameArgument,
-													 UInt16? valueBoundUpper)
+													 [CanBeNull] UInt16? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -10352,7 +10352,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThanOrEqual(BigInteger valueArgument,
 															[NotNull] String nameArgument,
-															BigInteger? valueBoundUpper)
+															[CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -10377,7 +10377,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(BigInteger? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] BigInteger? valueArgument,
 															[NotNull] String nameArgument,
 															BigInteger valueBoundUpper)
 		{
@@ -10404,9 +10404,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(BigInteger? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] BigInteger? valueArgument,
 															[NotNull] String nameArgument,
-															BigInteger? valueBoundUpper)
+															[CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -10462,7 +10462,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThanOrEqual(DateTime valueArgument,
 															[NotNull] String nameArgument,
-															DateTime? valueBoundUpper)
+															[CanBeNull] DateTime? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -10487,7 +10487,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(DateTime? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] DateTime? valueArgument,
 															[NotNull] String nameArgument,
 															DateTime valueBoundUpper)
 		{
@@ -10514,9 +10514,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(DateTime? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] DateTime? valueArgument,
 															[NotNull] String nameArgument,
-															DateTime? valueBoundUpper)
+															[CanBeNull] DateTime? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -10570,7 +10570,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThanOrEqual(Byte valueArgument,
 															[NotNull] String nameArgument,
-															Byte? valueBoundUpper)
+															[CanBeNull] Byte? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -10595,7 +10595,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(Byte? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] Byte? valueArgument,
 															[NotNull] String nameArgument,
 															Byte valueBoundUpper)
 		{
@@ -10622,9 +10622,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(Byte? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] Byte? valueArgument,
 															[NotNull] String nameArgument,
-															Byte? valueBoundUpper)
+															[CanBeNull] Byte? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -10678,7 +10678,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThanOrEqual(Decimal valueArgument,
 															[NotNull] String nameArgument,
-															Decimal? valueBoundUpper)
+															[CanBeNull] Decimal? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -10703,7 +10703,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(Decimal? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] Decimal? valueArgument,
 															[NotNull] String nameArgument,
 															Decimal valueBoundUpper)
 		{
@@ -10730,9 +10730,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(Decimal? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] Decimal? valueArgument,
 															[NotNull] String nameArgument,
-															Decimal? valueBoundUpper)
+															[CanBeNull] Decimal? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -10786,7 +10786,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThanOrEqual(Double valueArgument,
 															[NotNull] String nameArgument,
-															Double? valueBoundUpper)
+															[CanBeNull] Double? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -10811,7 +10811,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(Double? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] Double? valueArgument,
 															[NotNull] String nameArgument,
 															Double valueBoundUpper)
 		{
@@ -10838,9 +10838,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(Double? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] Double? valueArgument,
 															[NotNull] String nameArgument,
-															Double? valueBoundUpper)
+															[CanBeNull] Double? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -10894,7 +10894,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThanOrEqual(Single valueArgument,
 															[NotNull] String nameArgument,
-															Single? valueBoundUpper)
+															[CanBeNull] Single? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -10919,7 +10919,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(Single? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] Single? valueArgument,
 															[NotNull] String nameArgument,
 															Single valueBoundUpper)
 		{
@@ -10946,9 +10946,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(Single? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] Single? valueArgument,
 															[NotNull] String nameArgument,
-															Single? valueBoundUpper)
+															[CanBeNull] Single? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -11002,7 +11002,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThanOrEqual(Int32 valueArgument,
 															[NotNull] String nameArgument,
-															Int32? valueBoundUpper)
+															[CanBeNull] Int32? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -11027,7 +11027,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 			[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(Int32? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] Int32? valueArgument,
 															[NotNull] String nameArgument,
 															Int32 valueBoundUpper)
 		{
@@ -11054,9 +11054,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(Int32? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] Int32? valueArgument,
 															[NotNull] String nameArgument,
-															Int32? valueBoundUpper)
+															[CanBeNull] Int32? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -11110,7 +11110,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThanOrEqual(Int64 valueArgument,
 															[NotNull] String nameArgument,
-															Int64? valueBoundUpper)
+															[CanBeNull] Int64? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -11135,7 +11135,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(Int64? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] Int64? valueArgument,
 															[NotNull] String nameArgument,
 															Int64 valueBoundUpper)
 		{
@@ -11162,9 +11162,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(Int64? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] Int64? valueArgument,
 															[NotNull] String nameArgument,
-															Int64? valueBoundUpper)
+															[CanBeNull] Int64? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -11218,7 +11218,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThanOrEqual(SByte valueArgument,
 															[NotNull] String nameArgument,
-															SByte? valueBoundUpper)
+															[CanBeNull] SByte? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -11243,7 +11243,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(SByte? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] SByte? valueArgument,
 															[NotNull] String nameArgument,
 															SByte valueBoundUpper)
 		{
@@ -11270,9 +11270,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(SByte? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] SByte? valueArgument,
 															[NotNull] String nameArgument,
-															SByte? valueBoundUpper)
+															[CanBeNull] SByte? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -11326,7 +11326,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThanOrEqual(Int16 valueArgument,
 															[NotNull] String nameArgument,
-															Int16? valueBoundUpper)
+															[CanBeNull] Int16? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -11351,7 +11351,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(Int16? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] Int16? valueArgument,
 															[NotNull] String nameArgument,
 															Int16 valueBoundUpper)
 		{
@@ -11378,9 +11378,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(Int16? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] Int16? valueArgument,
 															[NotNull] String nameArgument,
-															Int16? valueBoundUpper)
+															[CanBeNull] Int16? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -11434,7 +11434,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThanOrEqual(UInt32 valueArgument,
 															[NotNull] String nameArgument,
-															UInt32? valueBoundUpper)
+															[CanBeNull] UInt32? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -11459,7 +11459,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(UInt32? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] UInt32? valueArgument,
 															[NotNull] String nameArgument,
 															UInt32 valueBoundUpper)
 		{
@@ -11486,9 +11486,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(UInt32? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] UInt32? valueArgument,
 															[NotNull] String nameArgument,
-															UInt32? valueBoundUpper)
+															[CanBeNull] UInt32? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -11542,7 +11542,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThanOrEqual(UInt64 valueArgument,
 															[NotNull] String nameArgument,
-															UInt64? valueBoundUpper)
+															[CanBeNull] UInt64? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -11567,7 +11567,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(UInt64? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] UInt64? valueArgument,
 															[NotNull] String nameArgument,
 															UInt64 valueBoundUpper)
 		{
@@ -11594,9 +11594,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(UInt64? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] UInt64? valueArgument,
 															[NotNull] String nameArgument,
-															UInt64? valueBoundUpper)
+															[CanBeNull] UInt64? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -11650,7 +11650,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThanOrEqual(UInt16 valueArgument,
 															[NotNull] String nameArgument,
-															UInt16? valueBoundUpper)
+															[CanBeNull] UInt16? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -11675,7 +11675,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(UInt16? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] UInt16? valueArgument,
 															[NotNull] String nameArgument,
 															UInt16 valueBoundUpper)
 		{
@@ -11702,9 +11702,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual(UInt16? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual([CanBeNull] UInt16? valueArgument,
 															[NotNull] String nameArgument,
-															UInt16? valueBoundUpper)
+															[CanBeNull] UInt16? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -11766,7 +11766,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsOutside(BigInteger valueArgument,
 													[NotNull] String nameArgument,
 													BigInteger valueBoundLower,
-													BigInteger? valueBoundUpper)
+													[CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -11794,7 +11794,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(BigInteger valueArgument,
 													[NotNull] String nameArgument,
-													BigInteger? valueBoundLower,
+													[CanBeNull] BigInteger? valueBoundLower,
 													BigInteger valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -11823,8 +11823,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(BigInteger valueArgument,
 													[NotNull] String nameArgument,
-													BigInteger? valueBoundLower,
-													BigInteger? valueBoundUpper)
+													[CanBeNull] BigInteger? valueBoundLower,
+													[CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -11850,7 +11850,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(BigInteger? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] BigInteger? valueArgument,
 													[NotNull] String nameArgument,
 													BigInteger valueBoundLower,
 													BigInteger valueBoundUpper)
@@ -11879,10 +11879,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(BigInteger? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] BigInteger? valueArgument,
 													[NotNull] String nameArgument,
 													BigInteger valueBoundLower,
-													BigInteger? valueBoundUpper)
+													[CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -11908,9 +11908,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(BigInteger? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] BigInteger? valueArgument,
 													[NotNull] String nameArgument,
-													BigInteger? valueBoundLower,
+													[CanBeNull] BigInteger? valueBoundLower,
 													BigInteger valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -11937,10 +11937,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(BigInteger? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] BigInteger? valueArgument,
 													[NotNull] String nameArgument,
-													BigInteger? valueBoundLower,
-													BigInteger? valueBoundUpper)
+													[CanBeNull] BigInteger? valueBoundLower,
+													[CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -12000,7 +12000,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsOutside(DateTime valueArgument,
 													[NotNull] String nameArgument,
 													DateTime valueBoundLower,
-													DateTime? valueBoundUpper)
+													[CanBeNull] DateTime? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -12028,7 +12028,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(DateTime valueArgument,
 													[NotNull] String nameArgument,
-													DateTime? valueBoundLower,
+													[CanBeNull] DateTime? valueBoundLower,
 													DateTime valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -12057,8 +12057,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(DateTime valueArgument,
 													[NotNull] String nameArgument,
-													DateTime? valueBoundLower,
-													DateTime? valueBoundUpper)
+													[CanBeNull] DateTime? valueBoundLower,
+													[CanBeNull] DateTime? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -12084,7 +12084,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(DateTime? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] DateTime? valueArgument,
 													[NotNull] String nameArgument,
 													DateTime valueBoundLower,
 													DateTime valueBoundUpper)
@@ -12113,10 +12113,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(DateTime? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] DateTime? valueArgument,
 													[NotNull] String nameArgument,
 													DateTime valueBoundLower,
-													DateTime? valueBoundUpper)
+													[CanBeNull] DateTime? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -12142,9 +12142,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(DateTime? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] DateTime? valueArgument,
 													[NotNull] String nameArgument,
-													DateTime? valueBoundLower,
+													[CanBeNull] DateTime? valueBoundLower,
 													DateTime valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -12171,10 +12171,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(DateTime? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] DateTime? valueArgument,
 													[NotNull] String nameArgument,
-													DateTime? valueBoundLower,
-													DateTime? valueBoundUpper)
+													[CanBeNull] DateTime? valueBoundLower,
+													[CanBeNull] DateTime? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -12232,7 +12232,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsOutside(Byte valueArgument,
 													[NotNull] String nameArgument,
 													Byte valueBoundLower,
-													Byte? valueBoundUpper)
+													[CanBeNull] Byte? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -12260,7 +12260,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(Byte valueArgument,
 													[NotNull] String nameArgument,
-													Byte? valueBoundLower,
+													[CanBeNull] Byte? valueBoundLower,
 													Byte valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -12289,8 +12289,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(Byte valueArgument,
 													[NotNull] String nameArgument,
-													Byte? valueBoundLower,
-													Byte? valueBoundUpper)
+													[CanBeNull] Byte? valueBoundLower,
+													[CanBeNull] Byte? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -12316,7 +12316,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(Byte? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] Byte? valueArgument,
 													[NotNull] String nameArgument,
 													Byte valueBoundLower,
 													Byte valueBoundUpper)
@@ -12345,10 +12345,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(Byte? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] Byte? valueArgument,
 													[NotNull] String nameArgument,
 													Byte valueBoundLower,
-													Byte? valueBoundUpper)
+													[CanBeNull] Byte? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -12374,9 +12374,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(Byte? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] Byte? valueArgument,
 													[NotNull] String nameArgument,
-													Byte? valueBoundLower,
+													[CanBeNull] Byte? valueBoundLower,
 													Byte valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -12403,10 +12403,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(Byte? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] Byte? valueArgument,
 													[NotNull] String nameArgument,
-													Byte? valueBoundLower,
-													Byte? valueBoundUpper)
+													[CanBeNull] Byte? valueBoundLower,
+													[CanBeNull] Byte? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -12464,7 +12464,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsOutside(Decimal valueArgument,
 													[NotNull] String nameArgument,
 													Decimal valueBoundLower,
-													Decimal? valueBoundUpper)
+													[CanBeNull] Decimal? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -12492,7 +12492,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(Decimal valueArgument,
 													[NotNull] String nameArgument,
-													Decimal? valueBoundLower,
+													[CanBeNull] Decimal? valueBoundLower,
 													Decimal valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -12521,8 +12521,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(Decimal valueArgument,
 													[NotNull] String nameArgument,
-													Decimal? valueBoundLower,
-													Decimal? valueBoundUpper)
+													[CanBeNull] Decimal? valueBoundLower,
+													[CanBeNull] Decimal? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -12548,7 +12548,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(Decimal? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] Decimal? valueArgument,
 													[NotNull] String nameArgument,
 													Decimal valueBoundLower,
 													Decimal valueBoundUpper)
@@ -12577,10 +12577,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(Decimal? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] Decimal? valueArgument,
 													[NotNull] String nameArgument,
 													Decimal valueBoundLower,
-													Decimal? valueBoundUpper)
+													[CanBeNull] Decimal? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -12606,9 +12606,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(Decimal? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] Decimal? valueArgument,
 													[NotNull] String nameArgument,
-													Decimal? valueBoundLower,
+													[CanBeNull] Decimal? valueBoundLower,
 													Decimal valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -12635,10 +12635,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(Decimal? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] Decimal? valueArgument,
 													[NotNull] String nameArgument,
-													Decimal? valueBoundLower,
-													Decimal? valueBoundUpper)
+													[CanBeNull] Decimal? valueBoundLower,
+													[CanBeNull] Decimal? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -12696,7 +12696,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsOutside(Double valueArgument,
 													[NotNull] String nameArgument,
 													Double valueBoundLower,
-													Double? valueBoundUpper)
+													[CanBeNull] Double? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -12724,7 +12724,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(Double valueArgument,
 													[NotNull] String nameArgument,
-													Double? valueBoundLower,
+													[CanBeNull] Double? valueBoundLower,
 													Double valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -12753,8 +12753,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(Double valueArgument,
 													[NotNull] String nameArgument,
-													Double? valueBoundLower,
-													Double? valueBoundUpper)
+													[CanBeNull] Double? valueBoundLower,
+													[CanBeNull] Double? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -12780,7 +12780,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(Double? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] Double? valueArgument,
 													[NotNull] String nameArgument,
 													Double valueBoundLower,
 													Double valueBoundUpper)
@@ -12809,10 +12809,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(Double? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] Double? valueArgument,
 													[NotNull] String nameArgument,
 													Double valueBoundLower,
-													Double? valueBoundUpper)
+													[CanBeNull] Double? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -12838,9 +12838,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(Double? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] Double? valueArgument,
 													[NotNull] String nameArgument,
-													Double? valueBoundLower,
+													[CanBeNull] Double? valueBoundLower,
 													Double valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -12867,10 +12867,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(Double? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] Double? valueArgument,
 													[NotNull] String nameArgument,
-													Double? valueBoundLower,
-													Double? valueBoundUpper)
+													[CanBeNull] Double? valueBoundLower,
+													[CanBeNull] Double? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -12928,7 +12928,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsOutside(Single valueArgument,
 													[NotNull] String nameArgument,
 													Single valueBoundLower,
-													Single? valueBoundUpper)
+													[CanBeNull] Single? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -12956,7 +12956,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(Single valueArgument,
 													[NotNull] String nameArgument,
-													Single? valueBoundLower,
+													[CanBeNull] Single? valueBoundLower,
 													Single valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -12985,8 +12985,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(Single valueArgument,
 													[NotNull] String nameArgument,
-													Single? valueBoundLower,
-													Single? valueBoundUpper)
+													[CanBeNull] Single? valueBoundLower,
+													[CanBeNull] Single? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -13012,7 +13012,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(Single? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] Single? valueArgument,
 													[NotNull] String nameArgument,
 													Single valueBoundLower,
 													Single valueBoundUpper)
@@ -13041,10 +13041,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(Single? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] Single? valueArgument,
 													[NotNull] String nameArgument,
 													Single valueBoundLower,
-													Single? valueBoundUpper)
+													[CanBeNull] Single? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -13070,9 +13070,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(Single? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] Single? valueArgument,
 													[NotNull] String nameArgument,
-													Single? valueBoundLower,
+													[CanBeNull] Single? valueBoundLower,
 													Single valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -13099,10 +13099,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(Single? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] Single? valueArgument,
 													[NotNull] String nameArgument,
-													Single? valueBoundLower,
-													Single? valueBoundUpper)
+													[CanBeNull] Single? valueBoundLower,
+													[CanBeNull] Single? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -13160,7 +13160,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsOutside(Int32 valueArgument,
 													[NotNull] String nameArgument,
 													Int32 valueBoundLower,
-													Int32? valueBoundUpper)
+													[CanBeNull] Int32? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -13188,7 +13188,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(Int32 valueArgument,
 													[NotNull] String nameArgument,
-													Int32? valueBoundLower,
+													[CanBeNull] Int32? valueBoundLower,
 													Int32 valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -13217,8 +13217,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(Int32 valueArgument,
 													[NotNull] String nameArgument,
-													Int32? valueBoundLower,
-													Int32? valueBoundUpper)
+													[CanBeNull] Int32? valueBoundLower,
+													[CanBeNull] Int32? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -13244,7 +13244,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(Int32? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] Int32? valueArgument,
 													[NotNull] String nameArgument,
 													Int32 valueBoundLower,
 													Int32 valueBoundUpper)
@@ -13273,10 +13273,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(Int32? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] Int32? valueArgument,
 													[NotNull] String nameArgument,
 													Int32 valueBoundLower,
-													Int32? valueBoundUpper)
+													[CanBeNull] Int32? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -13302,9 +13302,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(Int32? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] Int32? valueArgument,
 													[NotNull] String nameArgument,
-													Int32? valueBoundLower,
+													[CanBeNull] Int32? valueBoundLower,
 													Int32 valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -13331,10 +13331,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(Int32? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] Int32? valueArgument,
 													[NotNull] String nameArgument,
-													Int32? valueBoundLower,
-													Int32? valueBoundUpper)
+													[CanBeNull] Int32? valueBoundLower,
+													[CanBeNull] Int32? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -13392,7 +13392,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsOutside(Int64 valueArgument,
 													[NotNull] String nameArgument,
 													Int64 valueBoundLower,
-													Int64? valueBoundUpper)
+													[CanBeNull] Int64? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -13420,7 +13420,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(Int64 valueArgument,
 													[NotNull] String nameArgument,
-													Int64? valueBoundLower,
+													[CanBeNull] Int64? valueBoundLower,
 													Int64 valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -13449,8 +13449,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(Int64 valueArgument,
 													[NotNull] String nameArgument,
-													Int64? valueBoundLower,
-													Int64? valueBoundUpper)
+													[CanBeNull] Int64? valueBoundLower,
+													[CanBeNull] Int64? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -13476,7 +13476,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(Int64? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] Int64? valueArgument,
 													[NotNull] String nameArgument,
 													Int64 valueBoundLower,
 													Int64 valueBoundUpper)
@@ -13505,10 +13505,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(Int64? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] Int64? valueArgument,
 													[NotNull] String nameArgument,
 													Int64 valueBoundLower,
-													Int64? valueBoundUpper)
+													[CanBeNull] Int64? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -13534,9 +13534,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(Int64? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] Int64? valueArgument,
 													[NotNull] String nameArgument,
-													Int64? valueBoundLower,
+													[CanBeNull] Int64? valueBoundLower,
 													Int64 valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -13563,10 +13563,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(Int64? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] Int64? valueArgument,
 													[NotNull] String nameArgument,
-													Int64? valueBoundLower,
-													Int64? valueBoundUpper)
+													[CanBeNull] Int64? valueBoundLower,
+													[CanBeNull] Int64? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -13624,7 +13624,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsOutside(SByte valueArgument,
 													[NotNull] String nameArgument,
 													SByte valueBoundLower,
-													SByte? valueBoundUpper)
+													[CanBeNull] SByte? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -13652,7 +13652,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(SByte valueArgument,
 													[NotNull] String nameArgument,
-													SByte? valueBoundLower,
+													[CanBeNull] SByte? valueBoundLower,
 													SByte valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -13681,8 +13681,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(SByte valueArgument,
 													[NotNull] String nameArgument,
-													SByte? valueBoundLower,
-													SByte? valueBoundUpper)
+													[CanBeNull] SByte? valueBoundLower,
+													[CanBeNull] SByte? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -13708,7 +13708,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(SByte? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] SByte? valueArgument,
 													[NotNull] String nameArgument,
 													SByte valueBoundLower,
 													SByte valueBoundUpper)
@@ -13737,10 +13737,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(SByte? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] SByte? valueArgument,
 													[NotNull] String nameArgument,
 													SByte valueBoundLower,
-													SByte? valueBoundUpper)
+													[CanBeNull] SByte? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -13766,9 +13766,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(SByte? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] SByte? valueArgument,
 													[NotNull] String nameArgument,
-													SByte? valueBoundLower,
+													[CanBeNull] SByte? valueBoundLower,
 													SByte valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -13795,10 +13795,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(SByte? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] SByte? valueArgument,
 													[NotNull] String nameArgument,
-													SByte? valueBoundLower,
-													SByte? valueBoundUpper)
+													[CanBeNull] SByte? valueBoundLower,
+													[CanBeNull] SByte? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -13856,7 +13856,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsOutside(Int16 valueArgument,
 													[NotNull] String nameArgument,
 													Int16 valueBoundLower,
-													Int16? valueBoundUpper)
+													[CanBeNull] Int16? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -13884,7 +13884,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(Int16 valueArgument,
 													[NotNull] String nameArgument,
-													Int16? valueBoundLower,
+													[CanBeNull] Int16? valueBoundLower,
 													Int16 valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -13913,8 +13913,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(Int16 valueArgument,
 													[NotNull] String nameArgument,
-													Int16? valueBoundLower,
-													Int16? valueBoundUpper)
+													[CanBeNull] Int16? valueBoundLower,
+													[CanBeNull] Int16? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -13940,7 +13940,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(Int16? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] Int16? valueArgument,
 													[NotNull] String nameArgument,
 													Int16 valueBoundLower,
 													Int16 valueBoundUpper)
@@ -13969,10 +13969,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(Int16? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] Int16? valueArgument,
 													[NotNull] String nameArgument,
 													Int16 valueBoundLower,
-													Int16? valueBoundUpper)
+													[CanBeNull] Int16? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -13998,9 +13998,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(Int16? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] Int16? valueArgument,
 													[NotNull] String nameArgument,
-													Int16? valueBoundLower,
+													[CanBeNull] Int16? valueBoundLower,
 													Int16 valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -14027,10 +14027,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(Int16? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] Int16? valueArgument,
 													[NotNull] String nameArgument,
-													Int16? valueBoundLower,
-													Int16? valueBoundUpper)
+													[CanBeNull] Int16? valueBoundLower,
+													[CanBeNull] Int16? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -14088,7 +14088,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsOutside(UInt32 valueArgument,
 													[NotNull] String nameArgument,
 													UInt32 valueBoundLower,
-													UInt32? valueBoundUpper)
+													[CanBeNull] UInt32? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -14116,7 +14116,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(UInt32 valueArgument,
 													[NotNull] String nameArgument,
-													UInt32? valueBoundLower,
+													[CanBeNull] UInt32? valueBoundLower,
 													UInt32 valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -14145,8 +14145,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(UInt32 valueArgument,
 													[NotNull] String nameArgument,
-													UInt32? valueBoundLower,
-													UInt32? valueBoundUpper)
+													[CanBeNull] UInt32? valueBoundLower,
+													[CanBeNull] UInt32? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -14172,7 +14172,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(UInt32? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] UInt32? valueArgument,
 													[NotNull] String nameArgument,
 													UInt32 valueBoundLower,
 													UInt32 valueBoundUpper)
@@ -14201,10 +14201,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(UInt32? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] UInt32? valueArgument,
 													[NotNull] String nameArgument,
 													UInt32 valueBoundLower,
-													UInt32? valueBoundUpper)
+													[CanBeNull] UInt32? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -14230,9 +14230,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(UInt32? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] UInt32? valueArgument,
 													[NotNull] String nameArgument,
-													UInt32? valueBoundLower,
+													[CanBeNull] UInt32? valueBoundLower,
 													UInt32 valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -14259,10 +14259,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(UInt32? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] UInt32? valueArgument,
 													[NotNull] String nameArgument,
-													UInt32? valueBoundLower,
-													UInt32? valueBoundUpper)
+													[CanBeNull] UInt32? valueBoundLower,
+													[CanBeNull] UInt32? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -14320,7 +14320,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsOutside(UInt64 valueArgument,
 													[NotNull] String nameArgument,
 													UInt64 valueBoundLower,
-													UInt64? valueBoundUpper)
+													[CanBeNull] UInt64? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -14348,7 +14348,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(UInt64 valueArgument,
 													[NotNull] String nameArgument,
-													UInt64? valueBoundLower,
+													[CanBeNull] UInt64? valueBoundLower,
 													UInt64 valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -14377,8 +14377,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(UInt64 valueArgument,
 													[NotNull] String nameArgument,
-													UInt64? valueBoundLower,
-													UInt64? valueBoundUpper)
+													[CanBeNull] UInt64? valueBoundLower,
+													[CanBeNull] UInt64? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -14404,7 +14404,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(UInt64? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] UInt64? valueArgument,
 													[NotNull] String nameArgument,
 													UInt64 valueBoundLower,
 													UInt64 valueBoundUpper)
@@ -14433,10 +14433,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(UInt64? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] UInt64? valueArgument,
 													[NotNull] String nameArgument,
 													UInt64 valueBoundLower,
-													UInt64? valueBoundUpper)
+													[CanBeNull] UInt64? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -14462,9 +14462,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(UInt64? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] UInt64? valueArgument,
 													[NotNull] String nameArgument,
-													UInt64? valueBoundLower,
+													[CanBeNull] UInt64? valueBoundLower,
 													UInt64 valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -14491,10 +14491,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(UInt64? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] UInt64? valueArgument,
 													[NotNull] String nameArgument,
-													UInt64? valueBoundLower,
-													UInt64? valueBoundUpper)
+													[CanBeNull] UInt64? valueBoundLower,
+													[CanBeNull] UInt64? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -14552,7 +14552,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsOutside(UInt16 valueArgument,
 													[NotNull] String nameArgument,
 													UInt16 valueBoundLower,
-													UInt16? valueBoundUpper)
+													[CanBeNull] UInt16? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -14580,7 +14580,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(UInt16 valueArgument,
 													[NotNull] String nameArgument,
-													UInt16? valueBoundLower,
+													[CanBeNull] UInt16? valueBoundLower,
 													UInt16 valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -14609,8 +14609,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside(UInt16 valueArgument,
 													[NotNull] String nameArgument,
-													UInt16? valueBoundLower,
-													UInt16? valueBoundUpper)
+													[CanBeNull] UInt16? valueBoundLower,
+													[CanBeNull] UInt16? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -14636,7 +14636,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(UInt16? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] UInt16? valueArgument,
 													[NotNull] String nameArgument,
 													UInt16 valueBoundLower,
 													UInt16 valueBoundUpper)
@@ -14665,10 +14665,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(UInt16? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] UInt16? valueArgument,
 													[NotNull] String nameArgument,
 													UInt16 valueBoundLower,
-													UInt16? valueBoundUpper)
+													[CanBeNull] UInt16? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -14694,9 +14694,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(UInt16? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] UInt16? valueArgument,
 													[NotNull] String nameArgument,
-													UInt16? valueBoundLower,
+													[CanBeNull] UInt16? valueBoundLower,
 													UInt16 valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -14723,10 +14723,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside(UInt16? valueArgument,
+		public static void RequireArgumentIsOutside([CanBeNull] UInt16? valueArgument,
 													[NotNull] String nameArgument,
-													UInt16? valueBoundLower,
-													UInt16? valueBoundUpper)
+													[CanBeNull] UInt16? valueBoundLower,
+													[CanBeNull] UInt16? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -14786,7 +14786,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsOutsideExclusive(BigInteger valueArgument,
 															 [NotNull] String nameArgument,
 															 BigInteger valueBoundLower,
-															 BigInteger? valueBoundUpper)
+															 [CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -14814,7 +14814,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(BigInteger valueArgument,
 															 [NotNull] String nameArgument,
-															 BigInteger? valueBoundLower,
+															 [CanBeNull] BigInteger? valueBoundLower,
 															 BigInteger valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -14843,8 +14843,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(BigInteger valueArgument,
 															 [NotNull] String nameArgument,
-															 BigInteger? valueBoundLower,
-															 BigInteger? valueBoundUpper)
+															 [CanBeNull] BigInteger? valueBoundLower,
+															 [CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -14870,7 +14870,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(BigInteger? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] BigInteger? valueArgument,
 															 [NotNull] String nameArgument,
 															 BigInteger valueBoundLower,
 															 BigInteger valueBoundUpper)
@@ -14899,10 +14899,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(BigInteger? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] BigInteger? valueArgument,
 															 [NotNull] String nameArgument,
 															 BigInteger valueBoundLower,
-															 BigInteger? valueBoundUpper)
+															 [CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -14928,9 +14928,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(BigInteger? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] BigInteger? valueArgument,
 															 [NotNull] String nameArgument,
-															 BigInteger? valueBoundLower,
+															 [CanBeNull] BigInteger? valueBoundLower,
 															 BigInteger valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -14957,10 +14957,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(BigInteger? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] BigInteger? valueArgument,
 															 [NotNull] String nameArgument,
-															 BigInteger? valueBoundLower,
-															 BigInteger? valueBoundUpper)
+															 [CanBeNull] BigInteger? valueBoundLower,
+															 [CanBeNull] BigInteger? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -15020,7 +15020,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsOutsideExclusive(DateTime valueArgument,
 															 [NotNull] String nameArgument,
 															 DateTime valueBoundLower,
-															 DateTime? valueBoundUpper)
+															 [CanBeNull] DateTime? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -15048,7 +15048,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(DateTime valueArgument,
 															 [NotNull] String nameArgument,
-															 DateTime? valueBoundLower,
+															 [CanBeNull] DateTime? valueBoundLower,
 															 DateTime valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -15077,8 +15077,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(DateTime valueArgument,
 															 [NotNull] String nameArgument,
-															 DateTime? valueBoundLower,
-															 DateTime? valueBoundUpper)
+															 [CanBeNull] DateTime? valueBoundLower,
+															 [CanBeNull] DateTime? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -15104,7 +15104,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(DateTime? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] DateTime? valueArgument,
 															 [NotNull] String nameArgument,
 															 DateTime valueBoundLower,
 															 DateTime valueBoundUpper)
@@ -15133,10 +15133,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(DateTime? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] DateTime? valueArgument,
 															 [NotNull] String nameArgument,
 															 DateTime valueBoundLower,
-															 DateTime? valueBoundUpper)
+															 [CanBeNull] DateTime? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -15162,9 +15162,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(DateTime? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] DateTime? valueArgument,
 															 [NotNull] String nameArgument,
-															 DateTime? valueBoundLower,
+															 [CanBeNull] DateTime? valueBoundLower,
 															 DateTime valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -15191,10 +15191,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(DateTime? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] DateTime? valueArgument,
 															 [NotNull] String nameArgument,
-															 DateTime? valueBoundLower,
-															 DateTime? valueBoundUpper)
+															 [CanBeNull] DateTime? valueBoundLower,
+															 [CanBeNull] DateTime? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -15336,7 +15336,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(Byte? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] Byte? valueArgument,
 															 [NotNull] String nameArgument,
 															 Byte valueBoundLower,
 															 Byte valueBoundUpper)
@@ -15365,7 +15365,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(Byte? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] Byte? valueArgument,
 															 [NotNull] String nameArgument,
 															 Byte valueBoundLower,
 															 Byte? valueBoundUpper)
@@ -15394,7 +15394,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(Byte? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] Byte? valueArgument,
 															 [NotNull] String nameArgument,
 															 Byte? valueBoundLower,
 															 Byte valueBoundUpper)
@@ -15423,7 +15423,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(Byte? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] Byte? valueArgument,
 															 [NotNull] String nameArgument,
 															 Byte? valueBoundLower,
 															 Byte? valueBoundUpper)
@@ -15484,7 +15484,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsOutsideExclusive(Decimal valueArgument,
 															 [NotNull] String nameArgument,
 															 Decimal valueBoundLower,
-															 Decimal? valueBoundUpper)
+															 [CanBeNull] Decimal? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -15512,7 +15512,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(Decimal valueArgument,
 															 [NotNull] String nameArgument,
-															 Decimal? valueBoundLower,
+															 [CanBeNull] Decimal? valueBoundLower,
 															 Decimal valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -15541,8 +15541,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(Decimal valueArgument,
 															 [NotNull] String nameArgument,
-															 Decimal? valueBoundLower,
-															 Decimal? valueBoundUpper)
+															 [CanBeNull] Decimal? valueBoundLower,
+															 [CanBeNull] Decimal? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -15568,7 +15568,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(Decimal? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] Decimal? valueArgument,
 															 [NotNull] String nameArgument,
 															 Decimal valueBoundLower,
 															 Decimal valueBoundUpper)
@@ -15597,10 +15597,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(Decimal? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] Decimal? valueArgument,
 															 [NotNull] String nameArgument,
 															 Decimal valueBoundLower,
-															 Decimal? valueBoundUpper)
+															 [CanBeNull] Decimal? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -15626,9 +15626,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(Decimal? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] Decimal? valueArgument,
 															 [NotNull] String nameArgument,
-															 Decimal? valueBoundLower,
+															 [CanBeNull] Decimal? valueBoundLower,
 															 Decimal valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -15655,10 +15655,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(Decimal? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] Decimal? valueArgument,
 															 [NotNull] String nameArgument,
-															 Decimal? valueBoundLower,
-															 Decimal? valueBoundUpper)
+															 [CanBeNull] Decimal? valueBoundLower,
+															 [CanBeNull] Decimal? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -15716,7 +15716,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsOutsideExclusive(Double valueArgument,
 															 [NotNull] String nameArgument,
 															 Double valueBoundLower,
-															 Double? valueBoundUpper)
+															 [CanBeNull] Double? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -15744,7 +15744,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(Double valueArgument,
 															 [NotNull] String nameArgument,
-															 Double? valueBoundLower,
+															 [CanBeNull] Double? valueBoundLower,
 															 Double valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -15773,8 +15773,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(Double valueArgument,
 															 [NotNull] String nameArgument,
-															 Double? valueBoundLower,
-															 Double? valueBoundUpper)
+															 [CanBeNull] Double? valueBoundLower,
+															 [CanBeNull] Double? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -15800,7 +15800,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(Double? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] Double? valueArgument,
 															 [NotNull] String nameArgument,
 															 Double valueBoundLower,
 															 Double valueBoundUpper)
@@ -15829,10 +15829,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(Double? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] Double? valueArgument,
 															 [NotNull] String nameArgument,
 															 Double valueBoundLower,
-															 Double? valueBoundUpper)
+															 [CanBeNull] Double? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -15858,9 +15858,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(Double? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] Double? valueArgument,
 															 [NotNull] String nameArgument,
-															 Double? valueBoundLower,
+															 [CanBeNull] Double? valueBoundLower,
 															 Double valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -15887,10 +15887,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(Double? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] Double? valueArgument,
 															 [NotNull] String nameArgument,
-															 Double? valueBoundLower,
-															 Double? valueBoundUpper)
+															 [CanBeNull] Double? valueBoundLower,
+															 [CanBeNull] Double? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -15948,7 +15948,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsOutsideExclusive(Single valueArgument,
 															 [NotNull] String nameArgument,
 															 Single valueBoundLower,
-															 Single? valueBoundUpper)
+															 [CanBeNull] Single? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -15976,7 +15976,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(Single valueArgument,
 															 [NotNull] String nameArgument,
-															 Single? valueBoundLower,
+															 [CanBeNull] Single? valueBoundLower,
 															 Single valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -16005,8 +16005,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(Single valueArgument,
 															 [NotNull] String nameArgument,
-															 Single? valueBoundLower,
-															 Single? valueBoundUpper)
+															 [CanBeNull] Single? valueBoundLower,
+															 [CanBeNull] Single? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -16032,7 +16032,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(Single? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] Single? valueArgument,
 															 [NotNull] String nameArgument,
 															 Single valueBoundLower,
 															 Single valueBoundUpper)
@@ -16061,10 +16061,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(Single? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] Single? valueArgument,
 															 [NotNull] String nameArgument,
 															 Single valueBoundLower,
-															 Single? valueBoundUpper)
+															 [CanBeNull] Single? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -16090,9 +16090,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(Single? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] Single? valueArgument,
 															 [NotNull] String nameArgument,
-															 Single? valueBoundLower,
+															 [CanBeNull] Single? valueBoundLower,
 															 Single valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -16119,10 +16119,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(Single? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] Single? valueArgument,
 															 [NotNull] String nameArgument,
-															 Single? valueBoundLower,
-															 Single? valueBoundUpper)
+															 [CanBeNull] Single? valueBoundLower,
+															 [CanBeNull] Single? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -16264,7 +16264,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(Int32? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] Int32? valueArgument,
 															 [NotNull] String nameArgument,
 															 Int32 valueBoundLower,
 															 Int32 valueBoundUpper)
@@ -16293,7 +16293,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(Int32? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] Int32? valueArgument,
 															 [NotNull] String nameArgument,
 															 Int32 valueBoundLower,
 															 Int32? valueBoundUpper)
@@ -16322,7 +16322,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(Int32? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] Int32? valueArgument,
 															 [NotNull] String nameArgument,
 															 Int32? valueBoundLower,
 															 Int32 valueBoundUpper)
@@ -16351,7 +16351,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(Int32? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] Int32? valueArgument,
 															 [NotNull] String nameArgument,
 															 Int32? valueBoundLower,
 															 Int32? valueBoundUpper)
@@ -16496,7 +16496,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(Int64? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] Int64? valueArgument,
 															 [NotNull] String nameArgument,
 															 Int64 valueBoundLower,
 															 Int64 valueBoundUpper)
@@ -16525,7 +16525,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(Int64? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] Int64? valueArgument,
 															 [NotNull] String nameArgument,
 															 Int64 valueBoundLower,
 															 Int64? valueBoundUpper)
@@ -16554,7 +16554,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(Int64? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] Int64? valueArgument,
 															 [NotNull] String nameArgument,
 															 Int64? valueBoundLower,
 															 Int64 valueBoundUpper)
@@ -16583,7 +16583,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(Int64? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] Int64? valueArgument,
 															 [NotNull] String nameArgument,
 															 Int64? valueBoundLower,
 															 Int64? valueBoundUpper)
@@ -16644,7 +16644,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsOutsideExclusive(SByte valueArgument,
 															 [NotNull] String nameArgument,
 															 SByte valueBoundLower,
-															 SByte? valueBoundUpper)
+															 [CanBeNull] SByte? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -16672,7 +16672,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(SByte valueArgument,
 															 [NotNull] String nameArgument,
-															 SByte? valueBoundLower,
+															 [CanBeNull] SByte? valueBoundLower,
 															 SByte valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -16701,8 +16701,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(SByte valueArgument,
 															 [NotNull] String nameArgument,
-															 SByte? valueBoundLower,
-															 SByte? valueBoundUpper)
+															 [CanBeNull] SByte? valueBoundLower,
+															 [CanBeNull] SByte? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -16728,7 +16728,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(SByte? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] SByte? valueArgument,
 															 [NotNull] String nameArgument,
 															 SByte valueBoundLower,
 															 SByte valueBoundUpper)
@@ -16757,10 +16757,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(SByte? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] SByte? valueArgument,
 															 [NotNull] String nameArgument,
 															 SByte valueBoundLower,
-															 SByte? valueBoundUpper)
+															 [CanBeNull] SByte? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -16786,9 +16786,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(SByte? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] SByte? valueArgument,
 															 [NotNull] String nameArgument,
-															 SByte? valueBoundLower,
+															 [CanBeNull] SByte? valueBoundLower,
 															 SByte valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -16815,10 +16815,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(SByte? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] SByte? valueArgument,
 															 [NotNull] String nameArgument,
-															 SByte? valueBoundLower,
-															 SByte? valueBoundUpper)
+															 [CanBeNull] SByte? valueBoundLower,
+															 [CanBeNull] SByte? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -16960,7 +16960,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(Int16? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] Int16? valueArgument,
 															 [NotNull] String nameArgument,
 															 Int16 valueBoundLower,
 															 Int16 valueBoundUpper)
@@ -16989,7 +16989,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(Int16? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] Int16? valueArgument,
 															 [NotNull] String nameArgument,
 															 Int16 valueBoundLower,
 															 Int16? valueBoundUpper)
@@ -17018,7 +17018,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(Int16? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] Int16? valueArgument,
 															 [NotNull] String nameArgument,
 															 Int16? valueBoundLower,
 															 Int16 valueBoundUpper)
@@ -17047,7 +17047,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(Int16? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] Int16? valueArgument,
 															 [NotNull] String nameArgument,
 															 Int16? valueBoundLower,
 															 Int16? valueBoundUpper)
@@ -17108,7 +17108,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsOutsideExclusive(UInt32 valueArgument,
 															 [NotNull] String nameArgument,
 															 UInt32 valueBoundLower,
-															 UInt32? valueBoundUpper)
+															 [CanBeNull] UInt32? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -17136,7 +17136,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(UInt32 valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt32? valueBoundLower,
+															 [CanBeNull] UInt32? valueBoundLower,
 															 UInt32 valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -17165,8 +17165,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(UInt32 valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt32? valueBoundLower,
-															 UInt32? valueBoundUpper)
+															 [CanBeNull] UInt32? valueBoundLower,
+															 [CanBeNull] UInt32? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -17192,7 +17192,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(UInt32? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] UInt32? valueArgument,
 															 [NotNull] String nameArgument,
 															 UInt32 valueBoundLower,
 															 UInt32 valueBoundUpper)
@@ -17221,10 +17221,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(UInt32? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] UInt32? valueArgument,
 															 [NotNull] String nameArgument,
 															 UInt32 valueBoundLower,
-															 UInt32? valueBoundUpper)
+															 [CanBeNull] UInt32? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -17250,9 +17250,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(UInt32? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] UInt32? valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt32? valueBoundLower,
+															 [CanBeNull] UInt32? valueBoundLower,
 															 UInt32 valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -17279,10 +17279,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(UInt32? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] UInt32? valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt32? valueBoundLower,
-															 UInt32? valueBoundUpper)
+															 [CanBeNull] UInt32? valueBoundLower,
+															 [CanBeNull] UInt32? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -17340,7 +17340,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsOutsideExclusive(UInt64 valueArgument,
 															 [NotNull] String nameArgument,
 															 UInt64 valueBoundLower,
-															 UInt64? valueBoundUpper)
+															 [CanBeNull] UInt64? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -17368,7 +17368,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(UInt64 valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt64? valueBoundLower,
+															 [CanBeNull] UInt64? valueBoundLower,
 															 UInt64 valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -17397,8 +17397,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(UInt64 valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt64? valueBoundLower,
-															 UInt64? valueBoundUpper)
+															 [CanBeNull] UInt64? valueBoundLower,
+															 [CanBeNull] UInt64? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -17424,7 +17424,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(UInt64? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] UInt64? valueArgument,
 															 [NotNull] String nameArgument,
 															 UInt64 valueBoundLower,
 															 UInt64 valueBoundUpper)
@@ -17453,10 +17453,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(UInt64? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] UInt64? valueArgument,
 															 [NotNull] String nameArgument,
 															 UInt64 valueBoundLower,
-															 UInt64? valueBoundUpper)
+															 [CanBeNull] UInt64? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -17482,9 +17482,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(UInt64? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] UInt64? valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt64? valueBoundLower,
+															 [CanBeNull] UInt64? valueBoundLower,
 															 UInt64 valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -17511,10 +17511,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(UInt64? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] UInt64? valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt64? valueBoundLower,
-															 UInt64? valueBoundUpper)
+															 [CanBeNull] UInt64? valueBoundLower,
+															 [CanBeNull] UInt64? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -17572,7 +17572,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsOutsideExclusive(UInt16 valueArgument,
 															 [NotNull] String nameArgument,
 															 UInt16 valueBoundLower,
-															 UInt16? valueBoundUpper)
+															 [CanBeNull] UInt16? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -17600,7 +17600,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(UInt16 valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt16? valueBoundLower,
+															 [CanBeNull] UInt16? valueBoundLower,
 															 UInt16 valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -17629,8 +17629,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive(UInt16 valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt16? valueBoundLower,
-															 UInt16? valueBoundUpper)
+															 [CanBeNull] UInt16? valueBoundLower,
+															 [CanBeNull] UInt16? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -17656,7 +17656,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(UInt16? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] UInt16? valueArgument,
 															 [NotNull] String nameArgument,
 															 UInt16 valueBoundLower,
 															 UInt16 valueBoundUpper)
@@ -17685,10 +17685,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(UInt16? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] UInt16? valueArgument,
 															 [NotNull] String nameArgument,
 															 UInt16 valueBoundLower,
-															 UInt16? valueBoundUpper)
+															 [CanBeNull] UInt16? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 
@@ -17714,9 +17714,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(UInt16? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] UInt16? valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt16? valueBoundLower,
+															 [CanBeNull] UInt16? valueBoundLower,
 															 UInt16 valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -17743,10 +17743,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive(UInt16? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive([CanBeNull] UInt16? valueArgument,
 															 [NotNull] String nameArgument,
-															 UInt16? valueBoundLower,
-															 UInt16? valueBoundUpper)
+															 [CanBeNull] UInt16? valueBoundLower,
+															 [CanBeNull] UInt16? valueBoundUpper)
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
 

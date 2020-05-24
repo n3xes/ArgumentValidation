@@ -109,234 +109,6 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 
 		#region Methods/Functions
 
-#if (!NETFX_V2 && !NETFX_V3 && !NETFX_V35)
-
-		/// <summary>
-		///		Validates that the provided <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
-		/// </summary>
-		/// <param name="valueArgument">
-		///		The <see cref="T:System.Numerics.BigInteger"/> to validate if is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
-		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
-		/// <param name="valueBoundLower">The <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
-		/// <param name="valueBoundUpper">The <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
-		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
-		/// <exception cref="ArgumentOutOfRangeException">
-		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
-		///		-or-  
-		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.  
-		///		-or-  
-		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
-		/// </exception>
-		public static void RequireArgumentIsBetween(BigInteger valueArgument,
-													[NotNull] String nameArgument,
-													BigInteger valueBoundLower,
-													BigInteger valueBoundUpper)
-		{
-			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
-
-			valueArgument.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
-			valueArgument.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
-		}
-
-		/// <summary>
-		///		Validates that the provided <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
-		/// </summary>
-		/// <param name="valueArgument">
-		///		The <see cref="T:System.Numerics.BigInteger"/> to validate if is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
-		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
-		/// <param name="valueBoundLower">The <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
-		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
-		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
-		/// <exception cref="ArgumentOutOfRangeException">
-		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
-		///		-or-  
-		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.  
-		///		-or-  
-		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
-		/// </exception>
-		public static void RequireArgumentIsBetween(BigInteger valueArgument,
-													[NotNull] String nameArgument,
-													BigInteger valueBoundLower,
-													BigInteger? valueBoundUpper)
-		{
-			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
-
-			valueArgument.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
-			valueArgument.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
-		}
-
-		/// <summary>
-		///		Validates that the provided <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
-		/// </summary>
-		/// <param name="valueArgument">
-		///		The <see cref="T:System.Numerics.BigInteger"/> to validate if is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
-		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
-		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
-		/// <param name="valueBoundUpper">The <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
-		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
-		/// <exception cref="ArgumentOutOfRangeException">
-		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
-		///		-or-  
-		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.  
-		///		-or-  
-		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
-		/// </exception>
-		public static void RequireArgumentIsBetween(BigInteger valueArgument,
-													[NotNull] String nameArgument,
-													BigInteger? valueBoundLower,
-													BigInteger valueBoundUpper)
-		{
-			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
-
-			valueArgument.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
-			valueArgument.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
-		}
-
-		/// <summary>
-		///		Validates that the provided <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
-		/// </summary>
-		/// <param name="valueArgument">
-		///		The <see cref="T:System.Numerics.BigInteger"/> to validate if is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
-		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
-		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
-		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
-		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
-		/// <exception cref="ArgumentOutOfRangeException">
-		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
-		///		-or-  
-		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.  
-		///		-or-  
-		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
-		/// </exception>
-		public static void RequireArgumentIsBetween(BigInteger valueArgument,
-													[NotNull] String nameArgument,
-													BigInteger? valueBoundLower,
-													BigInteger? valueBoundUpper)
-		{
-			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
-
-			valueArgument.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
-			valueArgument.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
-		}
-
-		/// <summary>
-		///		Validates that the provided <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
-		/// </summary>
-		/// <param name="valueArgument">
-		///		The <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> to validate if is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
-		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
-		/// <param name="valueBoundLower">The <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
-		/// <param name="valueBoundUpper">The <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
-		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
-		/// <exception cref="ArgumentOutOfRangeException">
-		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
-		///		-or-  
-		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.  
-		///		-or-  
-		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
-		/// </exception>
-		public static void RequireArgumentIsBetween(BigInteger? valueArgument,
-													[NotNull] String nameArgument,
-													BigInteger valueBoundLower,
-													BigInteger valueBoundUpper)
-		{
-			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
-
-			valueArgument.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
-			valueArgument.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
-		}
-
-		/// <summary>
-		///		Validates that the provided <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
-		/// </summary>
-		/// <param name="valueArgument">
-		///		The <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> to validate if is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
-		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
-		/// <param name="valueBoundLower">The <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
-		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
-		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
-		/// <exception cref="ArgumentOutOfRangeException">
-		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
-		///		-or-  
-		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.  
-		///		-or-  
-		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
-		/// </exception>
-		public static void RequireArgumentIsBetween(BigInteger? valueArgument,
-													[NotNull] String nameArgument,
-													BigInteger valueBoundLower,
-													BigInteger? valueBoundUpper)
-		{
-			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
-
-			valueArgument.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
-			valueArgument.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
-		}
-
-		/// <summary>
-		///		Validates that the provided <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
-		/// </summary>
-		/// <param name="valueArgument">
-		///		The <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> to validate if is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
-		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
-		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
-		/// <param name="valueBoundUpper">The <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
-		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
-		/// <exception cref="ArgumentOutOfRangeException">
-		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
-		///		-or-  
-		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.  
-		///		-or-  
-		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
-		/// </exception>
-		public static void RequireArgumentIsBetween(BigInteger? valueArgument,
-													[NotNull] String nameArgument,
-													BigInteger? valueBoundLower,
-													BigInteger valueBoundUpper)
-		{
-			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
-
-			valueArgument.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
-			valueArgument.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
-		}
-
-		/// <summary>
-		///		Validates that the provided <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
-		/// </summary>
-		/// <param name="valueArgument">
-		///		The <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> to validate if is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
-		/// </param>
-		/// <param name="nameArgument">The argument name of the <paramref name="valueArgument"/> to validate.</param>
-		/// <param name="valueBoundLower">The <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="valueArgument"/> is greater than or equal to.</param>
-		/// <param name="valueBoundUpper">The <see cref="T:System.Nullable`1"/> of <see cref="T:System.Numerics.BigInteger"/> to validate if the <paramref name="valueArgument"/> is less than or equal to.</param>
-		/// <exception cref="ArgumentNullException">The <paramref name="nameArgument"/> is <see langword="null"/>.</exception>
-		/// <exception cref="ArgumentOutOfRangeException">
-		///		The <paramref name="nameArgument"/> is <see cref="F:System.String.Empty"/> or white space.  
-		///		-or-  
-		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.  
-		///		-or-  
-		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
-		/// </exception>
-		public static void RequireArgumentIsBetween(BigInteger? valueArgument,
-													[NotNull] String nameArgument,
-													BigInteger? valueBoundLower,
-													BigInteger? valueBoundUpper)
-		{
-			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
-
-			valueArgument.RequireArgumentIsLessThanOrEqual(nameArgument, valueBoundUpper);
-			valueArgument.RequireArgumentIsGreaterThanOrEqual(nameArgument, valueBoundLower);
-		}
-
-#endif
-
 		/// <summary>
 		///		Validates that the provided <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundLower"/> and less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </summary>
@@ -356,10 +128,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween<T>(T valueArgument,
+		public static void RequireArgumentIsBetween<T>([CanBeNull] T valueArgument,
 													   [NotNull] String nameArgument,
-													   T valueBoundLower,
-													   T valueBoundUpper)
+													   [CanBeNull] T valueBoundLower,
+													   [CanBeNull] T valueBoundUpper)
 			where T : IComparable<T>
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -390,7 +162,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsBetween<T>(T valueArgument,
 													   [NotNull] String nameArgument,
 													   T valueBoundLower,
-													   T? valueBoundUpper)
+													   [CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -420,7 +192,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetween<T>(T valueArgument,
 													   [NotNull] String nameArgument,
-													   T? valueBoundLower,
+													   [CanBeNull] T? valueBoundLower,
 													   T valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
@@ -451,8 +223,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetween<T>(T valueArgument,
 													   [NotNull] String nameArgument,
-													   T? valueBoundLower,
-													   T? valueBoundUpper)
+													   [CanBeNull] T? valueBoundLower,
+													   [CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -480,7 +252,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween<T>(T? valueArgument,
+		public static void RequireArgumentIsBetween<T>([CanBeNull] T? valueArgument,
 													   [NotNull] String nameArgument,
 													   T valueBoundLower,
 													   T valueBoundUpper)
@@ -511,10 +283,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween<T>(T? valueArgument,
+		public static void RequireArgumentIsBetween<T>([CanBeNull] T? valueArgument,
 													   [NotNull] String nameArgument,
 													   T valueBoundLower,
-													   T? valueBoundUpper)
+													   [CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -542,9 +314,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween<T>(T? valueArgument,
+		public static void RequireArgumentIsBetween<T>([CanBeNull] T? valueArgument,
 													   [NotNull] String nameArgument,
-													   T? valueBoundLower,
+													   [CanBeNull] T? valueBoundLower,
 													   T valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
@@ -573,10 +345,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetween<T>(T? valueArgument,
+		public static void RequireArgumentIsBetween<T>([CanBeNull] T? valueArgument,
 													   [NotNull] String nameArgument,
-													   T? valueBoundLower,
-													   T? valueBoundUpper)
+													   [CanBeNull] T? valueBoundLower,
+													   [CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -604,10 +376,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive<T>(T valueArgument,
+		public static void RequireArgumentIsBetweenExclusive<T>([CanBeNull] T valueArgument,
 																[NotNull] String nameArgument,
-																T valueBoundLower,
-																T valueBoundUpper)
+																[CanBeNull] T valueBoundLower,
+																[CanBeNull] T valueBoundUpper)
 			where T : IComparable<T>
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -638,7 +410,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsBetweenExclusive<T>(T valueArgument,
 																[NotNull] String nameArgument,
 																T valueBoundLower,
-																T? valueBoundUpper)
+																[CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -668,7 +440,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive<T>(T valueArgument,
 																[NotNull] String nameArgument,
-																T? valueBoundLower,
+																[CanBeNull] T? valueBoundLower,
 																T valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
@@ -699,8 +471,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsBetweenExclusive<T>(T valueArgument,
 																[NotNull] String nameArgument,
-																T? valueBoundLower,
-																T? valueBoundUpper)
+																[CanBeNull] T? valueBoundLower,
+																[CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -728,7 +500,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive<T>(T? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive<T>([CanBeNull] T? valueArgument,
 																[NotNull] String nameArgument,
 																T valueBoundLower,
 																T valueBoundUpper)
@@ -759,10 +531,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive<T>(T? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive<T>([CanBeNull] T? valueArgument,
 																[NotNull] String nameArgument,
 																T valueBoundLower,
-																T? valueBoundUpper)
+																[CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -790,9 +562,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive<T>(T? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive<T>([CanBeNull] T? valueArgument,
 																[NotNull] String nameArgument,
-																T? valueBoundLower,
+																[CanBeNull] T? valueBoundLower,
 																T valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
@@ -821,10 +593,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsBetweenExclusive<T>(T? valueArgument,
+		public static void RequireArgumentIsBetweenExclusive<T>([CanBeNull] T? valueArgument,
 																[NotNull] String nameArgument,
-																T? valueBoundLower,
-																T? valueBoundUpper)
+																[CanBeNull] T? valueBoundLower,
+																[CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -849,9 +621,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan<T>(T valueArgument,
+		public static void RequireArgumentIsGreaterThan<T>([CanBeNull] T valueArgument,
 														   [NotNull] String nameArgument,
-														   T valueBoundLower)
+														   [CanBeNull] T valueBoundLower)
 			where T : IComparable<T>
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -880,7 +652,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThan<T>(T valueArgument,
 														   [NotNull] String nameArgument,
-														   T? valueBoundLower)
+														   [CanBeNull] T? valueBoundLower)
 			where T : struct, IComparable<T>
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -907,7 +679,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan<T>(T? valueArgument,
+		public static void RequireArgumentIsGreaterThan<T>([CanBeNull] T? valueArgument,
 														   [NotNull] String nameArgument,
 														   T valueBoundLower)
 			where T : struct, IComparable<T>
@@ -936,9 +708,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThan<T>(T? valueArgument,
+		public static void RequireArgumentIsGreaterThan<T>([CanBeNull] T? valueArgument,
 														   [NotNull] String nameArgument,
-														   T? valueBoundLower)
+														   [CanBeNull] T? valueBoundLower)
 			where T : struct, IComparable<T>
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -965,9 +737,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual<T>(T valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual<T>([CanBeNull] T valueArgument,
 																  [NotNull] String nameArgument,
-																  T valueBoundLower)
+																  [CanBeNull] T valueBoundLower)
 			where T : IComparable<T>
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -996,7 +768,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsGreaterThanOrEqual<T>(T valueArgument,
 																  [NotNull] String nameArgument,
-																  T? valueBoundLower)
+																  [CanBeNull] T? valueBoundLower)
 			where T : struct, IComparable<T>
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -1023,7 +795,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual<T>(T? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual<T>([CanBeNull] T? valueArgument,
 																  [NotNull] String nameArgument,
 																  T valueBoundLower)
 			where T : struct, IComparable<T>
@@ -1052,9 +824,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundLower"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsGreaterThanOrEqual<T>(T? valueArgument,
+		public static void RequireArgumentIsGreaterThanOrEqual<T>([CanBeNull] T? valueArgument,
 																  [NotNull] String nameArgument,
-																  T? valueBoundLower)
+																  [CanBeNull] T? valueBoundLower)
 			where T : struct, IComparable<T>
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -1081,9 +853,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan<T>(T valueArgument,
+		public static void RequireArgumentIsLessThan<T>([CanBeNull] T valueArgument,
 														[NotNull] String nameArgument,
-														T valueBoundUpper)
+														[CanBeNull] T valueBoundUpper)
 			where T : IComparable<T>
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -1112,7 +884,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThan<T>(T valueArgument,
 														[NotNull] String nameArgument,
-														T? valueBoundUpper)
+														[CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -1139,7 +911,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan<T>(T? valueArgument,
+		public static void RequireArgumentIsLessThan<T>([CanBeNull] T? valueArgument,
 														[NotNull] String nameArgument,
 														T valueBoundUpper)
 			where T : struct, IComparable<T>
@@ -1168,9 +940,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is greater than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThan<T>(T? valueArgument,
+		public static void RequireArgumentIsLessThan<T>([CanBeNull] T? valueArgument,
 														[NotNull] String nameArgument,
-														T? valueBoundUpper)
+														[CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -1197,9 +969,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual<T>(T valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual<T>([CanBeNull] T valueArgument,
 															   [NotNull] String nameArgument,
-															   T valueBoundUpper)
+															   [CanBeNull] T valueBoundUpper)
 			where T : IComparable<T>
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -1228,7 +1000,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsLessThanOrEqual<T>(T valueArgument,
 															   [NotNull] String nameArgument,
-															   T? valueBoundUpper)
+															   [CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -1255,7 +1027,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual<T>(T? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual<T>([CanBeNull] T? valueArgument,
 															   [NotNull] String nameArgument,
 															   T valueBoundUpper)
 			where T : struct, IComparable<T>
@@ -1284,9 +1056,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsLessThanOrEqual<T>(T? valueArgument,
+		public static void RequireArgumentIsLessThanOrEqual<T>([CanBeNull] T? valueArgument,
 															   [NotNull] String nameArgument,
-															   T? valueBoundUpper)
+															   [CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -1316,10 +1088,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside<T>(T valueArgument,
+		public static void RequireArgumentIsOutside<T>([CanBeNull] T valueArgument,
 													   [NotNull] String nameArgument,
-													   T valueBoundLower,
-													   T valueBoundUpper)
+													   [CanBeNull] T valueBoundLower,
+													   [CanBeNull] T valueBoundUpper)
 			where T : IComparable<T>
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -1350,7 +1122,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsOutside<T>(T valueArgument,
 													   [NotNull] String nameArgument,
 													   T valueBoundLower,
-													   T? valueBoundUpper)
+													   [CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -1380,7 +1152,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside<T>(T valueArgument,
 													   [NotNull] String nameArgument,
-													   T? valueBoundLower,
+													   [CanBeNull] T? valueBoundLower,
 													   T valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
@@ -1411,8 +1183,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutside<T>(T valueArgument,
 													   [NotNull] String nameArgument,
-													   T? valueBoundLower,
-													   T? valueBoundUpper)
+													   [CanBeNull] T? valueBoundLower,
+													   [CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -1440,7 +1212,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside<T>(T? valueArgument,
+		public static void RequireArgumentIsOutside<T>([CanBeNull] T? valueArgument,
 													   [NotNull] String nameArgument,
 													   T valueBoundLower,
 													   T valueBoundUpper)
@@ -1471,10 +1243,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside<T>(T? valueArgument,
+		public static void RequireArgumentIsOutside<T>([CanBeNull] T? valueArgument,
 													   [NotNull] String nameArgument,
 													   T valueBoundLower,
-													   T? valueBoundUpper)
+													   [CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -1502,9 +1274,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside<T>(T? valueArgument,
+		public static void RequireArgumentIsOutside<T>([CanBeNull] T? valueArgument,
 													   [NotNull] String nameArgument,
-													   T? valueBoundLower,
+													   [CanBeNull] T? valueBoundLower,
 													   T valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
@@ -1533,10 +1305,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutside<T>(T? valueArgument,
+		public static void RequireArgumentIsOutside<T>([CanBeNull] T? valueArgument,
 													   [NotNull] String nameArgument,
-													   T? valueBoundLower,
-													   T? valueBoundUpper)
+													   [CanBeNull] T? valueBoundLower,
+													   [CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -1564,10 +1336,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive<T>(T valueArgument,
+		public static void RequireArgumentIsOutsideExclusive<T>([CanBeNull] T valueArgument,
 																[NotNull] String nameArgument,
-																T valueBoundLower,
-																T valueBoundUpper)
+																[CanBeNull] T valueBoundLower,
+																[CanBeNull] T valueBoundUpper)
 			where T : IComparable<T>
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -1598,7 +1370,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		public static void RequireArgumentIsOutsideExclusive<T>(T valueArgument,
 																[NotNull] String nameArgument,
 																T valueBoundLower,
-																T? valueBoundUpper)
+																[CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -1628,7 +1400,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive<T>(T valueArgument,
 																[NotNull] String nameArgument,
-																T? valueBoundLower,
+																[CanBeNull] T? valueBoundLower,
 																T valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
@@ -1659,8 +1431,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		[CLSCompliant(false)]
 		public static void RequireArgumentIsOutsideExclusive<T>(T valueArgument,
 																[NotNull] String nameArgument,
-																T? valueBoundLower,
-																T? valueBoundUpper)
+																[CanBeNull] T? valueBoundLower,
+																[CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -1688,7 +1460,7 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive<T>(T? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive<T>([CanBeNull] T? valueArgument,
 																[NotNull] String nameArgument,
 																T valueBoundLower,
 																T valueBoundUpper)
@@ -1719,10 +1491,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive<T>(T? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive<T>([CanBeNull] T? valueArgument,
 																[NotNull] String nameArgument,
 																T valueBoundLower,
-																T? valueBoundUpper)
+																[CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
@@ -1750,9 +1522,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive<T>(T? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive<T>([CanBeNull] T? valueArgument,
 																[NotNull] String nameArgument,
-																T? valueBoundLower,
+																[CanBeNull] T? valueBoundLower,
 																T valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
@@ -1781,10 +1553,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="valueArgument"/> is less than or equal to the <paramref name="valueBoundUpper"/>.
 		/// </exception>
 		[CLSCompliant(false)]
-		public static void RequireArgumentIsOutsideExclusive<T>(T? valueArgument,
+		public static void RequireArgumentIsOutsideExclusive<T>([CanBeNull] T? valueArgument,
 																[NotNull] String nameArgument,
-																T? valueBoundLower,
-																T? valueBoundUpper)
+																[CanBeNull] T? valueBoundLower,
+																[CanBeNull] T? valueBoundUpper)
 			where T : struct, IComparable<T>
 		{
 			nameArgument.RequireArgumentHasNonWhiteSpaceValue("nameArgument");
