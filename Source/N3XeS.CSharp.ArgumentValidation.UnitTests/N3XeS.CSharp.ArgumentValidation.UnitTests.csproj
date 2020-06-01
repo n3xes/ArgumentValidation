@@ -4730,7 +4730,6 @@
     <Compile Include="ArgumentSignedIntegralNumberValidationUtilityTests.RequireArgumentIsPositiveTest09.g.cs">
       <DependentUpon>ArgumentSignedIntegralNumberValidationUtilityTests.cs</DependentUpon>
     </Compile>
-    <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\PexAssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">

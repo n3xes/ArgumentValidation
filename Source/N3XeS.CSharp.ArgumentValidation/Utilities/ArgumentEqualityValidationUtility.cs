@@ -125,7 +125,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		///		The <paramref name="nameArgument"/> or <paramref name="valueArgument"/> is empty or white space.
 		/// </exception>
 		[ContractAnnotation("valueArgument:null => halt"),
-		 SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", Justification = "Reviewed.  Suppression is OK here.  WhiteSpace is a word.", MessageId = "WhiteSpace")]
+		 SuppressMessage("Microsoft.Naming", 
+						 "CA1702:CompoundWordsShouldBeCasedCorrectly", 
+						 Justification = "Reviewed.  Suppression is OK here.  WhiteSpace is a word.", 
+						 MessageId = "WhiteSpace")]
 		public static void RequireArgumentHasNonWhiteSpaceValue([ArgumentValidatedNotNull, CanBeNull] String valueArgument,
 																[NotNull] String nameArgument)
 		{
@@ -179,7 +182,10 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="valueArgument"/> is not <see langword="null"/>, empty, or white space.
 		/// </exception>
-		[SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", Justification = "Reviewed.  Suppression is OK here.  WhiteSpace is a word.", MessageId = "WhiteSpace")]
+		[SuppressMessage("Microsoft.Naming", 
+						 "CA1702:CompoundWordsShouldBeCasedCorrectly", 
+						 Justification = "Reviewed.  Suppression is OK here.  WhiteSpace is a word.", 
+						 MessageId = "WhiteSpace")]
 		public static void RequireArgumentHasNullEmptyOrWhiteSpaceValue([CanBeNull] String valueArgument,
 																		[NotNull] String nameArgument)
 		{
@@ -905,7 +911,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="valueArgument"/> is not equal to the default value of <see cref="T:System.Nullable`1"/> of <see cref="T:System.SByte"/>, <see langword="null"/>.
 		/// </exception>
-		[CLSCompliant(false), ContractAnnotation("valueArgument:notnull => halt")]
+		[CLSCompliant(false), 
+		 ContractAnnotation("valueArgument:notnull => halt")]
 		public static void RequireArgumentDefaultValue([CanBeNull] SByte? valueArgument,
 													   [NotNull] String nameArgument)
 		{
@@ -992,7 +999,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="valueArgument"/> is not equal to the default value of <see cref="T:System.Nullable`1"/> of <see cref="T:System.UInt32"/>, <see langword="null"/>.
 		/// </exception>
-		[CLSCompliant(false), ContractAnnotation("valueArgument:notnull => halt")]
+		[CLSCompliant(false), 
+		 ContractAnnotation("valueArgument:notnull => halt")]
 		public static void RequireArgumentDefaultValue([CanBeNull] UInt32? valueArgument,
 													   [NotNull] String nameArgument)
 		{
@@ -1036,7 +1044,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="valueArgument"/> is not equal to the default value of <see cref="T:System.Nullable`1"/> of <see cref="T:System.UInt64"/>, <see langword="null"/>.
 		/// </exception>
-		[CLSCompliant(false), ContractAnnotation("valueArgument:notnull => halt")]
+		[CLSCompliant(false), 
+		 ContractAnnotation("valueArgument:notnull => halt")]
 		public static void RequireArgumentDefaultValue([CanBeNull] UInt64? valueArgument,
 													   [NotNull] String nameArgument)
 		{
@@ -1080,7 +1089,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="valueArgument"/> is not equal to the default value of <see cref="T:System.Nullable`1"/> of <see cref="T:System.UInt16"/>, <see langword="null"/>.
 		/// </exception>
-		[CLSCompliant(false), ContractAnnotation("valueArgument:notnull => halt")]
+		[CLSCompliant(false), 
+		 ContractAnnotation("valueArgument:notnull => halt")]
 		public static void RequireArgumentDefaultValue([CanBeNull] UInt16? valueArgument,
 													   [NotNull] String nameArgument)
 		{
@@ -1834,7 +1844,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="valueArgument"/> is equal to the default value of <see cref="T:System.Nullable`1"/> of <see cref="T:System.SByte"/>, <see langword="null"/>.
 		/// </exception>
-		[CLSCompliant(false), ContractAnnotation("valueArgument:null => halt")]
+		[CLSCompliant(false), 
+		 ContractAnnotation("valueArgument:null => halt")]
 		// ReSharper disable once NotNullOnImplicitCanBeNull
 		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, CanBeNull] SByte? valueArgument,
 														  [NotNull] String nameArgument)
@@ -1923,7 +1934,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="valueArgument"/> is equal to the default value of <see cref="T:System.Nullable`1"/> of <see cref="T:System.UInt32"/>, <see langword="null"/>.
 		/// </exception>
-		[CLSCompliant(false), ContractAnnotation("valueArgument:null => halt")]
+		[CLSCompliant(false), 
+		 ContractAnnotation("valueArgument:null => halt")]
 		// ReSharper disable once NotNullOnImplicitCanBeNull
 		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, CanBeNull] UInt32? valueArgument,
 														  [NotNull] String nameArgument)
@@ -1968,7 +1980,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="valueArgument"/> is equal to the default value of <see cref="T:System.Nullable`1"/> of <see cref="T:System.UInt64"/>, <see langword="null"/>.
 		/// </exception>
-		[CLSCompliant(false), ContractAnnotation("valueArgument:null => halt")]
+		[CLSCompliant(false), 
+		 ContractAnnotation("valueArgument:null => halt")]
 		// ReSharper disable once NotNullOnImplicitCanBeNull
 		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, CanBeNull] UInt64? valueArgument,
 														  [NotNull] String nameArgument)
@@ -2013,7 +2026,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 		/// <exception cref="ArgumentOutOfRangeException">
 		///		The <paramref name="valueArgument"/> is equal to the default value of <see cref="T:System.Nullable`1"/> of <see cref="T:System.UInt16"/>, <see langword="null"/>.
 		/// </exception>
-		[CLSCompliant(false), ContractAnnotation("valueArgument:null => halt")]
+		[CLSCompliant(false), 
+		 ContractAnnotation("valueArgument:null => halt")]
 		// ReSharper disable once NotNullOnImplicitCanBeNull
 		public static void RequireArgumentNotDefaultValue([ArgumentValidatedNotNull, CanBeNull] UInt16? valueArgument,
 														  [NotNull] String nameArgument)
