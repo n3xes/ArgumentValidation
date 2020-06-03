@@ -4,7 +4,7 @@
         <name>N3XeS.CSharp.ArgumentValidation</name>
     </assembly>
     <members>
-        <member name="T:N3XeS.CSharp.ArgumentValidation.Attributes.ArgumentValidatedNotNullAttribute">
+        <member name="T:N3XeS.CSharp.ArgumentValidation.Attributes.ValidatedNotNullAttribute">
             <summary>
             	A parameter attribute used to describe a parameter that it is being validated against
             	<see langword="null"/> in a validation method.

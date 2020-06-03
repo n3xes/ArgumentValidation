@@ -1,7 +1,7 @@
 ﻿#region Header: Copyright © 2014, John Caruthers
 
 // ======================================================================================================================
-// <copyright company="John Caruthers" file="ArgumentValidatedNotNullAttribute.cs">
+// <copyright company="John Caruthers" file="ValidatedNotNullAttribute.cs">
 //		Copyright © 2014, John Caruthers
 //		All rights reserved.
 //
@@ -59,7 +59,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Attributes
 	/// </history>
 	[AttributeUsage(AttributeTargets.Parameter), 
 	 PublicAPI]
-	public sealed class ArgumentValidatedNotNullAttribute
+	// ReSharper disable once InconsistentNaming
+	public sealed class ValidatedNotNullAttribute
 		: Attribute
 	{
 		#region Constants
