@@ -67,7 +67,6 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Attributes\ValidatedNotNullAttribute.cs" />
     <Compile Include="Extensions\ArgumentEqualityValidationExtension.cs" />
     <Compile Include="Extensions\ArgumentFloatingPointNumberParityValidationExtension.cs" />
     <Compile Include="Extensions\ArgumentIntegralParityValidationExtension.cs" />
@@ -179,6 +178,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Attributes\" />
     <Folder Include="BaseClasses\" />
     <Folder Include="Configurations\" />
     <Folder Include="Delegates\" />
@@ -212,7 +212,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="N3XeS.CSharp.Analyzation">
-      <Version>1.0.20152.1</Version>
+      <Version>1.0.20154.1</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

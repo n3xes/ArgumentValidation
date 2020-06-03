@@ -40,7 +40,8 @@ namespace N3XeS.CSharp.ArgumentValidation.Extensions
 
 	using JetBrains.Annotations;
 
-	using Attributes;
+	using Analyzation.Attributes;
+
 	using Utilities;
 
 	#endregion

@@ -41,9 +41,9 @@ namespace N3XeS.CSharp.ArgumentValidation.Utilities
 
 	using JetBrains.Annotations;
 
+	using Analyzation.Attributes;
 	using Analyzation.Extensions;
 
-	using Attributes;
 	using Extensions;
 	using Properties;
 
